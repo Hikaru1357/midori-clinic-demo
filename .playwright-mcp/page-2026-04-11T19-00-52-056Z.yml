@@ -1,0 +1,1177 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - heading "大阪なんば内科・消化器内視鏡クリニック 大阪の胃カメラ・大腸カメラ（大腸内視鏡検査）・消化器内科｜大阪なんば内科・消化器内視鏡クリニック｜なんば駅直結" [level=1] [ref=e5]:
+          - link "大阪なんば内科・消化器内視鏡クリニック 大阪の胃カメラ・大腸カメラ（大腸内視鏡検査）・消化器内科｜大阪なんば内科・消化器内視鏡クリニック｜なんば駅直結" [ref=e6] [cursor=pointer]:
+            - /url: https://www.namba-endoscopy.com/
+            - img "大阪なんば内科・消化器内視鏡クリニック" [ref=e7]
+            - generic [ref=e8]: 大阪の胃カメラ・大腸カメラ（大腸内視鏡検査）・消化器内科｜大阪なんば内科・消化器内視鏡クリニック｜なんば駅直結
+        - list [ref=e9]:
+          - listitem [ref=e10]:
+            - generic [ref=e11]:
+              - paragraph [ref=e12]:
+                - text: Language
+                - generic [ref=e13]: 言語切替
+              - generic [ref=e14]:
+                - link "zh-CN" [ref=e15] [cursor=pointer]:
+                  - /url: "#"
+                  - img "zh-CN" [ref=e16]
+                - link "en" [ref=e17] [cursor=pointer]:
+                  - /url: "#"
+                  - img "en" [ref=e18]
+                - link "hi" [ref=e19] [cursor=pointer]:
+                  - /url: "#"
+                  - img "hi" [ref=e20]
+                - link "ja" [ref=e21] [cursor=pointer]:
+                  - /url: "#"
+                  - img "ja" [ref=e22]
+                - link "ko" [ref=e23] [cursor=pointer]:
+                  - /url: "#"
+                  - img "ko" [ref=e24]
+                - link "es" [ref=e25] [cursor=pointer]:
+                  - /url: "#"
+                  - img "es" [ref=e26]
+                - link "vi" [ref=e27] [cursor=pointer]:
+                  - /url: "#"
+                  - img "vi" [ref=e28]
+                - combobox "Select Language" [ref=e29]:
+                  - option "Select Language"
+                  - option "简体中文"
+                  - option "English"
+                  - option "हिन्दी"
+                  - option "日本語" [selected]
+                  - option "한국어"
+                  - option "Español"
+                  - option "Tiếng Việt"
+          - listitem [ref=e30]:
+            - link "一般社団法人 MSO 芦屋おく内視鏡クリニック" [ref=e31] [cursor=pointer]:
+              - /url: https://www.oku-clinic.net/
+              - img "一般社団法人 MSO 芦屋おく内視鏡クリニック" [ref=e32]
+          - listitem [ref=e33]:
+            - link "医療法人篤眞会 奥クリニック" [ref=e34] [cursor=pointer]:
+              - /url: https://oku-cl.jp/
+              - img "医療法人篤眞会 奥クリニック" [ref=e35]
+      - navigation [ref=e36]:
+        - list [ref=e37]:
+          - listitem [ref=e38]:
+            - generic [ref=e40]:
+              - generic [ref=e41]: 診療案内
+              - generic [ref=e42]: MEDICAL INFORMATION
+            - list:
+              - listitem:
+                - link "一般内科":
+                  - /url: https://www.namba-endoscopy.com/internal_medicine/
+              - listitem:
+                - link "消化器内科":
+                  - /url: https://www.namba-endoscopy.com/gastroenterology-lp/
+              - listitem:
+                - link "肝臓内科":
+                  - /url: https://www.namba-endoscopy.com/iiver/
+              - listitem:
+                - link "肛門内科":
+                  - /url: https://www.namba-endoscopy.com/proctology/
+              - listitem:
+                - link "胃カメラ（胃内視鏡検査）":
+                  - /url: https://www.namba-endoscopy.com/gastroscopy/
+              - listitem:
+                - link "大腸カメラ（大腸内視鏡検査）":
+                  - /url: https://www.namba-endoscopy.com/colonoscopy/
+              - listitem:
+                - link "健康診断":
+                  - /url: https://www.namba-endoscopy.com/checkup/
+              - listitem:
+                - link "人間ドック":
+                  - /url: https://www.namba-endoscopy.com/medical_checkup/
+              - listitem:
+                - link "便秘外来":
+                  - /url: https://www.namba-endoscopy.com/constipation/
+              - listitem:
+                - link "生活習慣病":
+                  - /url: https://www.namba-endoscopy.com/lifestyle_related_diseases/
+              - listitem:
+                - link "マイクロバイオミー":
+                  - /url: https://www.namba-endoscopy.com/microbiome/
+              - listitem:
+                - link "よくあるご質問":
+                  - /url: https://www.namba-endoscopy.com/question/
+          - listitem [ref=e43]:
+            - generic [ref=e45]:
+              - generic [ref=e46]:
+                - text: 胃カメラ
+                - text: （胃内視鏡検査）
+              - generic [ref=e47]: GASTROSCOPY
+            - list:
+              - listitem:
+                - link "胃カメラ（胃内視鏡検査）":
+                  - /url: https://www.namba-endoscopy.com/gastroscopy/
+              - listitem:
+                - link "漫画でわかる胃カメラ検査":
+                  - /url: https://www.namba-endoscopy.com/manga1/
+              - listitem:
+                - link "内視鏡検査の選び方":
+                  - /url: https://www.namba-endoscopy.com/choose/
+          - listitem [ref=e48]:
+            - generic [ref=e50]:
+              - generic [ref=e51]:
+                - text: 大腸カメラ
+                - text: （大腸内視鏡検査）
+              - generic [ref=e52]: COLONOSCOPY
+            - list:
+              - listitem:
+                - link "大腸カメラ（大腸内視鏡検査）":
+                  - /url: https://www.namba-endoscopy.com/colonoscopy/
+              - listitem:
+                - link "漫画でわかる大腸カメラ検査":
+                  - /url: https://www.namba-endoscopy.com/manga2/
+              - listitem:
+                - link "内視鏡検査の選び方":
+                  - /url: https://www.namba-endoscopy.com/choose/
+          - listitem [ref=e53]:
+            - generic [ref=e55]:
+              - generic [ref=e56]:
+                - text: 健康診断・
+                - text: 人間ドック
+              - generic [ref=e57]: CHECKUP
+            - list:
+              - listitem:
+                - link "健康診断":
+                  - /url: https://www.namba-endoscopy.com/checkup/
+              - listitem:
+                - link "人間ドック":
+                  - /url: https://www.namba-endoscopy.com/medical_checkup/
+          - listitem [ref=e58]:
+            - link "肝臓内科 LIVER" [ref=e59] [cursor=pointer]:
+              - /url: https://www.namba-endoscopy.com/iiver/
+              - generic [ref=e60]:
+                - generic [ref=e61]: 肝臓内科
+                - generic [ref=e62]: LIVER
+          - listitem [ref=e63]:
+            - link "肛門内科 PROCTOLOGY" [ref=e64] [cursor=pointer]:
+              - /url: https://www.namba-endoscopy.com/proctology/
+              - generic [ref=e65]:
+                - generic [ref=e66]: 肛門内科
+                - generic [ref=e67]: PROCTOLOGY
+          - listitem [ref=e68]:
+            - generic [ref=e70]:
+              - generic [ref=e71]: 症状・病名から探す
+              - generic [ref=e72]: SYMPTOM＆DISEASE
+            - generic:
+              - generic:
+                - list:
+                  - listitem:
+                    - generic: 症状から探す
+                  - listitem:
+                    - link "お腹の痛み":
+                      - /url: https://www.namba-endoscopy.com/abdominal-pain/
+                  - listitem:
+                    - link "胃が痛い":
+                      - /url: https://www.namba-endoscopy.com/stomach-pain/
+                  - listitem:
+                    - link "下腹部が痛い":
+                      - /url: https://www.namba-endoscopy.com/lower-abdominal-pain/
+                  - listitem:
+                    - link "脇腹が痛い":
+                      - /url: https://www.namba-endoscopy.com/flank_pain/
+                  - listitem:
+                    - link "背中の痛み":
+                      - /url: https://www.namba-endoscopy.com/back-pain/
+                  - listitem:
+                    - link "胸の痛み":
+                      - /url: https://www.namba-endoscopy.com/chest-pain/
+                  - listitem:
+                    - link "胸やけ":
+                      - /url: https://www.namba-endoscopy.com/heartburn/
+                  - listitem:
+                    - link "腹部膨満感（お腹の張り）":
+                      - /url: https://www.namba-endoscopy.com/abdominal_bloating/
+                  - listitem:
+                    - link "胃の張り":
+                      - /url: https://www.namba-endoscopy.com/bloated-stomach/
+                  - listitem:
+                    - link "吐き気":
+                      - /url: https://www.namba-endoscopy.com/nausea/
+                  - listitem:
+                    - link "吐血":
+                      - /url: https://www.namba-endoscopy.com/blood-vomit/
+                  - listitem:
+                    - link "軟便・下痢":
+                      - /url: https://www.namba-endoscopy.com/diarrhea/
+                  - listitem:
+                    - link "便秘が続く":
+                      - /url: https://www.namba-endoscopy.com/constipation-2/
+                  - listitem:
+                    - link "血便":
+                      - /url: https://www.namba-endoscopy.com/bloody_stool/
+                  - listitem:
+                    - link "黒い便":
+                      - /url: https://www.namba-endoscopy.com/black-stool/
+                  - listitem:
+                    - link "便が細い":
+                      - /url: https://www.namba-endoscopy.com/thin_stools/
+                  - listitem:
+                    - link "便の色が気になる":
+                      - /url: https://www.namba-endoscopy.com/color_of_stool/
+                  - listitem:
+                    - link "便潜血陽性":
+                      - /url: https://www.namba-endoscopy.com/fecal_occult_blood_positive/
+                  - listitem:
+                    - link "残便感":
+                      - /url: https://www.namba-endoscopy.com/feeling-of-incomplete-stool/
+                  - listitem:
+                    - link "げっぷが多い":
+                      - /url: https://www.namba-endoscopy.com/burp/
+                  - listitem:
+                    - link "胃のむかつき":
+                      - /url: https://www.namba-endoscopy.com/stomach-upset/
+                  - listitem:
+                    - link "のどの違和感":
+                      - /url: https://www.namba-endoscopy.com/throat-discomfort/
+                  - listitem:
+                    - link "口臭が気になる":
+                      - /url: https://www.namba-endoscopy.com/bad-breath/
+                  - listitem:
+                    - link "疲れやすい":
+                      - /url: https://www.namba-endoscopy.com/fatigue/
+                  - listitem:
+                    - link "ふらつき・めまい":
+                      - /url: https://www.namba-endoscopy.com/dizziness/
+                  - listitem:
+                    - link "黄疸":
+                      - /url: https://www.namba-endoscopy.com/jaundice/
+                  - listitem:
+                    - link "ストレスと腹痛":
+                      - /url: https://www.namba-endoscopy.com/stress_abdominal_pain/
+              - generic:
+                - list:
+                  - listitem:
+                    - generic: 病名から探す
+                - list:
+                  - listitem:
+                    - generic: 食道・胃
+                  - listitem:
+                    - link "逆流性食道炎":
+                      - /url: https://www.namba-endoscopy.com/reflux_esophagitis/
+                  - listitem:
+                    - link "急性胃炎":
+                      - /url: https://www.namba-endoscopy.com/acute_gastritis/
+                  - listitem:
+                    - link "慢性胃炎・萎縮性胃炎":
+                      - /url: https://www.namba-endoscopy.com/chronic-gastritis/
+                  - listitem:
+                    - link "鳥肌胃炎":
+                      - /url: https://www.namba-endoscopy.com/gooseflesh-like-gastritis/
+                  - listitem:
+                    - link "バレット食道":
+                      - /url: https://www.namba-endoscopy.com/barrett-esophagus/
+                  - listitem:
+                    - link "胃潰瘍・十二指腸潰瘍":
+                      - /url: https://www.namba-endoscopy.com/gastric_ulcer/
+                  - listitem:
+                    - link "機能性ディスペプシア":
+                      - /url: https://www.namba-endoscopy.com/functional_dyspepsia/
+                  - listitem:
+                    - link "胃がん":
+                      - /url: https://www.namba-endoscopy.com/gastric-cancer/
+                  - listitem:
+                    - link "食道がん":
+                      - /url: https://www.namba-endoscopy.com/esophageal_cancer/
+                  - listitem:
+                    - link "ピロリ菌検査・除菌":
+                      - /url: https://www.namba-endoscopy.com/helicobacter_pylori/
+                  - listitem:
+                    - link "ピロリ菌とは？":
+                      - /url: https://www.namba-endoscopy.com/pylori03/
+                  - listitem:
+                    - link "ピロリ菌の検査方法":
+                      - /url: https://www.namba-endoscopy.com/pylori04/
+                  - listitem:
+                    - link "一次・二次除菌について":
+                      - /url: https://www.namba-endoscopy.com/pylori05/
+                  - listitem:
+                    - link "三次・四次除菌（自由診療）":
+                      - /url: https://www.namba-endoscopy.com/pylori06/
+                  - listitem:
+                    - link "ペニシリンアレルギーでも除菌可能":
+                      - /url: https://www.namba-endoscopy.com/pylori07/
+                  - listitem:
+                    - link "除菌治療中の副作用について":
+                      - /url: https://www.namba-endoscopy.com/pylori08/
+                  - listitem:
+                    - link "マロリー・ワイス症候群":
+                      - /url: https://www.namba-endoscopy.com/mallory-weiss-syndrome/
+                  - listitem:
+                    - link "好酸球性食道炎":
+                      - /url: https://www.namba-endoscopy.com/eosinophilic-esophagitis/
+                  - listitem:
+                    - link "食道アカラシア":
+                      - /url: https://www.namba-endoscopy.com/esophageal-achalasia/
+                  - listitem:
+                    - link "食道裂孔ヘルニア":
+                      - /url: https://www.namba-endoscopy.com/esophageal-hiatus/
+                  - listitem:
+                    - link "食道静脈瘤":
+                      - /url: https://www.namba-endoscopy.com/esophageal-varices/
+                  - listitem:
+                    - link "胃底腺ポリープ":
+                      - /url: https://www.namba-endoscopy.com/fundic-gland-polyps/
+                  - listitem:
+                    - link "胃粘膜下腫瘍":
+                      - /url: https://www.namba-endoscopy.com/gastric-submucosal-tumor/
+                  - listitem:
+                    - link "胃静脈瘤":
+                      - /url: https://www.namba-endoscopy.com/gastric-varices/
+                  - listitem:
+                    - link "十二指腸粘膜下腫瘍":
+                      - /url: https://www.namba-endoscopy.com/duodenal-submucosal-tumor/
+                  - listitem:
+                    - link "吸収不良症候群／セリアック病":
+                      - /url: https://www.namba-endoscopy.com/malabsorption-syndrome/
+                  - listitem:
+                    - link "アニサキス":
+                      - /url: https://www.namba-endoscopy.com/anisakis/
+                  - listitem:
+                    - link "食中毒":
+                      - /url: https://www.namba-endoscopy.com/food-poisoning/
+                - list:
+                  - listitem:
+                    - generic: 大腸
+                  - listitem:
+                    - link "過敏性腸症候群":
+                      - /url: https://www.namba-endoscopy.com/irritable_bowel_syndrome/
+                  - listitem:
+                    - link "炎症性腸疾患":
+                      - /url: https://www.namba-endoscopy.com/enteritis/
+                  - listitem:
+                    - link "潰瘍性大腸炎":
+                      - /url: https://www.namba-endoscopy.com/enteritis/#a02
+                  - listitem:
+                    - link "クローン病":
+                      - /url: https://www.namba-endoscopy.com/enteritis/#a03
+                  - listitem:
+                    - link "大腸がん":
+                      - /url: https://www.namba-endoscopy.com/colorectal_cancer/
+                  - listitem:
+                    - link "大腸ポリープ・切除":
+                      - /url: https://www.namba-endoscopy.com/polyp/
+                  - listitem:
+                    - link "大腸憩室症":
+                      - /url: https://www.namba-endoscopy.com/colorectal_diverticulosis/
+                  - listitem:
+                    - link "大腸憩室炎":
+                      - /url: https://www.namba-endoscopy.com/colon-diverticulitis/
+                  - listitem:
+                    - link "大腸憩室出血":
+                      - /url: https://www.namba-endoscopy.com/colonic-diverticulum-bleeding/
+                  - listitem:
+                    - link "感染性腸炎":
+                      - /url: https://www.namba-endoscopy.com/infectious-enteritis/
+                  - listitem:
+                    - link "虚血性腸炎":
+                      - /url: https://www.namba-endoscopy.com/ischemic-enteritis/
+                  - listitem:
+                    - link "小腸出血":
+                      - /url: https://www.namba-endoscopy.com/small-intestine-bleeding/
+                  - listitem:
+                    - link "小腸潰瘍":
+                      - /url: https://www.namba-endoscopy.com/small-intestine-ulcer/
+                  - listitem:
+                    - link "小腸腫瘍（良性・悪性）":
+                      - /url: https://www.namba-endoscopy.com/small-intestine-ulcer2/
+                  - listitem:
+                    - link "小腸憩室症":
+                      - /url: https://www.namba-endoscopy.com/small-intestine-diverticulosis/
+                  - listitem:
+                    - link "腸閉塞":
+                      - /url: https://www.namba-endoscopy.com/intestinal-obstruction/
+                  - listitem:
+                    - link "大腸メラノーシス":
+                      - /url: https://www.namba-endoscopy.com/melanosis-coli/
+                  - listitem:
+                    - link "大腸脂肪腫":
+                      - /url: https://www.namba-endoscopy.com/colorectal-lipoma/
+                  - listitem:
+                    - link "直腸カルチノイド":
+                      - /url: https://www.namba-endoscopy.com/rectal-carcinoid/
+                  - listitem:
+                    - link "直腸潰瘍":
+                      - /url: https://www.namba-endoscopy.com/rectal-ulcer/
+                - list:
+                  - listitem:
+                    - generic: 肝臓
+                  - listitem:
+                    - link "肝機能障害":
+                      - /url: https://www.namba-endoscopy.com/liver-dysfunction/
+                  - listitem:
+                    - link "原因不明の肝炎":
+                      - /url: https://www.namba-endoscopy.com/hepatitis-of-unknown-cause/
+                  - listitem:
+                    - link "ウイルス性肝炎":
+                      - /url: https://www.namba-endoscopy.com/viral-hepatitis/
+                  - listitem:
+                    - link "アルコール性肝障害":
+                      - /url: https://www.namba-endoscopy.com/alcoholic-liver-disease/
+                  - listitem:
+                    - link "脂肪肝":
+                      - /url: https://www.namba-endoscopy.com/fatty-liver/
+                  - listitem:
+                    - link "自己免疫性肝炎":
+                      - /url: https://www.namba-endoscopy.com/autoimmune-liver-disease/
+                  - listitem:
+                    - link "薬剤性肝障害":
+                      - /url: https://www.namba-endoscopy.com/drug-induced-liver-injury/
+                  - listitem:
+                    - link "肝疾患と奈良宣言":
+                      - /url: https://www.namba-endoscopy.com/nara-declaration/
+                - list:
+                  - listitem:
+                    - generic: その他疾患
+                  - listitem:
+                    - link "風邪":
+                      - /url: https://www.namba-endoscopy.com/cold/
+                  - listitem:
+                    - link "糖尿病":
+                      - /url: https://www.namba-endoscopy.com/diabetes/
+                  - listitem:
+                    - link "高血圧":
+                      - /url: https://www.namba-endoscopy.com/high-blood-pressure/
+                  - listitem:
+                    - link "脂質異常症":
+                      - /url: https://www.namba-endoscopy.com/dyslipidemia/
+                  - listitem:
+                    - link "高尿酸血症・痛風":
+                      - /url: https://www.namba-endoscopy.com/gout/
+                  - listitem:
+                    - link "甲状腺機能低下症":
+                      - /url: https://www.namba-endoscopy.com/hypothyroidism/
+                  - listitem:
+                    - link "甲状腺機能亢進症":
+                      - /url: https://www.namba-endoscopy.com/hyperthyroidism/
+                  - listitem:
+                    - link "動脈硬化":
+                      - /url: https://www.namba-endoscopy.com/arteriosclerosis/
+          - listitem [ref=e73]:
+            - link "医療ツーリズム MEDICAL TOURISM" [ref=e74] [cursor=pointer]:
+              - /url: https://www.namba-endoscopy.com/2263-2/
+              - generic [ref=e75]:
+                - generic [ref=e76]: 医療ツーリズム
+                - generic [ref=e77]: MEDICAL TOURISM
+          - listitem [ref=e78]:
+            - generic [ref=e80]:
+              - generic [ref=e81]: 医院紹介
+              - generic [ref=e82]: CLINIC
+            - list:
+              - listitem:
+                - link "院長紹介":
+                  - /url: https://www.namba-endoscopy.com/clinic/#a03
+              - listitem:
+                - link "医師紹介":
+                  - /url: https://www.namba-endoscopy.com/clinic/#a04
+              - listitem:
+                - link "院内紹介":
+                  - /url: https://www.namba-endoscopy.com/clinic/#a05
+              - listitem:
+                - link "設備紹介":
+                  - /url: https://www.namba-endoscopy.com/clinic/#a06
+              - listitem:
+                - link "診療時間・アクセス":
+                  - /url: https://www.namba-endoscopy.com/clinic/#a01
+              - listitem:
+                - link "提携医院":
+                  - /url: https://www.namba-endoscopy.com/clinic/#a09
+          - listitem [ref=e83]:
+            - link "採用情報 RECRUIT" [ref=e84] [cursor=pointer]:
+              - /url: https://www.namba-endoscopy.com/staff/
+              - generic [ref=e85]:
+                - generic [ref=e86]: 採用情報
+                - generic [ref=e87]: RECRUIT
+  - generic [ref=e91]:
+    - generic [ref=e92]:
+      - img "内視鏡専門医による患者様のご負担を軽減した内視鏡検査を 鎮静剤を用いた胃カメラ・大腸カメラ検査が受けられます" [ref=e93]
+      - img "内視鏡専門医による患者様のご負担を軽減した内視鏡検査を 鎮静剤を用いた胃カメラ・大腸カメラ検査が受けられます" [ref=e95]
+    - generic [ref=e96]:
+      - img [ref=e97]
+      - img [ref=e99]
+    - generic [ref=e100]:
+      - img [ref=e101]
+      - img [ref=e103]
+  - list [ref=e105]:
+    - listitem [ref=e106]:
+      - link "Instagram" [ref=e107] [cursor=pointer]:
+        - /url: https://www.instagram.com/osakanamba_endoscopy/?igsh=dWx3OXo2cGtiNzY5
+        - img "Instagram" [ref=e108]
+    - listitem [ref=e109]:
+      - link "LINE" [ref=e110] [cursor=pointer]:
+        - /url: https://liff.line.me/1645278921-kWRPP32q/?accountId=825vtipf
+        - img "LINE" [ref=e111]
+    - listitem [ref=e112]:
+      - link "Facebook" [ref=e113] [cursor=pointer]:
+        - /url: https://www.facebook.com/61572290746991/
+        - img "Facebook" [ref=e114]
+    - listitem [ref=e115]:
+      - link "YouTube" [ref=e116] [cursor=pointer]:
+        - /url: https://www.youtube.com/@osakanambamedical_ch
+        - img "YouTube" [ref=e117]
+  - list [ref=e119]:
+    - listitem [ref=e120]:
+      - link "お問い合わせ・ご予約 06-6631-0500":
+        - /url: tel:0666310500
+        - img "お問い合わせ・ご予約 06-6631-0500"
+    - listitem [ref=e121]:
+      - link "24時間いつでも WEB予約" [ref=e122] [cursor=pointer]:
+        - /url: https://on-inge-clinic.reserve.ne.jp/
+        - img "24時間いつでも WEB予約" [ref=e123]
+    - listitem [ref=e124]:
+      - link "WEB問診" [ref=e125] [cursor=pointer]:
+        - /url: https://symview.me/medical_interview_flows/hg08648/public/?url_kind=1&openExt%20ernalBrowser=1
+        - img "WEB問診" [ref=e126]
+    - listitem [ref=e127]:
+      - link "LINEから予約" [ref=e128] [cursor=pointer]:
+        - /url: https://line.me/R/ti/p/@825vtipf?from=page&liff.referrer=https%3A%2F%2Fwww.namba-endoscopy.com%2F&searchId=825vtipf
+        - img "LINEから予約" [ref=e129]
+    - listitem [ref=e130]:
+      - link "診療時間 アクセス" [ref=e131] [cursor=pointer]:
+        - /url: https://www.namba-endoscopy.com/clinic/#a01
+        - img "診療時間 アクセス" [ref=e132]
+    - listitem [ref=e133]:
+      - link "TOPへ戻る" [ref=e134] [cursor=pointer]:
+        - /url: "#pagetop"
+        - img "TOPへ戻る" [ref=e135]
+  - generic [ref=e136]:
+    - paragraph [ref=e137]:
+      - text: Language
+      - generic [ref=e138]: 言語切替
+    - generic [ref=e139]:
+      - link "zh-CN" [ref=e140] [cursor=pointer]:
+        - /url: "#"
+        - img "zh-CN" [ref=e141]
+      - link "en" [ref=e142] [cursor=pointer]:
+        - /url: "#"
+        - img "en" [ref=e143]
+      - link "hi" [ref=e144] [cursor=pointer]:
+        - /url: "#"
+        - img "hi" [ref=e145]
+      - link "ja" [ref=e146] [cursor=pointer]:
+        - /url: "#"
+        - img "ja" [ref=e147]
+      - link "ko" [ref=e148] [cursor=pointer]:
+        - /url: "#"
+        - img "ko" [ref=e149]
+      - link "es" [ref=e150] [cursor=pointer]:
+        - /url: "#"
+        - img "es" [ref=e151]
+      - link "vi" [ref=e152] [cursor=pointer]:
+        - /url: "#"
+        - img "vi" [ref=e153]
+      - combobox "Select Language" [ref=e154]:
+        - option "Select Language"
+        - option "简体中文"
+        - option "English"
+        - option "हिन्दी"
+        - option "日本語" [selected]
+        - option "한국어"
+        - option "Español"
+        - option "Tiếng Việt"
+  - generic [ref=e155]:
+    - generic [ref=e156]:
+      - main [ref=e157]:
+        - generic [ref=e160]:
+          - generic [ref=e161]:
+            - paragraph [ref=e162]: NEWSお知らせ
+            - paragraph [ref=e163]:
+              - link "詳細はこちらへ" [ref=e164] [cursor=pointer]:
+                - /url: https://www.namba-endoscopy.com/category/news/
+          - generic [ref=e165]:
+            - term [ref=e166]: 2025年12月22日
+            - definition [ref=e167]:
+              - link "【お知らせ】スマートフォンによるマイナ保険証認証が可能になりました" [ref=e168] [cursor=pointer]:
+                - /url: https://www.namba-endoscopy.com/news/#a2207
+            - term [ref=e169]: 2025年12月19日
+            - definition [ref=e170]:
+              - link "人間ドックの女性オプションはじめます" [ref=e171] [cursor=pointer]:
+                - /url: https://www.namba-endoscopy.com/news/#a2205
+            - term [ref=e172]: 2025年12月3日
+            - definition [ref=e173]:
+              - link "年末年始休診のお知らせ" [ref=e174] [cursor=pointer]:
+                - /url: https://www.namba-endoscopy.com/news/#a2164
+        - generic [ref=e175]:
+          - generic [ref=e176]:
+            - generic [ref=e177]:
+              - link "大阪なんば内科・消化器内視鏡クリニック 救急・時間外診療のご案内" [ref=e178] [cursor=pointer]:
+                - /url: https://www.namba-endoscopy.com/emergency/
+                - img "大阪なんば内科・消化器内視鏡クリニック 救急・時間外診療のご案内" [ref=e179]
+              - link "大阪なんば内科・消化器内視鏡クリニック メディア掲載実績" [ref=e180] [cursor=pointer]:
+                - /url: https://www.namba-endoscopy.com/media/
+                - img "大阪なんば内科・消化器内視鏡クリニック メディア掲載実績" [ref=e181]
+              - generic [ref=e182]:
+                - link "漫画でわかる胃カメラ（胃内視鏡検査）｜大阪なんば内科・消化器内視鏡クリニック" [ref=e184] [cursor=pointer]:
+                  - /url: https://www.namba-endoscopy.com/manga1/
+                  - img "漫画でわかる胃カメラ（胃内視鏡検査）｜大阪なんば内科・消化器内視鏡クリニック" [ref=e185]
+                - link "漫画でわかる大腸カメラ（大腸内視鏡検査）｜大阪なんば内科・消化器内視鏡クリニック" [ref=e187] [cursor=pointer]:
+                  - /url: https://www.namba-endoscopy.com/manga2/
+                  - img "漫画でわかる大腸カメラ（大腸内視鏡検査）｜大阪なんば内科・消化器内視鏡クリニック" [ref=e188]
+              - generic [ref=e189]:
+                - link "ドクターズファイル掲載｜大阪なんば消化器内科・胃カメラ・大腸カメラ" [ref=e191] [cursor=pointer]:
+                  - /url: https://doctorsfile.jp/h/218339/hr/1/
+                  - img "ドクターズファイル掲載｜大阪なんば消化器内科・胃カメラ・大腸カメラ" [ref=e192]
+                - link "ドクターズファイル取材記事①｜大阪なんば消化器内視鏡クリニック" [ref=e194] [cursor=pointer]:
+                  - /url: https://doctorsfile.jp/h/218339/mt/1/
+                  - img "ドクターズファイル取材記事①｜大阪なんば消化器内視鏡クリニック" [ref=e195]
+                - link "ドクターズファイル取材記事②｜大阪なんば消化器内視鏡クリニック" [ref=e197] [cursor=pointer]:
+                  - /url: https://doctorsfile.jp/h/218339/mt/2/
+                  - img "ドクターズファイル取材記事②｜大阪なんば消化器内視鏡クリニック" [ref=e198]
+            - link "クリニックTV掲載｜大阪なんば内科・消化器内視鏡クリニック" [ref=e199] [cursor=pointer]:
+              - /url: https://clinictv.jp/facilities/86
+              - img "クリニックTV掲載｜大阪なんば内科・消化器内視鏡クリニック" [ref=e200]
+          - generic [ref=e202]:
+            - heading "Instagram" [level=2] [ref=e203]
+            - generic [ref=e204]:
+              - link "osakanamba_endoscopy ＼なんば駅6番出口徒歩1分／ 大阪なんば内科・消化器内視鏡クリニック 胃カメラ・大腸カメラが不安な方へ 鎮静剤使用｜消化器内視鏡専門医が対応 ・年間360日診療／お仕事帰りも受診可能 ・女性医師常勤 ・健診異常／血便／腹痛／脂肪肝のご相談も ▼WEB予約・公式LINEはこちら" [ref=e206] [cursor=pointer]:
+                - /url: https://www.instagram.com/osakanamba_endoscopy/
+                - generic [ref=e207]:
+                  - img [ref=e210]
+                  - generic [ref=e212]:
+                    - heading "osakanamba_endoscopy" [level=3] [ref=e213]
+                    - paragraph [ref=e214]: ＼なんば駅6番出口徒歩1分／ 大阪なんば内科・消化器内視鏡クリニック 胃カメラ・大腸カメラが不安な方へ 鎮静剤使用｜消化器内視鏡専門医が対応 ・年間360日診療／お仕事帰りも受診可能 ・女性医師常勤 ・健診異常／血便／腹痛／脂肪肝のご相談も ▼WEB予約・公式LINEはこちら
+              - generic [ref=e215]:
+                - link ". おはようございます☀ 大阪なんば内科・消化器内視鏡クリニックです。 内視鏡検査について よく" [ref=e218] [cursor=pointer]:
+                  - /url: https://www.instagram.com/p/DW5Bt79kxCr/
+                  - generic: . おはようございます☀ 大阪なんば内科・消化器内視鏡クリニックです。 内視鏡検査について よく
+                  - img [ref=e219]
+                  - img [ref=e221]
+                - link ". 大阪なんば内科・消化器内視鏡クリニックでは ＼＼ \\ \\ / / ／ ／ 当日大腸カメラができ" [ref=e224] [cursor=pointer]:
+                  - /url: https://www.instagram.com/p/DW0VFHAEX9-/
+                  - generic: . 大阪なんば内科・消化器内視鏡クリニックでは ＼＼ \ \ / / ／ ／ 当日大腸カメラができ
+                  - img [ref=e225]
+                  - img [ref=e227]
+                - link ". おはようございます☀ 大阪なんば内科・消化器内視鏡クリニックです。 胃カメラ検査が初めての方へ" [ref=e230] [cursor=pointer]:
+                  - /url: https://www.instagram.com/reel/DWz5BT1kwIf/
+                  - generic: . おはようございます☀ 大阪なんば内科・消化器内視鏡クリニックです。 胃カメラ検査が初めての方へ
+                  - img [ref=e231]
+                  - img [ref=e233]
+                - link ". おはようございます☀ 大阪なんば内科・消化器内視鏡クリニックです。 内視鏡検査後、 こんな不" [ref=e236] [cursor=pointer]:
+                  - /url: https://www.instagram.com/p/DWuryjFkz0k/
+                  - generic: . おはようございます☀ 大阪なんば内科・消化器内視鏡クリニックです。 内視鏡検査後、 こんな不
+                  - img [ref=e237]
+                  - img [ref=e239]
+                - link ". おはようございます☀ 大阪なんば内科・消化器内視鏡クリニックです。 「検査は不安だから、でき" [ref=e242] [cursor=pointer]:
+                  - /url: https://www.instagram.com/p/DWm_yY1E1fZ/
+                  - generic: . おはようございます☀ 大阪なんば内科・消化器内視鏡クリニックです。 「検査は不安だから、でき
+                  - img [ref=e243]
+                  - img [ref=e245]
+                - link ". おはようございます☀ 大阪なんば内科・消化器内視鏡クリニックです。 体調が良い今だからこそ、" [ref=e248] [cursor=pointer]:
+                  - /url: https://www.instagram.com/p/DWcpeW5E4EM/
+                  - generic: . おはようございます☀ 大阪なんば内科・消化器内視鏡クリニックです。 体調が良い今だからこそ、
+                  - img [ref=e249]
+                  - img [ref=e251]
+              - generic [ref=e252]:
+                - button "さらに読み込む" [ref=e253] [cursor=pointer]: さらに読み込む
+                - link "Instagram でフォロー" [ref=e256] [cursor=pointer]:
+                  - /url: https://www.instagram.com/osakanamba_endoscopy/
+                  - img [ref=e257]
+                  - text: Instagram でフォロー
+        - paragraph:
+          - link "大阪なんば内科・消化器内視鏡クリニック スタッフ採用情報":
+            - /url: https://www.namba-endoscopy.com/staff/
+            - img "大阪なんば内科・消化器内視鏡クリニック スタッフ採用情報"
+        - generic [ref=e259]:
+          - generic [ref=e262]:
+            - paragraph [ref=e264]:
+              - img "大阪なんば内科・消化器内視鏡クリニック 院内写真｜なんば駅直結" [ref=e265]
+            - generic [ref=e267]:
+              - table [ref=e268]:
+                - rowgroup [ref=e269]:
+                  - row "診療科目 内科・消化器内科・内視鏡内科・肝臓内科・肛門内科" [ref=e270]:
+                    - rowheader "診療科目" [ref=e271]
+                    - cell "内科・消化器内科・内視鏡内科・肝臓内科・肛門内科" [ref=e272]
+                  - row "住所 〒556-0011 大阪府大阪市浪速区難波中1丁目6-8 Osaka Metroなんばビル3階 ・Osaka Metro御堂筋線なんば駅6番出口から直結徒歩1分 ・南海電鉄なんば駅から徒歩2分 ・JR難波駅から徒歩5分 GoogleMapはこちらへ" [ref=e273]:
+                    - rowheader "住所" [ref=e274]
+                    - cell "〒556-0011 大阪府大阪市浪速区難波中1丁目6-8 Osaka Metroなんばビル3階 ・Osaka Metro御堂筋線なんば駅6番出口から直結徒歩1分 ・南海電鉄なんば駅から徒歩2分 ・JR難波駅から徒歩5分 GoogleMapはこちらへ" [ref=e275]:
+                      - text: 〒556-0011
+                      - text: 大阪府大阪市浪速区難波中1丁目6-8
+                      - text: Osaka Metroなんばビル3階
+                      - text: ・Osaka Metro御堂筋線なんば駅6番出口から直結徒歩1分
+                      - text: ・南海電鉄なんば駅から徒歩2分
+                      - text: ・JR難波駅から徒歩5分
+                      - link "GoogleMapはこちらへ" [ref=e277] [cursor=pointer]:
+                        - /url: https://maps.app.goo.gl/igyGeZT2SCvYih2R9
+                  - row "TEL 06-6631-0500" [ref=e278]:
+                    - rowheader "TEL" [ref=e279]
+                    - cell "06-6631-0500" [ref=e280]:
+                      - link "06-6631-0500":
+                        - /url: tel:06-6631-0500
+                  - row "FAX 06-6631-0600" [ref=e281]:
+                    - rowheader "FAX" [ref=e282]
+                    - cell "06-6631-0600" [ref=e283]:
+                      - link "06-6631-0600":
+                        - /url: tel:06-6631-0600
+                  - row "支払い 方法 各種クレジットカード・アプリ決済が使用出来ます。 詳細はこちらへ また、待ち時間を短縮し、患者様に少しでも快適に通院していただけるよう、オンライン決済を導入しております。 オンライン決済の詳細はこちらへ" [ref=e284]:
+                    - rowheader "支払い 方法" [ref=e285]:
+                      - text: 支払い
+                      - text: 方法
+                    - cell "各種クレジットカード・アプリ決済が使用出来ます。 詳細はこちらへ また、待ち時間を短縮し、患者様に少しでも快適に通院していただけるよう、オンライン決済を導入しております。 オンライン決済の詳細はこちらへ" [ref=e286]:
+                      - generic [ref=e287]:
+                        - text: 各種クレジットカード・アプリ決済が使用出来ます。
+                        - link "詳細はこちらへ" [ref=e288] [cursor=pointer]:
+                          - /url: https://www.namba-endoscopy.com/clinic/#a07a
+                        - paragraph [ref=e289]:
+                          - text: また、待ち時間を短縮し、患者様に少しでも快適に通院していただけるよう、オンライン決済を導入しております。
+                          - link "オンライン決済の詳細はこちらへ" [ref=e290] [cursor=pointer]:
+                            - /url: https://www.namba-endoscopy.com/news/1608/
+              - table [ref=e291]:
+                - rowgroup [ref=e292]:
+                  - row "月 火 水 木 金 土 日 祝" [ref=e293]:
+                    - columnheader [ref=e294]
+                    - columnheader "月" [ref=e295]
+                    - columnheader "火" [ref=e296]
+                    - columnheader "水" [ref=e297]
+                    - columnheader "木" [ref=e298]
+                    - columnheader "金" [ref=e299]
+                    - columnheader "土" [ref=e300]
+                    - columnheader "日" [ref=e301]
+                    - columnheader "祝" [ref=e302]
+                - rowgroup [ref=e303]:
+                  - row "09:00〜12:00 ● ● ● ● ● ● ● ●" [ref=e304]:
+                    - rowheader "09:00〜12:00" [ref=e305]
+                    - cell "●" [ref=e306]
+                    - cell "●" [ref=e307]
+                    - cell "●" [ref=e308]
+                    - cell "●" [ref=e309]
+                    - cell "●" [ref=e310]
+                    - cell "●" [ref=e311]
+                    - cell "●" [ref=e312]
+                    - cell "●" [ref=e313]
+                  - row "12:00～14:00 (予約検査) ▲ ▲ ▲ ▲ ▲ ■ ■ ■" [ref=e314]:
+                    - rowheader "12:00～14:00 (予約検査)" [ref=e315]:
+                      - text: 12:00～14:00
+                      - text: (予約検査)
+                    - cell "▲" [ref=e316]
+                    - cell "▲" [ref=e317]
+                    - cell "▲" [ref=e318]
+                    - cell "▲" [ref=e319]
+                    - cell "▲" [ref=e320]
+                    - cell "■" [ref=e321]
+                    - cell "■" [ref=e322]
+                    - cell "■" [ref=e323]
+                  - row "14:00～18:00 ● ● ● ● ● ● ― ―" [ref=e324]:
+                    - rowheader "14:00～18:00" [ref=e325]
+                    - cell "●" [ref=e326]
+                    - cell "●" [ref=e327]
+                    - cell "●" [ref=e328]
+                    - cell "●" [ref=e329]
+                    - cell "●" [ref=e330]
+                    - cell "●" [ref=e331]
+                    - cell "―" [ref=e332]
+                    - cell "―" [ref=e333]
+                  - row "14:00～15:00 ― ― ― ― ― ― ● ●" [ref=e334]:
+                    - rowheader "14:00～15:00" [ref=e335]
+                    - cell "―" [ref=e336]
+                    - cell "―" [ref=e337]
+                    - cell "―" [ref=e338]
+                    - cell "―" [ref=e339]
+                    - cell "―" [ref=e340]
+                    - cell "―" [ref=e341]
+                    - cell "●" [ref=e342]
+                    - cell "●" [ref=e343]
+              - paragraph [ref=e344]:
+                - text: 平日最終受付：17:30
+                - text: 土曜最終受付：17:30
+                - text: 日祝最終受付：14:30
+                - text: ▲ ※予約検査のみ受け付けています
+                - text: ■ ※予約検査と初診を受け付けています
+                - text: 休診日：年末年始のみ
+          - generic [ref=e347]:
+            - figure [ref=e348]:
+              - img "大阪なんば内科・消化器内視鏡クリニック 院内ギャラリー" [ref=e349]
+            - figure [ref=e350]:
+              - img "大阪なんば内科・消化器内視鏡クリニック 院内ギャラリー" [ref=e351]
+            - figure [ref=e352]:
+              - img "大阪なんば内科・消化器内視鏡クリニック 院内ギャラリー" [ref=e353]
+            - figure [ref=e354]:
+              - img "大阪なんば内科・消化器内視鏡クリニック 胃カメラ・大腸カメラ検査室" [ref=e355]
+            - figure [ref=e356]:
+              - img "大阪なんば内科・消化器内視鏡クリニック 胃カメラ・大腸カメラ検査室" [ref=e357]
+            - figure [ref=e358]:
+              - img "大阪なんば内科・消化器内視鏡クリニック 院内ギャラリー" [ref=e359]
+            - figure [ref=e360]:
+              - img "大阪なんば内科・消化器内視鏡クリニック 院内ギャラリー" [ref=e361]
+            - figure [ref=e362]:
+              - img "大阪なんば内科・消化器内視鏡クリニック 院内ギャラリー" [ref=e363]
+            - figure [ref=e364]:
+              - img "大阪なんば内科・消化器内視鏡クリニック 院内ギャラリー" [ref=e365]
+            - figure [ref=e366]:
+              - img "大阪なんば内科・消化器内視鏡クリニック 院内ギャラリー" [ref=e367]
+            - figure [ref=e368]:
+              - img "大阪なんば内科・消化器内視鏡クリニック 院内ギャラリー" [ref=e369]
+            - figure [ref=e370]:
+              - img "大阪なんば内科・消化器内視鏡クリニック 胃カメラ・大腸カメラ検査室" [ref=e371]
+            - figure [ref=e372]:
+              - img "大阪なんば内科・消化器内視鏡クリニック 胃カメラ・大腸カメラ検査室" [ref=e373]
+            - figure [ref=e374]:
+              - img "大阪なんば内科・消化器内視鏡クリニック 院内ギャラリー" [ref=e375]
+            - figure [ref=e376]:
+              - img "大阪なんば内科・消化器内視鏡クリニック 院内ギャラリー" [ref=e377]
+            - figure [ref=e378]:
+              - img "大阪なんば内科・消化器内視鏡クリニック 院内ギャラリー" [ref=e379]
+        - generic [ref=e380]:
+          - generic [ref=e382]:
+            - heading "GREETING 院長ご挨拶｜大阪なんば 消化器内科・胃カメラ・大腸カメラ" [level=2] [ref=e383]:
+              - text: GREETING
+              - generic [ref=e384]: 院長ご挨拶｜大阪なんば 消化器内科・胃カメラ・大腸カメラ
+            - generic [ref=e385]:
+              - paragraph [ref=e387]:
+                - img "大阪なんば内科・消化器内視鏡クリニック 院長 ご挨拶" [ref=e388]
+              - generic [ref=e390]:
+                - paragraph [ref=e391]:
+                  - text: がんで悲しむ人、
+                  - text: ご家族を一人でも少なくするために、
+                  - text: 自分ができることを全うしたい
+                - paragraph [ref=e392]:
+                  - text: 胃カメラ検査や大腸カメラ検査が消化器がんを早期発見するための重要な検査であることが、少しずつですが認知されるようになりました。
+                  - text: しかし、まだまだ「痛い」「こわい」といった理由で内視鏡検査を躊躇う人が少なくありません。大阪なんば内科・消化器内視鏡クリニックでは、ほとんど苦痛、恐怖感なく受けられる鎮静剤を用いた内視鏡検査を行っております。また最新の内視鏡システムの導入、日帰りでの大腸ポリープ切除対応、感染症対策の徹底など、誰もが安心して通えるクリニックとしての準備を整えました。
+                  - text: これまで受診を躊躇っていた人が気軽に相談できる、信頼して任せられるクリニックでありたいと考えております。どうぞ、よろしくお願いいたします。
+                - generic [ref=e393]:
+                  - link "詳細はこちらへ" [ref=e395] [cursor=pointer]:
+                    - /url: https://www.namba-endoscopy.com/clinic/#a03
+                  - link "医師・スタッフ紹介の詳細" [ref=e397] [cursor=pointer]:
+                    - /url: https://www.namba-endoscopy.com/clinic/#a04
+          - generic [ref=e400]:
+            - generic [ref=e402]:
+              - paragraph [ref=e403]:
+                - text: BIOGRAPHY
+                - generic [ref=e404]: 略歴
+              - generic [ref=e405]:
+                - term [ref=e406]: 平成21年3月
+                - definition [ref=e407]: 大阪医科大学医学部医学科卒業
+                - term [ref=e408]: 平成21年4月
+                - definition [ref=e409]: 市立堺病院 研修医
+                - term [ref=e410]: 平成23年4月
+                - definition [ref=e411]: 大阪赤十字病院 消化器内科 入職
+                - term [ref=e412]: 平成26年4月
+                - definition [ref=e413]: 関西電力病院 消化器科肝胆膵内科 入職
+                - term [ref=e414]: 平成29年5月
+                - definition [ref=e415]: 芦屋おく内視鏡クリニック開業
+                - term [ref=e416]: 令和06年5月
+                - definition [ref=e417]: 大阪なんば内科・消化器内視鏡クリニック 開業
+            - generic [ref=e419]:
+              - paragraph [ref=e420]:
+                - text: LICENCE
+                - generic [ref=e421]: 資格・所属学会
+              - list [ref=e422]:
+                - listitem [ref=e423]: 日本内科学会 認定内科医
+                - listitem [ref=e424]: 日本消化器病学会 消化器病専門医
+                - listitem [ref=e425]: 日本消化器内視鏡学会 内視鏡専門医
+                - listitem [ref=e426]: 日本肝臓学会 肝臓専門医
+                - listitem [ref=e427]: 難病指定医
+        - generic [ref=e430]:
+          - img "大阪なんばの胃カメラ・大腸カメラ（大腸内視鏡検査）最新設備完備" [ref=e432]
+          - generic [ref=e433]:
+            - paragraph [ref=e434]:
+              - text: 大阪なんばで受ける 胃カメラ・大腸カメラ（大腸内視鏡検査）
+              - text: トップレベルの設備で早期発見・早期治療を
+            - paragraph [ref=e435]: 疑わしい病変の拡大、粘膜表面の色調を強調する機能を搭載した、最新型の内視鏡検査システムを導入しています。胃がんや大腸がんをはじめとする症状の乏しい病気であっても、胃カメラ検査・大腸カメラ検査（大腸内視鏡検査）による早期発見が可能となり、それは早期治療・治癒率向上につながります。胃カメラ検査においては、嘔吐反射の起こりにくい極細の経鼻内視鏡にも対応。また、がん化のおそれのある大腸ポリープ切除については、日帰り手術として受けていただけます。
+            - generic [ref=e436]:
+              - link "土日の内視鏡検査" [ref=e438] [cursor=pointer]:
+                - /url: ""
+              - link "モーニング大腸カメラ" [ref=e440] [cursor=pointer]:
+                - /url: ""
+              - link "下剤を飲まない大腸カメラ" [ref=e442] [cursor=pointer]:
+                - /url: https://www.namba-endoscopy.com/colonoscopy/#a04_7
+        - generic [ref=e445]:
+          - generic [ref=e447]:
+            - paragraph [ref=e448]: 大阪の胃カメラ（胃内視鏡検査）
+            - paragraph [ref=e449]: 下記、該当する方は検査を受けましょう
+            - generic [ref=e450]:
+              - list [ref=e451]:
+                - listitem [ref=e452]: 吐き気や腹痛がある
+                - listitem [ref=e453]: みぞおち付近が空腹時痛くなる
+                - listitem [ref=e454]: 胸焼けがある（胃酸）
+                - listitem [ref=e455]: ピロリ菌検査で陽性が出た
+              - generic [ref=e456]:
+                - link "胃カメラ （胃内視鏡検査）" [ref=e458] [cursor=pointer]:
+                  - /url: https://www.namba-endoscopy.com/gastroscopy/
+                  - generic [ref=e459]:
+                    - text: 胃カメラ
+                    - text: （胃内視鏡検査）
+                - link "ピロリ菌・ 検査除菌" [ref=e461] [cursor=pointer]:
+                  - /url: https://www.namba-endoscopy.com/helicobacter_pylori/
+                  - generic [ref=e462]:
+                    - text: ピロリ菌・
+                    - text: 検査除菌
+          - generic [ref=e464]:
+            - paragraph [ref=e465]: 大阪の大腸カメラ（大腸内視鏡検査）
+            - paragraph [ref=e466]: 下記、該当する方は検査を受けましょう
+            - generic [ref=e467]:
+              - list [ref=e468]:
+                - listitem [ref=e469]: 下痢・便秘が続いている
+                - listitem [ref=e470]: お腹の張りが気になる
+                - listitem [ref=e471]: 家族に大腸がんを患った方がいる
+                - listitem [ref=e472]: 体重が急に減少した
+              - generic [ref=e473]:
+                - link "大腸カメラ （大腸内視鏡検査）" [ref=e475] [cursor=pointer]:
+                  - /url: https://www.namba-endoscopy.com/colonoscopy/
+                  - generic [ref=e476]:
+                    - text: 大腸カメラ
+                    - text: （大腸内視鏡検査）
+                - link "日帰り 大腸ポリープ切除" [ref=e478] [cursor=pointer]:
+                  - /url: https://www.namba-endoscopy.com/polyp/
+                  - generic [ref=e479]:
+                    - text: 日帰り
+                    - text: 大腸ポリープ切除
+        - generic [ref=e480]:
+          - generic [ref=e482]:
+            - heading "MEDICAL INFORMATION 診療案内｜大阪なんばの消化器内科・胃カメラ・大腸カメラ" [level=2] [ref=e483]:
+              - text: MEDICAL INFORMATION
+              - generic [ref=e484]: 診療案内｜大阪なんばの消化器内科・胃カメラ・大腸カメラ
+            - generic [ref=e485]:
+              - paragraph [ref=e487]:
+                - link "一般内科｜大阪なんば内科・消化器内視鏡クリニック 一般内科" [ref=e488] [cursor=pointer]:
+                  - /url: https://www.namba-endoscopy.com/internal_medicine/
+                  - img "一般内科｜大阪なんば内科・消化器内視鏡クリニック" [ref=e490]
+                  - generic [ref=e492]: 一般内科
+              - paragraph [ref=e494]:
+                - link "消化器内科｜大阪なんば 消化器内科クリニック 消化器内科" [ref=e495] [cursor=pointer]:
+                  - /url: https://www.namba-endoscopy.com/gastroenterology-lp/
+                  - img "消化器内科｜大阪なんば 消化器内科クリニック" [ref=e497]
+                  - generic [ref=e499]: 消化器内科
+              - paragraph [ref=e501]:
+                - link "肝臓内科｜大阪なんば内科・消化器内視鏡クリニック 肝臓内科" [ref=e502] [cursor=pointer]:
+                  - /url: https://www.namba-endoscopy.com/iiver/
+                  - img "肝臓内科｜大阪なんば内科・消化器内視鏡クリニック" [ref=e504]
+                  - generic [ref=e506]: 肝臓内科
+              - paragraph [ref=e508]:
+                - link "肛門内科｜大阪なんば内科・消化器内視鏡クリニック 肛門内科" [ref=e509] [cursor=pointer]:
+                  - /url: https://www.namba-endoscopy.com/proctology/
+                  - img "肛門内科｜大阪なんば内科・消化器内視鏡クリニック" [ref=e511]
+                  - generic [ref=e513]: 肛門内科
+              - paragraph [ref=e515]:
+                - link "健康診断｜大阪なんば内科・消化器内視鏡クリニック 健康診断" [ref=e516] [cursor=pointer]:
+                  - /url: https://www.namba-endoscopy.com/checkup/
+                  - img "健康診断｜大阪なんば内科・消化器内視鏡クリニック" [ref=e518]
+                  - generic [ref=e520]: 健康診断
+              - paragraph [ref=e522]:
+                - link "人間ドック｜大阪なんば内科・消化器内視鏡クリニック 人間ドック" [ref=e523] [cursor=pointer]:
+                  - /url: https://www.namba-endoscopy.com/medical_checkup/
+                  - img "人間ドック｜大阪なんば内科・消化器内視鏡クリニック" [ref=e525]
+                  - generic [ref=e527]: 人間ドック
+              - paragraph [ref=e529]:
+                - link "大阪の胃カメラ検査（胃内視鏡検査）｜なんば駅直結 胃カメラ検査 （胃内視鏡検査）" [ref=e530] [cursor=pointer]:
+                  - /url: https://www.namba-endoscopy.com/gastroscopy/
+                  - img "大阪の胃カメラ検査（胃内視鏡検査）｜なんば駅直結" [ref=e532]
+                  - generic [ref=e534]:
+                    - text: 胃カメラ検査
+                    - text: （胃内視鏡検査）
+              - paragraph [ref=e536]:
+                - link "大阪の大腸カメラ検査（大腸内視鏡検査）｜なんば駅直結 大腸カメラ検査 （大腸内視鏡検査）" [ref=e537] [cursor=pointer]:
+                  - /url: https://www.namba-endoscopy.com/colonoscopy/
+                  - img "大阪の大腸カメラ検査（大腸内視鏡検査）｜なんば駅直結" [ref=e539]
+                  - generic [ref=e541]:
+                    - text: 大腸カメラ検査
+                    - text: （大腸内視鏡検査）
+              - paragraph [ref=e543]:
+                - link "便秘外来｜大阪なんば内科・消化器内視鏡クリニック 便秘外来" [ref=e544] [cursor=pointer]:
+                  - /url: https://www.namba-endoscopy.com/constipation/
+                  - img "便秘外来｜大阪なんば内科・消化器内視鏡クリニック" [ref=e546]
+                  - generic [ref=e548]: 便秘外来
+              - paragraph [ref=e550]:
+                - link "生活習慣病（高血圧・糖尿病・脂質異常症）｜大阪なんば内科クリニック 生活習慣病" [ref=e551] [cursor=pointer]:
+                  - /url: https://www.namba-endoscopy.com/lifestyle_related_diseases/
+                  - img "生活習慣病（高血圧・糖尿病・脂質異常症）｜大阪なんば内科クリニック" [ref=e553]
+                  - generic [ref=e555]: 生活習慣病
+              - paragraph [ref=e557]:
+                - link "医療ツーリズム｜大阪なんば内科・消化器内視鏡クリニック 医療ツーリズム" [ref=e558] [cursor=pointer]:
+                  - /url: https://www.namba-endoscopy.com/2263-2/
+                  - img "医療ツーリズム｜大阪なんば内科・消化器内視鏡クリニック" [ref=e560]
+                  - generic [ref=e562]: 医療ツーリズム
+          - generic [ref=e565]:
+            - paragraph [ref=e566]:
+              - generic [ref=e567]: SYMPTOMS & DISEASE
+              - generic [ref=e568]: 症状・疾患から探す
+            - generic [ref=e569]:
+              - list [ref=e570]:
+                - listitem [ref=e571]:
+                  - generic [ref=e572]: お悩み・気になる症状
+                - listitem [ref=e573]:
+                  - generic [ref=e574]: 食道・胃の病名
+                - listitem [ref=e575]:
+                  - generic [ref=e576]: 大腸の病名
+              - generic [ref=e579]:
+                - paragraph [ref=e581]:
+                  - link "腹部膨満感 （お腹の張り）" [ref=e582] [cursor=pointer]:
+                    - /url: https://www.namba-endoscopy.com/abdominal_bloating/
+                    - generic [ref=e583]:
+                      - text: 腹部膨満感
+                      - text: （お腹の張り）
+                - paragraph [ref=e585]:
+                  - link "ストレスと腹痛" [ref=e586] [cursor=pointer]:
+                    - /url: https://www.namba-endoscopy.com/stress_abdominal_pain/
+                    - generic [ref=e587]: ストレスと腹痛
+                - paragraph [ref=e589]:
+                  - link "脇腹が痛い" [ref=e590] [cursor=pointer]:
+                    - /url: https://www.namba-endoscopy.com/flank_pain/
+                    - generic [ref=e591]: 脇腹が痛い
+                - paragraph [ref=e593]:
+                  - link "軟便・下痢" [ref=e594] [cursor=pointer]:
+                    - /url: https://www.namba-endoscopy.com/diarrhea/
+                    - generic [ref=e595]: 軟便・下痢
+                - paragraph [ref=e597]:
+                  - link "心配いらない血便" [ref=e598] [cursor=pointer]:
+                    - /url: https://www.namba-endoscopy.com/bloody_stool/
+                    - generic [ref=e599]: 心配いらない血便
+                - paragraph [ref=e601]:
+                  - link "便が細い" [ref=e602] [cursor=pointer]:
+                    - /url: https://www.namba-endoscopy.com/thin_stools/
+                    - generic [ref=e603]: 便が細い
+                - paragraph [ref=e605]:
+                  - link "便の色が気になる" [ref=e606] [cursor=pointer]:
+                    - /url: https://www.namba-endoscopy.com/color_of_stool/
+                    - generic [ref=e607]: 便の色が気になる
+                - paragraph [ref=e609]:
+                  - link "便潜血陽性" [ref=e610] [cursor=pointer]:
+                    - /url: https://www.namba-endoscopy.com/fecal_occult_blood_positive/
+                    - generic [ref=e611]: 便潜血陽性
+        - generic [ref=e614]:
+          - figure [ref=e616]:
+            - img "大阪なんば内科・消化器内視鏡クリニック アクセスマップ｜なんば駅直結" [ref=e617]
+          - generic [ref=e618]:
+            - paragraph [ref=e619]: 大阪なんば内科・消化器内視鏡クリニックには大阪市内にお住まいの方はもちろんですが、大阪府、兵庫県、三重県、和歌山県にお住いの方も外来診察、内視鏡検査（胃カメラ、大腸カメラ）、健康診断を受けにお越し頂いております。大阪府では京都市内、豊中市、吹田市、摂津市、寝屋川市、守口市、門真市、大東市、東大阪市、堺市、八尾市、藤井寺市、松原市など遠方からもお越し頂いております。当院までのアクセス情報は下記バナーよりご確認下さいませ。
+            - paragraph [ref=e620]:
+              - link "アクセスはこちら" [ref=e621] [cursor=pointer]:
+                - /url: https://www.namba-endoscopy.com/clinic/#a02
+      - complementary
+    - contentinfo [ref=e622]:
+      - generic [ref=e625]:
+        - generic [ref=e626]:
+          - paragraph [ref=e628]:
+            - img "大阪なんば内科・消化器内視鏡クリニック" [ref=e629]
+          - generic [ref=e630]:
+            - table [ref=e631]:
+              - rowgroup [ref=e632]:
+                - row "診療科目 内科・消化器内科・内視鏡内科・肝臓内科・肛門内科" [ref=e633]:
+                  - rowheader "診療科目" [ref=e634]
+                  - cell "内科・消化器内科・内視鏡内科・肝臓内科・肛門内科" [ref=e635]
+                - row "住所 〒556-0011 大阪府大阪市浪速区難波中1丁目6-8 Osaka Metroなんばビル3階 ・ Osaka Metro御堂筋線なんば駅6番出口から直結徒歩1分 ・ 南海電鉄なんば駅から徒歩2分 ・ JR難波駅から徒歩5分 GoogleMapはこちらへ" [ref=e636]:
+                  - rowheader "住所" [ref=e637]
+                  - cell "〒556-0011 大阪府大阪市浪速区難波中1丁目6-8 Osaka Metroなんばビル3階 ・ Osaka Metro御堂筋線なんば駅6番出口から直結徒歩1分 ・ 南海電鉄なんば駅から徒歩2分 ・ JR難波駅から徒歩5分 GoogleMapはこちらへ" [ref=e638]:
+                    - text: 〒556-0011
+                    - text: 大阪府大阪市浪速区難波中1丁目6-8
+                    - text: Osaka Metroなんばビル3階
+                    - list [ref=e639]:
+                      - listitem [ref=e640]: ・ Osaka Metro御堂筋線なんば駅6番出口から直結徒歩1分
+                      - listitem [ref=e641]: ・ 南海電鉄なんば駅から徒歩2分
+                      - listitem [ref=e642]: ・ JR難波駅から徒歩5分
+                    - link "GoogleMapはこちらへ" [ref=e644] [cursor=pointer]:
+                      - /url: https://maps.app.goo.gl/pJaxJ6ntiAcC8gZB7
+                - row "TEL 06-6631-0500" [ref=e645]:
+                  - rowheader "TEL" [ref=e646]
+                  - cell "06-6631-0500" [ref=e647]:
+                    - link "06-6631-0500":
+                      - /url: tel:06-6631-0500
+                - row "FAX 06-6631-0600" [ref=e648]:
+                  - rowheader "FAX" [ref=e649]
+                  - cell "06-6631-0600" [ref=e650]:
+                    - link "06-6631-0600":
+                      - /url: tel:06-6631-0600
+            - table [ref=e651]:
+              - rowgroup [ref=e652]:
+                - row "月 火 水 木 金 土 日 祝" [ref=e653]:
+                  - columnheader [ref=e654]
+                  - columnheader "月" [ref=e655]
+                  - columnheader "火" [ref=e656]
+                  - columnheader "水" [ref=e657]
+                  - columnheader "木" [ref=e658]
+                  - columnheader "金" [ref=e659]
+                  - columnheader "土" [ref=e660]
+                  - columnheader "日" [ref=e661]
+                  - columnheader "祝" [ref=e662]
+              - rowgroup [ref=e663]:
+                - row "09:00〜12:00 ● ● ● ● ● ● ● ●" [ref=e664]:
+                  - rowheader "09:00〜12:00" [ref=e665]
+                  - cell "●" [ref=e666]
+                  - cell "●" [ref=e667]
+                  - cell "●" [ref=e668]
+                  - cell "●" [ref=e669]
+                  - cell "●" [ref=e670]
+                  - cell "●" [ref=e671]
+                  - cell "●" [ref=e672]
+                  - cell "●" [ref=e673]
+                - row "12:00～14:00 (予約検査) ▲ ▲ ▲ ▲ ▲ ■ ■ ■" [ref=e674]:
+                  - rowheader "12:00～14:00 (予約検査)" [ref=e675]:
+                    - text: 12:00～14:00
+                    - text: (予約検査)
+                  - cell "▲" [ref=e676]:
+                    - generic [ref=e677]: ▲
+                  - cell "▲" [ref=e678]:
+                    - generic [ref=e679]: ▲
+                  - cell "▲" [ref=e680]:
+                    - generic [ref=e681]: ▲
+                  - cell "▲" [ref=e682]:
+                    - generic [ref=e683]: ▲
+                  - cell "▲" [ref=e684]:
+                    - generic [ref=e685]: ▲
+                  - cell "■" [ref=e686]:
+                    - generic [ref=e688]: ■
+                  - cell "■" [ref=e689]:
+                    - generic [ref=e691]: ■
+                  - cell "■" [ref=e692]:
+                    - generic [ref=e694]: ■
+                - row "14:00～18:00 ● ● ● ● ● ● ― ―" [ref=e695]:
+                  - rowheader "14:00～18:00" [ref=e696]
+                  - cell "●" [ref=e697]
+                  - cell "●" [ref=e698]
+                  - cell "●" [ref=e699]
+                  - cell "●" [ref=e700]
+                  - cell "●" [ref=e701]
+                  - cell "●" [ref=e702]
+                  - cell "―" [ref=e703]:
+                    - generic [ref=e705]: ―
+                  - cell "―" [ref=e706]:
+                    - generic [ref=e708]: ―
+                - row "14:00～15:00 ― ― ― ― ― ― ● ●" [ref=e709]:
+                  - rowheader "14:00～15:00" [ref=e710]
+                  - cell "―" [ref=e711]:
+                    - generic [ref=e714]: ―
+                  - cell "―" [ref=e715]:
+                    - generic [ref=e718]: ―
+                  - cell "―" [ref=e719]:
+                    - generic [ref=e722]: ―
+                  - cell "―" [ref=e723]:
+                    - generic [ref=e726]: ―
+                  - cell "―" [ref=e727]:
+                    - generic [ref=e730]: ―
+                  - cell "―" [ref=e731]:
+                    - generic [ref=e734]: ―
+                  - cell "●" [ref=e735]:
+                    - generic [ref=e738]: ●
+                  - cell "●" [ref=e739]:
+                    - generic [ref=e742]: ●
+            - paragraph [ref=e743]:
+              - generic [ref=e744]:
+                - generic [ref=e745]:
+                  - text: 平日最終受付：17:30
+                  - generic [ref=e746]:
+                    - text: 土曜最終受付：17:30
+                    - text: 日祝最終受付：14:30
+                - generic [ref=e747]: ▲ ※予約検査のみ受け付けています
+              - generic [ref=e749]:
+                - text: ■ ※
+                - generic [ref=e751]: 予約検査と
+              - generic [ref=e752]: 初診を受け付けています
+              - text: 休診日：年末年始のみ
+        - generic [ref=e753]:
+          - paragraph [ref=e755]:
+            - link "大阪なんば内科・消化器内視鏡クリニック 消化器専門サイト" [ref=e756] [cursor=pointer]:
+              - /url: https://www.namba-endoscopy.com/gastroenterology-lp
+              - img "大阪なんば内科・消化器内視鏡クリニック 消化器専門サイト" [ref=e757]
+          - paragraph [ref=e759]:
+            - link "芦屋おく内視鏡クリニック" [ref=e760] [cursor=pointer]:
+              - /url: https://oku-clinic.net/
+              - img "芦屋おく内視鏡クリニック" [ref=e761]
+          - paragraph [ref=e763]:
+            - link "OC 医療法人篤眞 奥クリニック" [ref=e764] [cursor=pointer]:
+              - /url: https://oku-cl.jp/
+              - img "OC 医療法人篤眞 奥クリニック" [ref=e765]
+        - paragraph [ref=e766]:
+          - link "サイトマップ" [ref=e767] [cursor=pointer]:
+            - /url: https://www.namba-endoscopy.com/sitemap/
+      - paragraph [ref=e770]: 大阪の胃カメラ・大腸内視鏡検査(大腸カメラ)©︎大阪なんば内科・消化器内視鏡クリニック

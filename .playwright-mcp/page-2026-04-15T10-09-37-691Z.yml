@@ -1,0 +1,481 @@
+- generic [active] [ref=e1]:
+  - link "電話" [ref=e3] [cursor=pointer]:
+    - /url: "#"
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - link "消化器内科・内視鏡内科 みどり内科クリニック" [ref=e6] [cursor=pointer]:
+        - /url: "#"
+        - img [ref=e8]:
+          - generic [ref=e11]: M
+          - generic [ref=e12]: MIDORI
+        - generic [ref=e13]:
+          - generic [ref=e14]: 消化器内科・内視鏡内科
+          - generic [ref=e15]: みどり内科クリニック
+      - navigation [ref=e16]:
+        - link "ホーム Home" [ref=e17] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e18]: ホーム
+          - generic [ref=e19]: Home
+        - link "診療科目 Medical" [ref=e20] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e21]: 診療科目
+          - generic [ref=e22]: Medical
+        - link "検査 Examination" [ref=e23] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e24]: 検査
+          - generic [ref=e25]: Examination
+        - link "ドクター紹介 Doctor" [ref=e26] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e27]: ドクター紹介
+          - generic [ref=e28]: Doctor
+        - link "クリニック紹介 Clinic" [ref=e29] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e30]: クリニック紹介
+          - generic [ref=e31]: Clinic
+        - link "お役立ち情報 Column" [ref=e32] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e33]: お役立ち情報
+          - generic [ref=e34]: Column
+      - link "03-0000-0000 受付は診療終了30分前まで" [ref=e36] [cursor=pointer]:
+        - /url: "#"
+        - img [ref=e37]
+        - generic [ref=e39]:
+          - text: 03-0000-0000
+          - generic [ref=e40]: 受付は診療終了30分前まで
+  - generic [ref=e41]:
+    - generic [ref=e42]:
+      - generic [ref=e43]:
+        - group "1 / 3" [ref=e44]
+        - group "2 / 3"
+        - group "3 / 3"
+      - generic [ref=e45]:
+        - button "Go to slide 1" [ref=e46] [cursor=pointer]
+        - button "Go to slide 2" [ref=e47] [cursor=pointer]
+        - button "Go to slide 3" [ref=e48] [cursor=pointer]
+    - generic [ref=e51]:
+      - generic [ref=e52]: 消化器内科・内視鏡内科
+      - heading "患者様に寄り添った 安心の内視鏡検査を" [level=1] [ref=e53]:
+        - generic [ref=e54]: 患者様に寄り添った
+        - generic [ref=e55]: 安心の内視鏡検査を
+      - paragraph [ref=e56]:
+        - text: 最新鋭の内視鏡システムと豊富な経験を持つ専門医が
+        - text: 苦痛の少ない検査で、あなたの健康をお守りします。
+    - generic [ref=e57]:
+      - generic [ref=e59]:
+        - generic [ref=e61]: "01"
+        - generic [ref=e63]: POINT
+        - paragraph [ref=e64]:
+          - text: 消化器内視鏡
+          - text: 専門医による検査
+      - generic [ref=e66]:
+        - generic [ref=e68]: "02"
+        - generic [ref=e70]: POINT
+        - paragraph [ref=e71]:
+          - text: 胃・大腸カメラを
+          - text: 同日検査が可能
+      - generic [ref=e73]:
+        - generic [ref=e75]: "03"
+        - generic [ref=e77]: POINT
+        - paragraph [ref=e78]:
+          - text: 鎮静剤使用で
+          - text: 苦痛の少ない検査
+    - generic [ref=e79]:
+      - paragraph [ref=e80]: Consultation Hours
+      - paragraph [ref=e81]: 診療時間
+      - table [ref=e83]:
+        - rowgroup [ref=e84]:
+          - row "月 火 水 木 金 土" [ref=e85]:
+            - columnheader [ref=e86]
+            - columnheader "月" [ref=e87]
+            - columnheader "火" [ref=e88]
+            - columnheader "水" [ref=e89]
+            - columnheader "木" [ref=e90]
+            - columnheader "金" [ref=e91]
+            - columnheader "土" [ref=e92]
+        - rowgroup [ref=e93]:
+          - row "午前 9:00〜12:30 ● ● ● ● ● ●" [ref=e94]:
+            - rowheader "午前 9:00〜12:30" [ref=e95]:
+              - text: 午前
+              - generic [ref=e96]: 9:00〜12:30
+            - cell "●" [ref=e97]
+            - cell "●" [ref=e98]
+            - cell "●" [ref=e99]
+            - cell "●" [ref=e100]
+            - cell "●" [ref=e101]
+            - cell "●" [ref=e102]
+          - row "午後 14:00〜18:00 ● ● − ● ● −" [ref=e103]:
+            - rowheader "午後 14:00〜18:00" [ref=e104]:
+              - text: 午後
+              - generic [ref=e105]: 14:00〜18:00
+            - cell "●" [ref=e106]
+            - cell "●" [ref=e107]
+            - cell "−" [ref=e108]
+            - cell "●" [ref=e109]
+            - cell "●" [ref=e110]
+            - cell "−" [ref=e111]
+      - paragraph [ref=e113]: 休診：水曜午後・日曜・祝日
+  - link "ホーム" [ref=e115] [cursor=pointer]:
+    - /url: "#"
+  - generic [ref=e117]:
+    - generic [ref=e118]:
+      - generic: News
+      - generic [ref=e119]: News
+      - heading "お知らせ" [level=2] [ref=e120]
+    - generic [ref=e123]:
+      - generic [ref=e124] [cursor=pointer]:
+        - generic [ref=e125]: 2026.04.01
+        - generic [ref=e126]: お知らせ
+        - generic [ref=e127]: ホームページを開設いたしました
+      - generic [ref=e128] [cursor=pointer]:
+        - generic [ref=e129]: 2026.03.15
+        - generic [ref=e130]: お知らせ
+        - generic [ref=e131]: 内視鏡検査のWEB予約を開始しました
+      - generic [ref=e132] [cursor=pointer]:
+        - generic [ref=e133]: 2026.03.01
+        - generic [ref=e134]: 検査情報
+        - generic [ref=e135]: 最新内視鏡システム EVIS X1 を導入しました
+      - generic [ref=e136] [cursor=pointer]:
+        - generic [ref=e137]: 2026.02.15
+        - generic [ref=e138]: お知らせ
+        - generic [ref=e139]: 大腸カメラ検査の鎮静剤対応を開始いたしました
+    - link "お知らせ一覧 →" [ref=e141] [cursor=pointer]:
+      - /url: "#"
+  - generic [ref=e143]:
+    - generic [ref=e144]:
+      - generic: Features
+      - heading "当院の6つの特長" [level=2] [ref=e146]
+      - paragraph [ref=e147]: Clinic Features
+    - generic [ref=e149]:
+      - generic: accuracy
+      - generic [ref=e150]:
+        - generic [ref=e151]:
+          - generic [ref=e152]: "01"
+          - generic [ref=e154]: High accuracy
+        - paragraph [ref=e155]:
+          - text: 最新の機器と専門技術で
+          - text: 精度の高い内視鏡検査を提供します。
+        - paragraph [ref=e156]: 年間1,000件以上の内視鏡検査実績を持つ消化器内視鏡専門医が、全ての検査を責任を持って実施いたします。豊富な経験に基づく確かな技術で、安心の検査をお届けします。
+      - generic [ref=e157]:
+        - img "内視鏡機器" [ref=e158]
+        - img "専門医" [ref=e159]
+        - img "検査風景" [ref=e160]
+      - img "医師ポートレート" [ref=e162]
+    - img "院内風景" [ref=e164]
+    - generic [ref=e165]:
+      - generic: comfortable
+      - generic [ref=e166]:
+        - generic [ref=e167]:
+          - generic [ref=e168]: "02"
+          - generic [ref=e170]: Comfortable
+        - paragraph [ref=e171]:
+          - text: 無痛内視鏡検査が
+          - text: 苦痛な胃の検査を変えていきます。
+        - paragraph [ref=e172]: 鎮静剤を使用し「半分眠った状態」での検査が可能です。患者様の負担を和らげながら、より入念な観察と正確な診断を行うことができます。
+      - generic [ref=e173]:
+        - img "鎮静剤検査" [ref=e174]
+        - img "安心のケア" [ref=e175]
+        - img "リカバリー室" [ref=e176]
+      - img "看護師" [ref=e178]
+    - img "待合室" [ref=e180]
+    - generic [ref=e181]:
+      - generic: comfortable
+      - generic [ref=e182]:
+        - generic [ref=e183]:
+          - generic [ref=e184]: "03"
+          - generic [ref=e186]: Comfortable
+        - paragraph [ref=e187]:
+          - text: いつでも安心して受診できる
+          - text: クリニックを目指しています。
+        - paragraph [ref=e188]: 同日に胃カメラと大腸カメラの両方を実施可能です。通院回数を減らし、お忙しい方にも便利にご利用いただけます。土日祝も対応しておりますので、お仕事帰りの方も安心です。
+      - generic [ref=e189]:
+        - img "受付" [ref=e190]
+        - img "カウンセリング" [ref=e191]
+        - img "院内設備" [ref=e192]
+      - img "スタッフ" [ref=e194]
+  - generic [ref=e196]:
+    - generic [ref=e197]: Midori Gastroenterology Clinic
+    - generic [ref=e198]: Midori Gastroenterology Clinic
+    - generic [ref=e199]: Midori Gastroenterology Clinic
+    - generic [ref=e200]: Midori Gastroenterology Clinic
+    - generic [ref=e201]: Midori Gastroenterology Clinic
+    - generic [ref=e202]: Midori Gastroenterology Clinic
+  - generic [ref=e204]:
+    - generic [ref=e205]:
+      - generic: Greeting
+      - generic [ref=e206]: Greeting
+      - heading "院長ご挨拶" [level=2] [ref=e207]
+    - generic [ref=e210]:
+      - img "院長" [ref=e212]
+      - generic [ref=e213]:
+        - heading "地域の皆様の 「おなかの健康」を守ります" [level=3] [ref=e214]:
+          - text: 地域の皆様の
+          - text: 「おなかの健康」を守ります
+        - paragraph [ref=e215]: 当院は消化器内科・内視鏡内科を専門とするクリニックです。「胃が痛い」「お腹の調子が悪い」といった日常的な消化器症状から、胃カメラ・大腸カメラによる精密検査まで、幅広く対応しております。
+        - paragraph [ref=e216]: 患者様お一人おひとりに丁寧に向き合い、わかりやすい説明と苦痛の少ない検査で、安心して受診いただける環境づくりに努めてまいります。
+        - paragraph [ref=e217]: ※当サイトはデモサイトです。実在するクリニックではありません。
+        - generic [ref=e218]:
+          - text: 院長
+          - generic [ref=e219]: 緑川 太郎
+        - link "ドクター紹介 →" [ref=e220] [cursor=pointer]:
+          - /url: "#"
+  - generic [ref=e221]:
+    - generic: Medical
+    - generic [ref=e222]:
+      - generic [ref=e223]:
+        - generic [ref=e224]: Medical
+        - heading "診療科目" [level=2] [ref=e225]
+      - generic [ref=e228]:
+        - link "消化器内科 消化器内科 Gastroenterology 詳しく見る" [ref=e229] [cursor=pointer]:
+          - /url: "#"
+          - img "消化器内科" [ref=e231]
+          - generic [ref=e232]:
+            - heading "消化器内科" [level=4] [ref=e233]
+            - generic [ref=e234]: Gastroenterology
+            - generic [ref=e235]: 詳しく見る
+        - link "内視鏡内科 内視鏡内科 Endoscopy 詳しく見る" [ref=e236] [cursor=pointer]:
+          - /url: "#"
+          - img "内視鏡内科" [ref=e238]
+          - generic [ref=e239]:
+            - heading "内視鏡内科" [level=4] [ref=e240]
+            - generic [ref=e241]: Endoscopy
+            - generic [ref=e242]: 詳しく見る
+  - generic [ref=e243]:
+    - generic: Examination
+    - generic [ref=e244]:
+      - generic [ref=e245]:
+        - generic [ref=e246]: Examination
+        - heading "検査" [level=2] [ref=e247]
+      - generic [ref=e250]:
+        - link "胃カメラ 胃カメラ Gastroscopy 詳しく見る" [ref=e251] [cursor=pointer]:
+          - /url: "#"
+          - img "胃カメラ" [ref=e253]
+          - generic [ref=e254]:
+            - heading "胃カメラ" [level=4] [ref=e255]
+            - generic [ref=e256]: Gastroscopy
+            - generic [ref=e257]: 詳しく見る
+        - link "大腸カメラ 大腸カメラ Colonoscopy 詳しく見る" [ref=e258] [cursor=pointer]:
+          - /url: "#"
+          - img "大腸カメラ" [ref=e260]
+          - generic [ref=e261]:
+            - heading "大腸カメラ" [level=4] [ref=e262]
+            - generic [ref=e263]: Colonoscopy
+            - generic [ref=e264]: 詳しく見る
+        - link "腹部エコー 腹部エコー Ultrasound 詳しく見る" [ref=e265] [cursor=pointer]:
+          - /url: "#"
+          - img "腹部エコー" [ref=e267]
+          - generic [ref=e268]:
+            - heading "腹部エコー" [level=4] [ref=e269]
+            - generic [ref=e270]: Ultrasound
+            - generic [ref=e271]: 詳しく見る
+        - link "血液検査 血液検査 Blood Test 詳しく見る" [ref=e272] [cursor=pointer]:
+          - /url: "#"
+          - img "血液検査" [ref=e274]
+          - generic [ref=e275]:
+            - heading "血液検査" [level=4] [ref=e276]
+            - generic [ref=e277]: Blood Test
+            - generic [ref=e278]: 詳しく見る
+        - link "レントゲン レントゲン X-Ray 詳しく見る" [ref=e279] [cursor=pointer]:
+          - /url: "#"
+          - img "レントゲン" [ref=e281]
+          - generic [ref=e282]:
+            - heading "レントゲン" [level=4] [ref=e283]
+            - generic [ref=e284]: X-Ray
+            - generic [ref=e285]: 詳しく見る
+        - link "健康診断 健康診断 Health Check 詳しく見る" [ref=e286] [cursor=pointer]:
+          - /url: "#"
+          - img "健康診断" [ref=e288]
+          - generic [ref=e289]:
+            - heading "健康診断" [level=4] [ref=e290]
+            - generic [ref=e291]: Health Check
+            - generic [ref=e292]: 詳しく見る
+  - generic [ref=e294]:
+    - generic [ref=e295]:
+      - generic: Information
+      - generic [ref=e296]: Information
+      - heading "診療時間・ご来院の方へ" [level=2] [ref=e297]
+    - generic [ref=e300]:
+      - generic [ref=e301]:
+        - table [ref=e302]:
+          - rowgroup [ref=e303]:
+            - row "月 火 水 木 金 土" [ref=e304]:
+              - columnheader [ref=e305]
+              - columnheader "月" [ref=e306]
+              - columnheader "火" [ref=e307]
+              - columnheader "水" [ref=e308]
+              - columnheader "木" [ref=e309]
+              - columnheader "金" [ref=e310]
+              - columnheader "土" [ref=e311]
+          - rowgroup [ref=e312]:
+            - row "午前 9:00〜12:30 ● ● ● ● ● ●" [ref=e313]:
+              - rowheader "午前 9:00〜12:30" [ref=e314]:
+                - text: 午前
+                - generic [ref=e315]: 9:00〜12:30
+              - cell "●" [ref=e316]
+              - cell "●" [ref=e317]
+              - cell "●" [ref=e318]
+              - cell "●" [ref=e319]
+              - cell "●" [ref=e320]
+              - cell "●" [ref=e321]
+            - row "午後 14:00〜18:00 ● ● − ● ● −" [ref=e322]:
+              - rowheader "午後 14:00〜18:00" [ref=e323]:
+                - text: 午後
+                - generic [ref=e324]: 14:00〜18:00
+              - cell "●" [ref=e325]
+              - cell "●" [ref=e326]
+              - cell "−" [ref=e327]
+              - cell "●" [ref=e328]
+              - cell "●" [ref=e329]
+              - cell "−" [ref=e330]
+        - generic [ref=e331]:
+          - paragraph [ref=e332]: 受付は診療終了30分前まで
+          - paragraph [ref=e333]: 休診日：水曜午後・日曜・祝日
+          - paragraph [ref=e334]: 内視鏡検査は完全予約制
+      - generic [ref=e335]:
+        - heading "ご来院の方へ" [level=3] [ref=e336]
+        - generic [ref=e337]:
+          - term [ref=e338]: 初診の方
+          - definition [ref=e339]: 保険証をお持ちの上、受付時間内にお越しください。
+          - term [ref=e340]: 受付時間
+          - definition [ref=e341]: 午前 9:00〜12:00 / 午後 14:00〜17:30
+          - term [ref=e342]: 予約について
+          - definition [ref=e343]: 内視鏡検査は完全予約制です。お電話またはWEB予約をご利用ください。
+          - term [ref=e344]: お支払い方法
+          - definition [ref=e345]: 各種保険取扱い・各種クレジットカード対応
+  - generic [ref=e347]:
+    - img "受付" [ref=e348]
+    - img "待合室" [ref=e349]
+    - img "診察室" [ref=e350]
+    - img "内視鏡室" [ref=e351]
+    - img "廊下" [ref=e352]
+    - img "スタッフ" [ref=e353]
+    - img "設備" [ref=e354]
+    - img "外観" [ref=e355]
+  - generic [ref=e357]:
+    - generic [ref=e358]:
+      - generic: Column
+      - generic [ref=e359]: Column
+      - heading "お役立ち情報" [level=2] [ref=e360]
+    - paragraph [ref=e363]: 消化器の健康に関する情報をわかりやすくお届けします。
+    - generic [ref=e364]:
+      - generic [ref=e367] [cursor=pointer]:
+        - generic [ref=e368]:
+          - generic [ref=e369]: 2026.03.10
+          - generic [ref=e370]: 検査のご案内
+        - heading "胃カメラ検査を受ける前に知っておきたいこと" [level=3] [ref=e371]
+        - paragraph [ref=e372]: 胃カメラ検査は食道・胃・十二指腸の病変を直接観察できる重要な検査です。検査前の準備や当日の流れについて解説します。
+      - generic [ref=e375] [cursor=pointer]:
+        - generic [ref=e376]:
+          - generic [ref=e377]: 2026.03.05
+          - generic [ref=e378]: 消化器の病気
+        - heading "ピロリ菌と胃がんの関係について" [level=3] [ref=e379]
+        - paragraph [ref=e380]: ピロリ菌は胃がんの大きなリスク因子です。感染の仕組みや除菌治療の方法についてお伝えします。
+      - generic [ref=e383] [cursor=pointer]:
+        - generic [ref=e384]:
+          - generic [ref=e385]: 2026.02.28
+          - generic [ref=e386]: 検査のご案内
+        - heading "大腸がん検診の重要性と検査の流れ" [level=3] [ref=e387]
+        - paragraph [ref=e388]: 大腸がんは早期発見で治癒率の高いがんです。大腸カメラ検査の流れと前日準備を解説します。
+    - link "記事一覧を見る →" [ref=e390] [cursor=pointer]:
+      - /url: "#"
+  - generic [ref=e392]:
+    - generic [ref=e393]:
+      - generic: Access
+      - generic [ref=e394]: Access
+      - heading "アクセス" [level=2] [ref=e395]
+    - generic [ref=e398]:
+      - generic [ref=e399]: Google Map
+      - generic [ref=e400]:
+        - heading "みどり内科クリニック" [level=3] [ref=e401]
+        - table [ref=e402]:
+          - rowgroup [ref=e403]:
+            - row "住所 〒107-0062 東京都港区南青山1-2-3 メディカルビル3F" [ref=e404]:
+              - rowheader "住所" [ref=e405]
+              - cell "〒107-0062 東京都港区南青山1-2-3 メディカルビル3F" [ref=e406]:
+                - text: 〒107-0062
+                - text: 東京都港区南青山1-2-3
+                - text: メディカルビル3F
+            - row "電話 03-0000-0000" [ref=e407]:
+              - rowheader "電話" [ref=e408]
+              - cell "03-0000-0000" [ref=e409]
+            - row "最寄駅 東京メトロ 青山一丁目駅 徒歩3分" [ref=e410]:
+              - rowheader "最寄駅" [ref=e411]
+              - cell "東京メトロ 青山一丁目駅 徒歩3分" [ref=e412]
+            - row "駐車場 提携駐車場あり（2時間まで無料）" [ref=e413]:
+              - rowheader "駐車場" [ref=e414]
+              - cell "提携駐車場あり（2時間まで無料）" [ref=e415]
+  - generic [ref=e417]:
+    - heading "まずはお気軽にご相談ください" [level=2] [ref=e418]
+    - paragraph [ref=e419]: 消化器の不調や内視鏡検査について、お気軽にお電話ください。
+    - link "03-0000-0000" [ref=e420] [cursor=pointer]:
+      - /url: "#"
+      - img [ref=e421]
+      - text: 03-0000-0000
+    - paragraph [ref=e423]: 受付は診療終了30分前まで
+  - contentinfo [ref=e424]:
+    - generic [ref=e426]:
+      - generic [ref=e427]:
+        - generic [ref=e428]:
+          - img [ref=e430]:
+            - generic [ref=e433]: M
+            - generic [ref=e434]: MIDORI
+          - generic [ref=e435]:
+            - generic [ref=e436]: 消化器内科・内視鏡内科
+            - generic [ref=e437]: みどり内科クリニック
+        - paragraph [ref=e438]:
+          - text: 〒107-0062
+          - text: 東京都港区南青山1-2-3
+          - text: メディカルビル3F
+        - generic [ref=e439]:
+          - img [ref=e440]
+          - text: 03-0000-0000
+      - generic [ref=e442]:
+        - heading "ページ一覧" [level=4] [ref=e443]
+        - list [ref=e444]:
+          - listitem [ref=e445]:
+            - link "ホーム" [ref=e446] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e447]:
+            - link "診療科目" [ref=e448] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e449]:
+            - link "検査" [ref=e450] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e451]:
+            - link "ドクター紹介" [ref=e452] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e453]:
+            - link "クリニック紹介" [ref=e454] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e455]:
+            - link "お役立ち情報" [ref=e456] [cursor=pointer]:
+              - /url: "#"
+      - generic [ref=e457]:
+        - heading "診療科目" [level=4] [ref=e458]
+        - list [ref=e459]:
+          - listitem [ref=e460]:
+            - link "消化器内科" [ref=e461] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e462]:
+            - link "内視鏡内科" [ref=e463] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e464]:
+            - link "胃カメラ検査" [ref=e465] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e466]:
+            - link "大腸カメラ検査" [ref=e467] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e468]:
+            - link "腹部エコー" [ref=e469] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e470]:
+            - link "健康診断" [ref=e471] [cursor=pointer]:
+              - /url: "#"
+      - generic [ref=e472]:
+        - heading "診療時間" [level=4] [ref=e473]
+        - generic [ref=e474]:
+          - paragraph [ref=e475]: 午前 9:00〜12:30
+          - paragraph [ref=e476]: 午後 14:00〜18:00
+          - paragraph [ref=e477]: 休診：水曜午後・日曜・祝日
+          - paragraph [ref=e478]: 受付は診療終了30分前まで
+          - paragraph [ref=e479]: ※内視鏡検査は完全予約制です
+    - paragraph [ref=e482]: © 2026 みどり内科クリニック All Rights Reserved.

@@ -136,7 +136,7 @@ ul { list-style: none; }
 
 /* Mobile nav overlay */
 .nav-overlay {
-  display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.4); z-index: 1004;
+  display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.15); z-index: 1004;
 }
 .nav-overlay.open { display: block; }
 
@@ -416,7 +416,7 @@ ul { list-style: none; }
     flex-direction: row; justify-content: space-between; align-items: center;
     padding: 16px 0; border-bottom: 1px solid var(--border);
   }
-  .nav a .nav-en { order: 2; }
+  .nav a .nav-en { display: none; }
   .header-right .header-tel { display: none; }
   .header-tel-sp { display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; }
   .page-hero { height: 200px; margin-top: 64px; }

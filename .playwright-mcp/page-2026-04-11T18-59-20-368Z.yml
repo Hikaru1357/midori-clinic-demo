@@ -1,0 +1,1167 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - generic [ref=e5]:
+      - heading "天王寺やすえ消化器内科・内視鏡クリニック" [level=1] [ref=e6]:
+        - link "天王寺やすえ消化器内科・内視鏡クリニック" [ref=e7] [cursor=pointer]:
+          - /url: https://www.tennoji-naishikyo.com/
+          - emphasis [ref=e8]:
+            - img "天王寺やすえ消化器内科・内視鏡クリニック" [ref=e9]
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - paragraph [ref=e12]:
+            - generic [ref=e14]: お電話でのご予約はこちらから
+            - generic [ref=e15]:
+              - generic [ref=e16]: Tel.
+              - emphasis [ref=e17]: 06-6779-1150
+          - generic [ref=e18]:
+            - link "24Hいつでも受付 WEB予約" [ref=e19] [cursor=pointer]:
+              - /url: https://tennoji-ygec.reserve.ne.jp#
+              - generic [ref=e20]: 24Hいつでも受付
+              - emphasis [ref=e21]: WEB予約
+            - link "友だち追加で簡単 LINE予約" [ref=e22] [cursor=pointer]:
+              - /url: https://lin.ee/cVUBPUF#
+              - generic [ref=e23]: 友だち追加で簡単
+              - emphasis [ref=e24]: LINE予約
+        - list [ref=e26]:
+          - listitem [ref=e27]:
+            - paragraph [ref=e28] [cursor=pointer]: 医院紹介
+            - generic:
+              - list:
+                - listitem:
+                  - link "医師紹介":
+                    - /url: https://www.tennoji-naishikyo.com/doctor/
+                - listitem:
+                  - link "医院情報":
+                    - /url: https://www.tennoji-naishikyo.com/clinic/#info
+                - listitem:
+                  - link "診療時間":
+                    - /url: https://www.tennoji-naishikyo.com/clinic/#time
+                - listitem:
+                  - link "アクセス":
+                    - /url: https://www.tennoji-naishikyo.com/clinic/#access
+                - listitem:
+                  - link "施設紹介":
+                    - /url: https://www.tennoji-naishikyo.com/clinic/#intro
+                - listitem:
+                  - link "設備紹介":
+                    - /url: https://www.tennoji-naishikyo.com/clinic/#medical equipment
+                - listitem:
+                  - link "求人募集":
+                    - /url: https://www.tennoji-naishikyo.com/recruit/
+          - listitem [ref=e29]:
+            - paragraph [ref=e30] [cursor=pointer]: 診療案内
+            - generic:
+              - list:
+                - listitem:
+                  - link "消化器内科":
+                    - /url: https://www.tennoji-naishikyo.com/gastroenterology/
+                    - generic: 消化器内科
+                - listitem:
+                  - link "肛門内科":
+                    - /url: https://www.tennoji-naishikyo.com/proctology/
+                    - generic: 肛門内科
+                - listitem:
+                  - link "健康診断":
+                    - /url: https://www.tennoji-naishikyo.com/medical_checkupsite/
+                - listitem:
+                  - link "人間ドック":
+                    - /url: https://www.tennoji-naishikyo.com/medical_checkupsite/
+                - listitem:
+                  - link "緊急外来":
+                    - /url: https://www.tennoji-naishikyo.com/emergency-outpatient-department/
+                    - generic: 緊急外来
+          - listitem [ref=e31]:
+            - paragraph [ref=e32] [cursor=pointer]: 胃カメラ検査
+            - generic:
+              - list:
+                - listitem:
+                  - paragraph: 胃カメラとは
+                  - generic:
+                    - list:
+                      - listitem:
+                        - link "胃カメラについて":
+                          - /url: https://www.tennoji-naishikyo.com/about_gastroscopy/#a01
+                      - listitem:
+                        - link "胃カメラとバリウム検査":
+                          - /url: https://www.tennoji-naishikyo.com/about_gastroscopy/#a02
+                      - listitem:
+                        - link "胃カメラが初めてで怖い…":
+                          - /url: https://www.tennoji-naishikyo.com/about_gastroscopy/#a03
+                      - listitem:
+                        - link "胃カメラ検査の流れ":
+                          - /url: https://www.tennoji-naishikyo.com/about_gastroscopy/#a03_1
+                      - listitem:
+                        - link "胃カメラの費用":
+                          - /url: https://www.tennoji-naishikyo.com/about_gastroscopy/#a04
+                      - listitem:
+                        - link "胃カメラ検査のよくある質問":
+                          - /url: https://www.tennoji-naishikyo.com/endoscopy_faq/#a01
+                - listitem:
+                  - paragraph: 鼻からと口からどっちが良い？
+                  - generic:
+                    - list:
+                      - listitem:
+                        - link "胃カメラ検査の検査方法（選択肢）":
+                          - /url: https://www.tennoji-naishikyo.com/nasal_or_oral_gastroscopy/#a01
+                      - listitem:
+                        - link "胃カメラ検査は鼻からと口からどっちが良い？":
+                          - /url: https://www.tennoji-naishikyo.com/nasal_or_oral_gastroscopy/#a02
+                      - listitem:
+                        - link "鼻から・口からそれぞれのメリット・デメリット":
+                          - /url: https://www.tennoji-naishikyo.com/nasal_or_oral_gastroscopy/#a03
+                      - listitem:
+                        - link "胃カメラを鼻から入れる場合の流れ":
+                          - /url: https://www.tennoji-naishikyo.com/nasal_or_oral_gastroscopy/#a04
+                      - listitem:
+                        - link "胃カメラを口から入れる場合の流れ":
+                          - /url: https://www.tennoji-naishikyo.com/nasal_or_oral_gastroscopy/#a05
+                      - listitem:
+                        - link "経鼻内視鏡・経口内視鏡のよくある質問":
+                          - /url: https://www.tennoji-naishikyo.com/nasal_or_oral_gastroscopy/#a06
+                - listitem:
+                  - paragraph: 胃カメラとバリウム検査は どちらが良い？
+                  - generic:
+                    - list:
+                      - listitem:
+                        - link "バリウム検査とは":
+                          - /url: https://www.tennoji-naishikyo.com/barium_or_gastroscopy/#a01
+                      - listitem:
+                        - link "胃カメラ検査とは":
+                          - /url: https://www.tennoji-naishikyo.com/barium_or_gastroscopy/#a02
+                      - listitem:
+                        - link "医師はバリウム検査を受けるのか？":
+                          - /url: https://www.tennoji-naishikyo.com/barium_or_gastroscopy/#a03
+                      - listitem:
+                        - link "胃カメラ検査に抵抗のある方へ":
+                          - /url: https://www.tennoji-naishikyo.com/barium_or_gastroscopy/#a04
+                - listitem:
+                  - paragraph: 土日の胃カメラ
+                  - generic:
+                    - list:
+                      - listitem:
+                        - link "土曜日・日曜日の胃カメラ検査":
+                          - /url: https://www.tennoji-naishikyo.com/weekend_endoscopy/#a01
+                      - listitem:
+                        - link "当院の胃カメラ検査":
+                          - /url: https://www.tennoji-naishikyo.com/weekend_endoscopy/#a02
+                      - listitem:
+                        - link "当院の大腸カメラ検査":
+                          - /url: https://www.tennoji-naishikyo.com/weekend_endoscopy/#a03
+                      - listitem:
+                        - link "当院の特徴":
+                          - /url: https://www.tennoji-naishikyo.com/weekend_endoscopy/#a04
+                - listitem:
+                  - paragraph: 早朝・夕方の胃カメラ
+                  - generic:
+                    - list:
+                      - listitem:
+                        - link "早朝の内視鏡検査":
+                          - /url: https://www.tennoji-naishikyo.com/early-morning-evening-endoscopy/#a01
+                      - listitem:
+                        - link "夕方の内視鏡検査":
+                          - /url: https://www.tennoji-naishikyo.com/early-morning-evening-endoscopy/#a04
+                      - listitem:
+                        - link "当院の胃カメラ検査・大腸カメラ検査":
+                          - /url: https://www.tennoji-naishikyo.com/early-morning-evening-endoscopy/#a02
+                      - listitem:
+                        - link "当院の胃カメラ検査・大腸カメラ検査の特徴":
+                          - /url: https://www.tennoji-naishikyo.com/early-morning-evening-endoscopy/#a03
+          - listitem [ref=e33]:
+            - paragraph [ref=e34] [cursor=pointer]: 大腸カメラ検査
+            - generic:
+              - list:
+                - listitem:
+                  - paragraph: 大腸カメラ検査とは
+                  - generic:
+                    - list:
+                      - listitem:
+                        - link "大腸カメラ検査について":
+                          - /url: https://www.tennoji-naishikyo.com/about_colonoscopy/#a01
+                      - listitem:
+                        - link "大腸カメラを推奨する症状":
+                          - /url: https://www.tennoji-naishikyo.com/about_colonoscopy/#a02
+                      - listitem:
+                        - link "大腸カメラで発見できる病気":
+                          - /url: https://www.tennoji-naishikyo.com/about_colonoscopy/#a03
+                      - listitem:
+                        - link "当院の大腸カメラ検査の特徴":
+                          - /url: https://www.tennoji-naishikyo.com/about_colonoscopy/#a04
+                      - listitem:
+                        - link "大腸カメラ検査の流れ":
+                          - /url: https://www.tennoji-naishikyo.com/about_colonoscopy/#a05
+                      - listitem:
+                        - link "大腸カメラ検査の費用":
+                          - /url: https://www.tennoji-naishikyo.com/about_colonoscopy/#a06
+                      - listitem:
+                        - link "大腸カメラ検査のよくある質問":
+                          - /url: https://www.tennoji-naishikyo.com/endoscopy_faq/#a02
+                - listitem:
+                  - paragraph: 大腸カメラで使用する下剤の種類
+                  - generic:
+                    - list:
+                      - listitem:
+                        - link "下剤とは":
+                          - /url: https://www.tennoji-naishikyo.com/colonoscopy_laxatives_types/#a01
+                      - listitem:
+                        - link "当院で取り揃えている下剤":
+                          - /url: https://www.tennoji-naishikyo.com/colonoscopy_laxatives_types/#a02
+                      - listitem:
+                        - link "下剤の比較":
+                          - /url: https://www.tennoji-naishikyo.com/colonoscopy_laxatives_types/#a03
+                      - listitem:
+                        - link "楽に下剤を服用する方法はある？":
+                          - /url: https://www.tennoji-naishikyo.com/colonoscopy_laxatives_types/#a04
+                      - listitem:
+                        - link "下剤服用時の注意点":
+                          - /url: https://www.tennoji-naishikyo.com/colonoscopy_laxatives_types/#a05
+                      - listitem:
+                        - link "下剤の費用":
+                          - /url: https://www.tennoji-naishikyo.com/colonoscopy_laxatives_types/#a06
+                - listitem:
+                  - paragraph: 大腸ポリープ切除
+                  - generic:
+                    - list:
+                      - listitem:
+                        - link "大腸ポリープ切除について":
+                          - /url: https://www.tennoji-naishikyo.com/colon_polypectomy/#a01
+                      - listitem:
+                        - link "大腸ポリープ切除に伴う合併症について":
+                          - /url: https://www.tennoji-naishikyo.com/colon_polypectomy/#a02
+                      - listitem:
+                        - link "大腸ポリープ病理検査の結果について":
+                          - /url: https://www.tennoji-naishikyo.com/colon_polypectomy/#a03
+                - listitem:
+                  - paragraph: 下剤を飲まない大腸カメラ
+                  - generic:
+                    - list:
+                      - listitem:
+                        - link "内視鏡的洗腸剤注入法":
+                          - /url: https://www.tennoji-naishikyo.com/colonoscopy_without_laxatives/#a01
+                      - listitem:
+                        - link "内視鏡的洗腸剤注入法がおすすめの方":
+                          - /url: https://www.tennoji-naishikyo.com/colonoscopy_without_laxatives/#a02
+                      - listitem:
+                        - link "内視鏡的洗腸剤注入法のメリット":
+                          - /url: https://www.tennoji-naishikyo.com/colonoscopy_without_laxatives/#a03
+                      - listitem:
+                        - link "内視鏡的洗腸剤注入法のデメリット":
+                          - /url: https://www.tennoji-naishikyo.com/colonoscopy_without_laxatives/#a04
+                      - listitem:
+                        - link "内視鏡的洗腸剤注入法の流れ":
+                          - /url: https://www.tennoji-naishikyo.com/colonoscopy_without_laxatives/#a05
+                - listitem:
+                  - paragraph: 土日の大腸カメラ
+                  - generic:
+                    - list:
+                      - listitem:
+                        - link "土曜日・日曜日の胃カメラ検査":
+                          - /url: https://www.tennoji-naishikyo.com/weekend_endoscopy/#a01
+                      - listitem:
+                        - link "当院の胃カメラ検査":
+                          - /url: https://www.tennoji-naishikyo.com/weekend_endoscopy/#a02
+                      - listitem:
+                        - link "当院の大腸カメラ検査":
+                          - /url: https://www.tennoji-naishikyo.com/weekend_endoscopy/#a03
+                      - listitem:
+                        - link "当院の特徴":
+                          - /url: https://www.tennoji-naishikyo.com/weekend_endoscopy/#a04
+                - listitem:
+                  - paragraph: 早朝・夕方の大腸カメラ
+                  - generic:
+                    - list:
+                      - listitem:
+                        - link "早朝の内視鏡検査":
+                          - /url: https://www.tennoji-naishikyo.com/early-morning-evening-endoscopy/#a01
+                      - listitem:
+                        - link "夕方の内視鏡検査":
+                          - /url: https://www.tennoji-naishikyo.com/early-morning-evening-endoscopy/#a04
+                      - listitem:
+                        - link "当院の胃カメラ検査・大腸カメラ検査":
+                          - /url: https://www.tennoji-naishikyo.com/early-morning-evening-endoscopy/#a02
+                      - listitem:
+                        - link "当院の胃カメラ検査・大腸カメラ検査の特徴":
+                          - /url: https://www.tennoji-naishikyo.com/early-morning-evening-endoscopy/#a03
+          - listitem [ref=e35]:
+            - paragraph [ref=e36] [cursor=pointer]: 疾患から探す
+            - generic:
+              - list:
+                - listitem:
+                  - paragraph: 食道の疾患
+                  - generic:
+                    - list:
+                      - listitem:
+                        - link "逆流性食道炎":
+                          - /url: https://www.tennoji-naishikyo.com/gerd/
+                      - listitem:
+                        - link "バレット食道":
+                          - /url: https://www.tennoji-naishikyo.com/barretts_esophagus/
+                      - listitem:
+                        - link "食道がん":
+                          - /url: https://www.tennoji-naishikyo.com/esophageal_cancer/
+                - listitem:
+                  - paragraph: 胃・十二指腸の疾患
+                  - generic:
+                    - list:
+                      - listitem:
+                        - link "胃潰瘍":
+                          - /url: https://www.tennoji-naishikyo.com/gastric_ulcer/
+                      - listitem:
+                        - link "十二指腸潰瘍":
+                          - /url: https://www.tennoji-naishikyo.com/duodenal_ulcer/
+                      - listitem:
+                        - link "機能性ディスペプシア":
+                          - /url: https://www.tennoji-naishikyo.com/functional_dyspepsia/
+                      - listitem:
+                        - link "ピロリ菌":
+                          - /url: https://www.tennoji-naishikyo.com/h_pylori/
+                      - listitem:
+                        - link "アニサキス":
+                          - /url: https://www.tennoji-naishikyo.com/anisakis/
+                      - listitem:
+                        - link "慢性胃炎":
+                          - /url: https://www.tennoji-naishikyo.com/chronic_gastritis/
+                      - listitem:
+                        - link "胃痙攣":
+                          - /url: https://www.tennoji-naishikyo.com/gastric_spasm/
+                      - listitem:
+                        - link "胃がん":
+                          - /url: https://www.tennoji-naishikyo.com/stomach_cancer/
+                      - listitem:
+                        - link "スキルス胃がん":
+                          - /url: https://www.tennoji-naishikyo.com/linitis_plastica/
+                - listitem:
+                  - paragraph: 大腸の疾患
+                  - generic:
+                    - list:
+                      - listitem:
+                        - link "急性胃腸炎":
+                          - /url: https://www.tennoji-naishikyo.com/acute_gastroenteritis/
+                      - listitem:
+                        - link "感染性胃腸炎（胃腸風邪）":
+                          - /url: https://www.tennoji-naishikyo.com/infectious_gastroenteritis/
+                      - listitem:
+                        - link "ウイルス性胃腸炎（嘔吐下痢翔）":
+                          - /url: https://www.tennoji-naishikyo.com/viral_gastroenteritis/
+                      - listitem:
+                        - link "ノロウイルス":
+                          - /url: https://www.tennoji-naishikyo.com/norovirus/
+                      - listitem:
+                        - link "大腸ポリープ":
+                          - /url: https://www.tennoji-naishikyo.com/colon_polyps/
+                      - listitem:
+                        - link "過敏性腸症候群":
+                          - /url: https://www.tennoji-naishikyo.com/ibs/
+                      - listitem:
+                        - link "潰瘍性大腸炎":
+                          - /url: https://www.tennoji-naishikyo.com/ibd/#a02
+                      - listitem:
+                        - link "クローン病":
+                          - /url: https://www.tennoji-naishikyo.com/ibd/#a03
+                      - listitem:
+                        - link "虚血性腸炎":
+                          - /url: https://www.tennoji-naishikyo.com/ischemic_colitis/
+                      - listitem:
+                        - link "大腸がん":
+                          - /url: https://www.tennoji-naishikyo.com/colorectal_cancer/
+                      - listitem:
+                        - link "直腸がん":
+                          - /url: https://www.tennoji-naishikyo.com/colorectal_cancer/#a06
+          - listitem [ref=e37]:
+            - paragraph [ref=e38] [cursor=pointer]: 症状から探す
+            - generic:
+              - list:
+                - listitem:
+                  - paragraph: 食道の症状
+                  - generic:
+                    - list:
+                      - listitem:
+                        - link "胸やけ（酸っぱいものが上がってくる）":
+                          - /url: https://www.tennoji-naishikyo.com/acid_reflux/
+                      - listitem:
+                        - link "ゲップがよく出る、止まらない":
+                          - /url: https://www.tennoji-naishikyo.com/excessive_belching/
+                - listitem:
+                  - paragraph: 胃・十二指腸の症状
+                  - generic:
+                    - list:
+                      - listitem:
+                        - link "胃痛（心窩部痛）":
+                          - /url: https://www.tennoji-naishikyo.com/epigastric_pain/
+                      - listitem:
+                        - link "胃もたれ":
+                          - /url: https://www.tennoji-naishikyo.com/dyspepsia/
+                      - listitem:
+                        - link "吐き気、嘔吐":
+                          - /url: https://www.tennoji-naishikyo.com/nausea_vomiting/
+                - listitem:
+                  - paragraph: 大腸の症状
+                  - generic:
+                    - list:
+                      - listitem:
+                        - link "おならが臭い、止まらない":
+                          - /url: https://www.tennoji-naishikyo.com/excessive_flatus/
+                      - listitem:
+                        - link "お腹が張る（腹部膨満感）":
+                          - /url: https://www.tennoji-naishikyo.com/abdominal_bloating/
+                      - listitem:
+                        - link "お腹が鳴る":
+                          - /url: https://www.tennoji-naishikyo.com/stomach_rumbling/
+                      - listitem:
+                        - link "腹痛":
+                          - /url: https://www.tennoji-naishikyo.com/abdominal_pain/
+                      - listitem:
+                        - link "ストレスと腹痛":
+                          - /url: https://www.tennoji-naishikyo.com/stress_abdominal_pain/
+                      - listitem:
+                        - link "便の色が気になる":
+                          - /url: https://www.tennoji-naishikyo.com/stool_color/
+                      - listitem:
+                        - link "血便":
+                          - /url: https://www.tennoji-naishikyo.com/hematochezia/
+                      - listitem:
+                        - link "便秘":
+                          - /url: https://www.tennoji-naishikyo.com/constipation/
+                      - listitem:
+                        - link "下痢":
+                          - /url: https://www.tennoji-naishikyo.com/diarrhea/
+                      - listitem:
+                        - link "お腹が弱い、下しやすい":
+                          - /url: https://www.tennoji-naishikyo.com/sensitive_stomach/
+                      - listitem:
+                        - link "下痢になりやすい":
+                          - /url: https://www.tennoji-naishikyo.com/diet_for_diarrhea_prevention/
+                      - listitem:
+                        - link "大腸がん検査でひっかかった（便潜血陽性）":
+                          - /url: https://www.tennoji-naishikyo.com/positive_fobt/
+  - generic [ref=e39]:
+    - group "1 / 1" [ref=e43]:
+      - figure [ref=e44]
+      - generic [ref=e45]:
+        - paragraph [ref=e46]:
+          - generic [ref=e47]: 内視鏡検査の新たなる次元へ
+        - paragraph [ref=e48]:
+          - text: 最新鋭の機器と
+          - text: 専門医の確かな技術で
+          - text: 未来の治療を。
+        - paragraph [ref=e49]:
+          - text: With the latest equipment
+          - text: With the reliable skills of specialists
+          - text: Future treatments.
+      - generic [ref=e50]:
+        - figure [ref=e51]
+        - figure [ref=e52]
+    - img "経験豊富な院長がすべての検査を対応" [ref=e54]
+    - img "ACCESS 天王寺駅 7番出口 徒歩1分" [ref=e56]
+    - paragraph [ref=e57]: for the future
+  - main [ref=e58]:
+    - generic [ref=e61]:
+      - generic [ref=e64]:
+        - paragraph [ref=e65]:
+          - strong [ref=e66]: 【当院人間ドックで一番人気のコースについて】
+        - paragraph [ref=e67]:
+          - text: 当院で実施している人間ドックの中で、
+          - strong [ref=e68]: 最も多くの方にお選びいただいている人気No.1コース
+          - text: が
+          - text: 👉 **「プレミアム標準人間ドック【胃＋大腸】」**です。
+          - strong [ref=e70]:
+            - link "コースはこちら＞＞" [ref=e71] [cursor=pointer]:
+              - /url: https://www.tennoji-naishikyo.com/medical_checkupsite/premium-gastroscopy-colonoscopy-doc/
+          - text: 本コースでは、
+          - strong [ref=e72]: 鎮静剤を使用した苦痛の少ない胃カメラ・大腸カメラ検査をはじめ、
+          - strong [ref=e73]: 内視鏡専門医である院長がすべての内視鏡検査を担当
+          - text: いたします。
+          - text: また、消化器疾患のチェックに加え、
+          - text: 生活習慣病や心疾患・肺疾患・甲状腺疾患、がんに関する検査など、
+          - strong [ref=e74]: 全身の健康状態を総合的に確認できる充実した検査内容を、リーズナブルに組み合わせた人間ドックコース
+          - text: となっています。
+          - text: 「せっかく人間ドックを受けるなら、精度の高い検査を受けたい」
+          - text: 「将来の安心につながる検査を、しっかり受けておきたい」
+          - text: という方に、特にご好評をいただいております。
+          - text: 胃と大腸を
+          - strong [ref=e75]: 同日に検査できるため、通院回数や時間的な負担を抑えられる点
+          - text: も、このコースが選ばれている理由の一つです。
+          - text: 人間ドックのコース選びに迷われている方は、ぜひご検討ください。
+          - text: 内容や検査の流れについてご不明な点がございましたら、どうぞお気軽にスタッフまでお声がけください。
+      - generic [ref=e78]:
+        - paragraph [ref=e79]:
+          - strong [ref=e80]: マスクご持参のお願いと有料配布について
+        - paragraph [ref=e81]:
+          - text: 当院では引き続き、ご来院時のマスク着用をお願いしております。 これまでマスクをお持ちでない方には1枚50円で配布しておりましたが、 患者さまの経済的ご負担を考慮し、
+          - strong [ref=e82]: 2025年11月より1枚20円へと価格を見直すことといたしました。
+          - text: 今後も安心してご受診いただける環境づくりに努めてまいりますので、 引き続きマスクのご持参にご協力いただきますようお願い申し上げます。
+      - generic [ref=e85]:
+        - paragraph [ref=e86]:
+          - strong [ref=e87]: 診療対象年齢について
+        - paragraph [ref=e88]:
+          - text: 当院では、15歳以上の方を対象に診療を行っております。
+          - text: 中学生以下の小児の方の診察には対応しておりませんので、あらかじめご了承いただきますようお願いいたします。
+          - text: ご不明な点がございましたら、お気軽にお問い合わせください。
+      - generic [ref=e91]:
+        - paragraph [ref=e92]:
+          - strong [ref=e93]: 当院の診療内容についてのご案内
+        - paragraph [ref=e94]:
+          - text: 当院は、消化器内科・内視鏡内科・肛門内科に特化した専門クリニックです。
+          - text: そのため、一般内科全般（感冒症状のみの診療や高血圧・糖尿病などの生活習慣病の継続管理のみを目的とした受診）については、原則として行っておりません。
+          - text: 恐れ入りますが、上記の診療をご希望の方は、かかりつけ医または総合内科標榜の医療機関へのご相談をお願い申し上げます。
+          - text: 専門性を活かし、質の高い消化器診療を提供するための体制となっております。何卒ご理解のほどよろしくお願いいたします。
+    - generic [ref=e97]:
+      - generic [ref=e98]:
+        - heading "News お知らせ" [level=2] [ref=e99]:
+          - generic [ref=e100]: News
+          - emphasis [ref=e101]: お知らせ
+        - link "お知らせ一覧" [ref=e102] [cursor=pointer]:
+          - /url: https://www.tennoji-naishikyo.com/news/
+      - list [ref=e105]:
+        - listitem [ref=e106]:
+          - link "2026.04.06 【医師監修記事公開のお知らせ】" [ref=e107] [cursor=pointer]:
+            - /url: https://www.tennoji-naishikyo.com/%e3%80%90%e5%8c%bb%e5%b8%ab%e7%9b%a3%e4%bf%ae%e8%a8%98%e4%ba%8b%e5%85%ac%e9%96%8b%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89%e3%81%9b%e3%80%91/
+            - paragraph [ref=e109]: 2026.04.06
+            - paragraph [ref=e111]: 【医師監修記事公開のお知らせ】
+        - listitem [ref=e112]:
+          - link "2026.03.30 【メディア掲載のお知らせ】 オトナンサーにて当院院長が監修した記事が掲載されました。" [ref=e113] [cursor=pointer]:
+            - /url: https://www.tennoji-naishikyo.com/%e3%80%90%e3%83%a1%e3%83%87%e3%82%a3%e3%82%a2%e6%8e%b2%e8%bc%89%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89%e3%81%9b%e3%80%91-%e3%82%aa%e3%83%88%e3%83%8a%e3%83%b3%e3%82%b5%e3%83%bc%e3%81%ab%e3%81%a6%e5%bd%93/
+            - paragraph [ref=e115]: 2026.03.30
+            - paragraph [ref=e117]: 【メディア掲載のお知らせ】 オトナンサーにて当院院長が監修した記事が掲載されました。
+        - listitem [ref=e118]:
+          - link "2026.03.30 【テレビ出演のお知らせ】テレビ東京系列「ソレダメ！」に出演いたしました。" [ref=e119] [cursor=pointer]:
+            - /url: https://www.tennoji-naishikyo.com/%e3%80%90%e3%83%86%e3%83%ac%e3%83%93%e5%87%ba%e6%bc%94%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89%e3%81%9b%e3%80%91%e3%83%86%e3%83%ac%e3%83%93%e6%9d%b1%e4%ba%ac%e7%b3%bb%e5%88%97%e3%80%8c%e3%82%bd%e3%83%ac/
+            - paragraph [ref=e121]: 2026.03.30
+            - paragraph [ref=e123]: 【テレビ出演のお知らせ】テレビ東京系列「ソレダメ！」に出演いたしました。
+    - generic [ref=e126]:
+      - generic [ref=e127]:
+        - heading "Blog クリニックブログ" [level=2] [ref=e128]:
+          - generic [ref=e129]: Blog
+          - emphasis [ref=e130]: クリニックブログ
+        - link "ブログ一覧" [ref=e131] [cursor=pointer]:
+          - /url: https://www.tennoji-naishikyo.com/blog/
+      - generic [ref=e135]:
+        - group "1 / 4" [ref=e136]:
+          - listitem [ref=e137]:
+            - link "2026.03.19 「便が細い」のは危険信号？もしかして大腸がんのサインかも more" [ref=e138] [cursor=pointer]:
+              - /url: https://www.tennoji-naishikyo.com/blog/%e3%80%8c%e4%be%bf%e3%81%8c%e7%b4%b0%e3%81%84%e3%80%8d%e3%81%ae%e3%81%af%e5%8d%b1%e9%99%ba%e4%bf%a1%e5%8f%b7%ef%bc%9f%e3%82%82%e3%81%97%e3%81%8b%e3%81%97%e3%81%a6%e5%a4%a7%e8%85%b8%e3%81%8c%e3%82%93/
+              - figure [ref=e139]
+              - generic [ref=e140]:
+                - paragraph [ref=e141]: 2026.03.19
+                - paragraph [ref=e142]: 「便が細い」のは危険信号？もしかして大腸がんのサインかも
+                - paragraph [ref=e143]: more
+        - group "2 / 4" [ref=e144]:
+          - listitem [ref=e145]:
+            - link "2026.03.10 便潜血が陰性なら大腸癌の心配はない？ more" [ref=e146] [cursor=pointer]:
+              - /url: https://www.tennoji-naishikyo.com/blog/%e4%be%bf%e6%bd%9c%e8%a1%80%e3%81%8c%e9%99%b0%e6%80%a7%e3%81%aa%e3%82%89%e5%a4%a7%e8%85%b8%e7%99%8c%e3%81%ae%e5%bf%83%e9%85%8d%e3%81%af%e3%81%aa%e3%81%84%ef%bc%9f/
+              - figure [ref=e147]
+              - generic [ref=e148]:
+                - paragraph [ref=e149]: 2026.03.10
+                - paragraph [ref=e150]: 便潜血が陰性なら大腸癌の心配はない？
+                - paragraph [ref=e151]: more
+        - group "3 / 4" [ref=e152]:
+          - listitem [ref=e153]:
+            - link "2026.02.20 胃カメラは本当に苦しい？ more" [ref=e154] [cursor=pointer]:
+              - /url: https://www.tennoji-naishikyo.com/blog/%e8%83%83%e3%82%ab%e3%83%a1%e3%83%a9%e3%81%af%e6%9c%ac%e5%bd%93%e3%81%ab%e8%8b%a6%e3%81%97%e3%81%84%ef%bc%9f/
+              - figure [ref=e155]
+              - generic [ref=e156]:
+                - paragraph [ref=e157]: 2026.02.20
+                - paragraph [ref=e158]: 胃カメラは本当に苦しい？
+                - paragraph [ref=e159]: more
+        - group "4 / 4" [ref=e160]:
+          - listitem [ref=e161]:
+            - link "2026.01.27 激痛の原因は“あの寿司”だった…胃アニサキス症の正体 more" [ref=e162] [cursor=pointer]:
+              - /url: https://www.tennoji-naishikyo.com/blog/%e6%bf%80%e7%97%9b%e3%81%ae%e5%8e%9f%e5%9b%a0%e3%81%af%e3%81%82%e3%81%ae%e5%af%bf%e5%8f%b8%e3%81%a0%e3%81%a3%e3%81%9f%e8%83%83%e3%82%a2%e3%83%8b%e3%82%b5%e3%82%ad%e3%82%b9/
+              - figure [ref=e163]
+              - generic [ref=e164]:
+                - paragraph [ref=e165]: 2026.01.27
+                - paragraph [ref=e166]: 激痛の原因は“あの寿司”だった…胃アニサキス症の正体
+                - paragraph [ref=e167]: more
+      - generic [ref=e169]:
+        - generic [ref=e170]: 最新情報
+        - generic [ref=e171]:
+          - generic [ref=e172] [cursor=pointer]:
+            - generic [ref=e174]: 2026/04/09 最新情報
+            - generic [ref=e175]: "【🎂3月のお誕生日会🎉】 ⁡ 3月生まれのスタッフのお誕生日をお祝いしました✨ ⁡ ささやかな時間ですが、 スタッフみんなで笑顔を共有できる大切なひとときです。 ⁡ 天王寺やすえ消化器内科・内視鏡クリニックは これからもチームで支え合いながら、 より良い医療を提供してまいります❣️😊✨ ⁡ ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 📱 ご予約はプロフィールのリンクにある 《LINE・WEB予約》で24時間受付中です。 インスタグラムプロフィール欄にあるリンクから HPへアクセスをお願いいたします✨🙏 ⁡ 🔗 @tennoji_naishikyo ⁡ また、診療時間内は《お電話》でも承っております😊 ⁡ ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿ ⁡ 📍天王寺やすえ消化器内科・内視鏡クリニック ［消化器内科・内視鏡内科・肛門内科］ ⁡ 院長 安江千尋 ⁡ ⁡ 🚊大阪市天王寺区堀越町 11-11 天王寺ガーデンスクエア3F ⁡ 「天王寺駅」あべちか7番出口より徒歩1分 ⁡ ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ #天王寺やすえ消化器内科内視鏡クリニック #内視鏡クリニック 消化器内科 #内視鏡検査 胃カメラ #大腸カメラ 大阪クリニック 天王寺クリニック 内視鏡専門医 #人間ドック 天王寺内視鏡"
+          - generic [ref=e176] [cursor=pointer]:
+            - generic [ref=e178]: 2026/04/06 最新情報
+            - generic [ref=e179]: "【4/11（土） 胃カメラ・大腸カメラ 空きあり】 2026年4月11日（土）は、大変人気の曜日ですが、まだわずかに空きがございます。即日内視鏡検査にも対応しております。お早めにご予約ください。 ✔️ 眠って受けられる無痛内視鏡 ✔️ 天王寺駅から徒歩1分 ✔️ 日帰りポリープ切除にも対応 ご予約：WEB予約【またはお電話】にて受け付けています。 天王寺やすえ消化器内科・内視鏡クリニック #胃カメラ #大腸カメラ #内視鏡 #無痛内視鏡 #即日検査 #日帰りポリープ切除 #土曜診療 #日曜診療 #土日対応 #天王寺 #阿倍野 #大阪市 #天王寺駅徒歩1分 #消化器内科 #胃もたれ #便潜血 #血便 #検診後フォロー #予防医療 #早期発見 #WEB予約可 #駅近クリニック"
+          - generic [ref=e180] [cursor=pointer]:
+            - generic [ref=e182]: 2026/03/30 最新情報
+            - generic [ref=e183]: "【4/4（土）, 4/5(日) 胃カメラ・大腸カメラ 空きあり】 2026年4月4日（土）および4月5日（日）は、大変人気の曜日ですが、まだわずかに空きがございます。即日内視鏡検査にも対応しております。お早めにご予約ください。 ✔️ 眠って受けられる無痛内視鏡 ✔️ 天王寺駅から徒歩1分 ✔️ 日帰りポリープ切除にも対応 ご予約：WEB予約【またはお電話】にて受け付けています。 天王寺やすえ消化器内科・内視鏡クリニック #胃カメラ #大腸カメラ #内視鏡 #無痛内視鏡 #即日検査 #日帰りポリープ切除 #土曜診療 #日曜診療 #土日対応 #天王寺 #阿倍野 #大阪市 #天王寺駅徒歩1分 #消化器内科 #胃もたれ #便潜血 #血便 #検診後フォロー #予防医療 #早期発見 #WEB予約可 #駅近クリニック"
+          - generic [ref=e184] [cursor=pointer]:
+            - generic [ref=e186]: 2026/03/25 最新情報
+            - generic [ref=e187]: 大阪で大腸カメラ検査をお考えの方に、天王寺やすえ消化器内科・内視鏡クリニックをご紹介いたします。 当院では、優れた内視鏡システムを導入しており、微細な病変も見逃さないよう心掛けています。 大腸カメラ検査は、便秘や下痢、血便などの症状がある場合や、検診で異常を指摘された際に推奨されます。 検査中は、炭酸ガス送気システムを利用し、お腹の張りを軽減することができます。安心して検査を受けられる環境づくりに努めています。大腸の健康を大切にし、患者様の健康維持に貢献できるよう取り組んでいます。
+          - generic [ref=e188] [cursor=pointer]:
+            - generic [ref=e190]: 2026/03/19 最新情報
+            - generic [ref=e191]: "【2026年4月診療スケジュールのご案内🗓️】 ⁡ 天王寺やすえ消化器内科・内視鏡クリニックです😊 いつもご利用いただきありがとうございます✨ ⁡ 4月の診療スケジュールをお知らせいたします🌸 ⁡ 新年度が始まり、生活リズムや環境の変化が多い 季節ですね。 この時期は、胃腸の不調（胃もたれ・腹痛・便通異常など）を感じやすくなる方も増えます。 ⁡ また、春は健康意識が高まるタイミングでもあり、 内視鏡検査のご予約も徐々に増えてきます📈 ⁡ ご検討中の方はお早めのご予約がおすすめです😊 気になる症状があれば、お気軽にご相談ください✨ ⁡ 今月もどうぞよろしくお願いいたします🌿 ⁡ ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ ⁡ ■ 休診日 火曜日/第2・第4日曜日/祝日 ⁡ ⁡ ■ フレキシブル内視鏡検査も受付中 早朝(AM8時〜)・夕方・土日も対応可能です。 ご希望の方はお気軽にお問い合わせください。 ⁡ ご不明な点がございましたら、お電話からお気軽にどうぞ。 皆さまのご来院をスタッフ一同お待ちしております。 ⁡ ☑️最新鋭の内視鏡機器 × 専門医による高精度な検査 ☑️眠って受けられる苦痛の少ない胃・大腸カメラ ☑️大阪天王寺駅から徒歩1分でアクセス抜群 ☑️早朝・夕方・土日も検査可能で忙しい方も安心 ☑️下剤を飲まない大腸カメラ検査にも対応 ⁡ ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿ ⁡ 📱ご予約方法:LINE・WEB24時間受付中 ⁡ インスタグラムプロフィール欄にあるリンクから HPへアクセスをお願いいたします😊 ⁡ 💡LINE予約が手軽で便利です♪ ⁡ 予約方法にお困りの際は、 お気軽にお電話でお尋ねくださいね✨🙆 ⁡ 🔗 @tennoji_naishikyo ⁡ ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿ ⁡ 📍天王寺やすえ消化器内科・内視鏡クリニック ［消化器内科・内視鏡内科・肛門内科］ ⁡ 院長 安江千尋 ⁡ 🚊大阪市天王寺区堀越町 11-11 天王寺ガーデンスクエア3F ⁡ 「天王寺駅」あべちか7番出口より徒歩1分 ⁡ ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ ⁡ #天王寺やすえ消化器内科内視鏡クリニック #内視鏡クリニック #消化器内科 #内視鏡検査 胃カメラ #大腸カメラ 大阪クリニック 天王寺クリニック 内視鏡専門医 人間ドック"
+          - generic [ref=e192] [cursor=pointer]:
+            - generic [ref=e194]: 2026/03/17 最新情報
+            - generic [ref=e195]: "【3/21（土） 胃カメラ・大腸カメラ 空きあり】 2026年3月21日（土）は、大変人気の曜日ですが、まだわずかに空きがございます。即日内視鏡検査にも対応しております。お早めにご予約ください。 ✔️ 眠って受けられる無痛内視鏡 ✔️ 天王寺駅から徒歩1分 ✔️ 日帰りポリープ切除にも対応 ご予約：WEB予約【またはお電話】にて受け付けています。 天王寺やすえ消化器内科・内視鏡クリニック #胃カメラ #大腸カメラ #内視鏡 #無痛内視鏡 #即日検査 #日帰りポリープ切除 #土曜診療 #日曜診療 #土日対応 #天王寺 #阿倍野 #大阪市 #天王寺駅徒歩1分 #消化器内科 #胃もたれ #便潜血 #血便 #検診後フォロー #予防医療 #早期発見 #WEB予約可 #駅近クリニック 天王寺やすえ消化器内科・内視鏡クリニック│大阪市・胃カメラ・大腸カメラ"
+          - generic [ref=e196] [cursor=pointer]:
+            - generic [ref=e198]: 2026/03/15 最新情報
+            - generic [ref=e199]: 天王寺やすえ消化器内科・内視鏡クリニックでは、内視鏡検査と無痛診療に力を入れています。特に、胃カメラ検査が苦手な方や緊張しやすい方のために、完全無痛内視鏡検査を実施しています。この検査では、鎮静剤を使用し、リラックスした状態で検査を受けていただけるため、安心して臨むことができます。鎮静剤は患者様の体格や既往歴、アレルギー歴に応じて最低限の量を使用するため、身体への負担も少なく済みます。また、検査中は全身状態を確認しながら進めるため、異変があればすぐに対応可能です。快適で安全な医療を心がけています。
+          - generic [ref=e200] [cursor=pointer]:
+            - generic [ref=e202]: 2026/03/13 最新情報
+            - generic [ref=e203]: 【大腸ポリープは早期発見・早期治療が重要です】 大阪・天王寺で大腸ポリープや大腸がんの早期発見をご希望の方は、内視鏡専門医による大腸カメラ検査をご検討ください。 大腸ポリープは多くの場合自覚症状がありませんが、一部は将来的に大腸がんへ進展する可能性があります。 大腸内視鏡検査では、ポリープの発見だけでなくその場で切除できる場合もあります。 天王寺駅徒歩1分の天王寺やすえ消化器内科・内視鏡クリニック（大阪）では、苦痛に配慮した大腸カメラ検査・治療を行っています。 以下のような症状がある方はご相談ください。 ・血便 ・便潜血検査陽性 ・便が細い ・便秘や下痢が続く ・大腸がんが心配 大阪・天王寺で大腸ポリープや大腸がんの検査をご希望の方は、お気軽にご相談ください。
+          - generic [ref=e204] [cursor=pointer]:
+            - generic [ref=e206]: 2026/03/04 最新情報
+            - generic [ref=e207]: "【3/7（土） 胃カメラ・大腸カメラ 空きあり】 2026年3月7日（土）は、大変人気の曜日ですが、まだわずかに空きがございます。即日内視鏡検査にも対応しております。お早めにご予約ください。 ✔️ 眠って受けられる無痛内視鏡 ✔️ 天王寺駅から徒歩1分 ✔️ 日帰りポリープ切除にも対応 ご予約：WEB予約【またはお電話】にて受け付けています。 天王寺やすえ消化器内科・内視鏡クリニック #胃カメラ #大腸カメラ #内視鏡 #無痛内視鏡 #即日検査 #日帰りポリープ切除 #土曜診療 #日曜診療 #土日対応 #天王寺 #阿倍野 #大阪市 #天王寺駅徒歩1分 #消化器内科 #胃もたれ #便潜血 #血便 #検診後フォロー #予防医療 #早期発見 #WEB予約可 #駅近クリニック"
+          - generic [ref=e208] [cursor=pointer]:
+            - generic [ref=e210]: 2026/03/01 最新情報
+            - generic [ref=e211]: "【📺テレビ出演のお知らせ】 ⁡ このたび、当院院長・安江千尋が テレビ東京系列で放送されている生活情報バラエティ番組 「ソレダメ！」 に出演いたします。 ■ 放送日時 2026年3月4日（水）18:25～20:30 テレビ大阪も同時間帯で放送予定です❣️ 当院が登場する「腸活」テーマのコーナーは、 20時過ぎ頃からの予定となっております。 番組内では、腸活について、どなたでも日常生活に 取り入れやすいポイントを分かりやすく解説しております。 ぜひご覧ください🥰✨ ⁡ ⁡ ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 📱 ご予約はプロフィールのリンクにある 《LINE・WEB予約》で24時間受付中です。 インスタグラムプロフィール欄にあるリンクから HPへアクセスをお願いいたします✨🙏 ⁡ 🔗 @tennoji_naishikyo ⁡ また、診療時間内は《お電話》でも承っております😊 ⁡ ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿ ⁡ 📍天王寺やすえ消化器内科・内視鏡クリニック ［消化器内科・内視鏡内科・肛門内科］ ⁡ 院長 安江千尋 ⁡ ⁡ 🚊大阪市天王寺区堀越町 11-11 天王寺ガーデンスクエア3F ⁡ 「天王寺駅」あべちか7番出口より徒歩1分 ⁡ ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ ⁡ #天王寺やすえ消化器内科内視鏡クリニック #内視鏡クリニック #人間ドック消化器内科 #内視鏡検査 胃カメラ #大腸カメラ 大阪クリニック 天王寺クリニック 内視鏡専門医 天王寺内視鏡"
+          - generic [ref=e212] [cursor=pointer]:
+            - generic [ref=e214]: 2026/02/26 最新情報
+            - generic [ref=e215]: 天王寺やすえ消化器内科・内視鏡クリニックでは、天王寺にて大腸カメラ検査を実施しています。大腸カメラ検査は、先端にカメラを装備したスコープをおしりから挿入し、大腸粘膜の状態をリアルタイムで観察する信頼性の高い検査です。日本有数の症例数を誇るがん専門病院で培った経験を持つ専門医が、検査と治療を担当しています。鎮静剤を用いた快適な検査にも対応しており、炭酸ガスを使用することで、検査後のお腹の張りを軽減できます。大腸がんを含む大腸疾患の多くは無症状で進行するため、定期的な検査が重要です。患者様の健康を心がけています。
+          - generic [ref=e216] [cursor=pointer]:
+            - generic [ref=e218]: 2026/02/26 最新情報
+            - generic [ref=e219]: "【2026年3月 診療スケジュールのご案内🗓️】 ⁡ 天王寺やすえ消化器内科・内視鏡クリニックです😊 いつも当院をご利用いただき、誠にありがとうございます✨ ⁡ 3月の診療スケジュールについて お知らせいたします✨🎎🌸 ⁡ 実は… 昨年3月は、年間で最も内視鏡検査のご予約が 多かった月でした。 年度末は 🔶新年度前の健康チェック 🔶健康診断後の精密検査 🔶便潜血陽性の再検査 🔶転勤・引っ越し前の検査 🔶症状があるまま年度をまたぎたくない方 などが重なり、ご予約が早期に埋まりやすくなります。 胃カメラ・大腸カメラをご検討中の方は、 ぜひお早めにご相談ください😊 今月も、精度の高い検査と安心できる診療を 心がけてまいります✨ どうぞよろしくお願いいたします🌸 ⁡ ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ ⁡ ■ 休診日 火曜日/第2・第4日曜日/祝日 ⁡ ⁡ ■ フレキシブル内視鏡検査も受付中 早朝(AM8時〜)・夕方・土日も対応可能です。 ご希望の方はお気軽にお問い合わせください。 ⁡ ご不明な点がございましたら、お電話からお気軽にどうぞ。 皆さまのご来院をスタッフ一同お待ちしております。 ⁡ ☑️最新鋭の内視鏡機器 × 専門医による高精度な検査 ☑️眠って受けられる苦痛の少ない胃・大腸カメラ ☑️大阪天王寺駅から徒歩1分でアクセス抜群 ☑️早朝・夕方・土日も検査可能で忙しい方も安心 ☑️下剤を飲まない大腸カメラ検査にも対応 ⁡ ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿ ⁡ 📱ご予約方法:LINE・WEB24時間受付中 ⁡ インスタグラムプロフィール欄にあるリンクから HPへアクセスをお願いいたします😊 ⁡ 💡LINE予約が手軽で便利です♪ ⁡ 予約方法にお困りの際は、 お気軽にお電話でお尋ねくださいね✨🙆 ⁡ 🔗 @tennoji_naishikyo ⁡ ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿ ⁡ 📍天王寺やすえ消化器内科・内視鏡クリニック ［消化器内科・内視鏡内科・肛門内科］ ⁡ 院長 安江千尋 ⁡ 🚊大阪市天王寺区堀越町 11-11 天王寺ガーデンスクエア3F ⁡ 「天王寺駅」あべちか7番出口より徒歩1分 ⁡ ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ ⁡ #天王寺やすえ消化器内科内視鏡クリニック #内視鏡クリニック #内視鏡検査 胃カメラ #大腸カメラ 大阪クリニック 天王寺クリニック 内視鏡専門医 #人間ドック"
+          - generic [ref=e220] [cursor=pointer]:
+            - generic [ref=e222]: 2026/02/26 最新情報
+            - generic [ref=e223]: "【2/28（土）, 3/1(日) 胃カメラ・大腸カメラ 空きあり】 2026年2月28日（土）および3/1（日）は、大変人気の曜日ですが、まだわずかに空きがございます。即日内視鏡検査にも対応しております。お早めにご予約ください。 ✔️ 眠って受けられる無痛内視鏡 ✔️ 天王寺駅から徒歩1分 ✔️ 日帰りポリープ切除にも対応 ご予約：WEB予約【またはお電話】にて受け付けています。 天王寺やすえ消化器内科・内視鏡クリニック #胃カメラ #大腸カメラ #内視鏡 #無痛内視鏡 #即日検査 #日帰りポリープ切除 #土曜診療 #日曜診療 #土日対応 #天王寺 #阿倍野 #大阪市 #天王寺駅徒歩1分 #消化器内科 #胃もたれ #便潜血 #血便 #検診後フォロー #予防医療 #早期発見 #WEB予約可 #駅近クリニック"
+          - generic [ref=e224] [cursor=pointer]:
+            - generic [ref=e226]: 2026/02/19 最新情報
+            - generic [ref=e227]: "【2/21（土） 胃カメラ・大腸カメラ 空きあり】 2026年2月21日（土）は、人気の土曜日ですがキャンセルが出たため、わずかに空きがございます。即日内視鏡検査にも対応しております。お早めにご予約ください。 ✔️ 眠って受けられる無痛内視鏡 ✔️ 天王寺駅から徒歩1分 ✔️ 日帰りポリープ切除にも対応 ご予約：WEB予約【またはお電話】にて受け付けています。 天王寺やすえ消化器内科・内視鏡クリニック #胃カメラ #大腸カメラ #内視鏡 #無痛内視鏡 #即日検査 #日帰りポリープ切除 #土曜診療 #日曜診療 #土日対応 #天王寺 #阿倍野 #大阪市 #天王寺駅徒歩1分 #消化器内科 #胃もたれ #便潜血 #血便 #検診後フォロー #予防医療 #早期発見 #WEB予約可 #駅近クリニック"
+          - generic [ref=e228] [cursor=pointer]:
+            - generic [ref=e230]: 2026/02/15 最新情報
+            - generic [ref=e231]: 天王寺やすえ消化器内科・内視鏡クリニックでは、安心して胃カメラ検査を受けられる環境を整えています。当院の胃カメラ検査は、カメラ付きのスコープを口または鼻から挿入し、食道や胃、十二指腸をリアルタイムで観察します。鎮静剤を使用し、リラックスした状態で検査を行うため、ウトウトとした間に終了します。検査後はストレッチャーでリカバリールームへ移動し、ゆっくりとお休みいただける体制を整えています。経鼻内視鏡と経口内視鏡の選択肢があり、患者様の希望に応じた検査方法を提案いたします。患者様の安心を大切にしています。
+          - generic [ref=e232] [cursor=pointer]:
+            - generic [ref=e234]: 2026/02/13 最新情報
+            - generic [ref=e235]: "【2/14（土） 胃カメラ・大腸カメラ 空きあり】 2026年2月14日（土）は、人気の土曜日ですがキャンセルが出たため、わずかに空きがございます。即日内視鏡検査にも対応しております。お早めにご予約ください。 ✔️ 眠って受けられる無痛内視鏡 ✔️ 天王寺駅から徒歩1分 ✔️ 日帰りポリープ切除にも対応 ご予約：WEB予約【またはお電話】にて受け付けています。 天王寺やすえ消化器内科・内視鏡クリニック #胃カメラ #大腸カメラ #内視鏡 #無痛内視鏡 #即日検査 #日帰りポリープ切除 #土曜診療 #日曜診療 #土日対応 #天王寺 #阿倍野 #大阪市 #天王寺駅徒歩1分 #消化器内科 #胃もたれ #便潜血 #血便 #検診後フォロー #予防医療 #早期発見 #WEB予約可 #駅近クリニック"
+          - generic [ref=e236] [cursor=pointer]:
+            - generic [ref=e238]: 2026/02/12 最新情報
+            - generic [ref=e239]: "大阪で消化器内科・胃腸内科をお探しの方は、天王寺やすえ消化器内科・内視鏡クリニックへご相談ください。 当院では、胃痛・胸やけ・胃もたれ・腹痛・下痢・便秘・血便など、消化器症状全般に対応しております。 日本消化器病学会専門医・指導医が診察を行い、必要に応じて胃カメラ・大腸カメラによる精密検査をご提案いたします。 「最近胃の調子が悪い」 「健診で便潜血陽性を指摘された」 「大阪で安心して相談できる胃腸内科を探している」 そのような方は、お気軽にご相談ください。 早期発見・早期治療を大切にし、丁寧な説明を心がけています。 📍大阪・天王寺駅徒歩1分 📅 早朝・夕方・土日も対応 💤 鎮静剤を使用した内視鏡検査にも対応 #大阪消化器内科 #大阪胃腸内科 #天王寺内科 #大腸カメラ大阪 #胃カメラ大阪"
+    - generic [ref=e245]:
+      - generic [ref=e246]:
+        - paragraph [ref=e247]: features
+        - heading "当院の 14 の特徴 Clinic features" [level=2] [ref=e248]:
+          - generic [ref=e249]:
+            - text: 当院の
+            - strong [ref=e250]: "14"
+            - text: の特徴
+          - emphasis [ref=e251]: Clinic features
+      - generic [ref=e252]:
+        - generic [ref=e254]:
+          - generic [ref=e255]:
+            - figure [ref=e256]
+            - paragraph [ref=e257]: High accuracy
+          - generic [ref=e258]:
+            - paragraph [ref=e259]:
+              - generic [ref=e260]: "01"
+              - emphasis [ref=e261]: High accuracy
+            - heading "最新鋭の機器と専門技術で 精度の高い内視鏡検査を 提供します。" [level=3] [ref=e262]:
+              - text: 最新鋭の機器と専門技術で
+              - text: 精度の高い内視鏡検査を 提供します。
+            - list [ref=e263]:
+              - listitem [ref=e264]:
+                - link "がん専門病院で経験を積んだ、 日本消化器内視鏡学会専門医・ 指導医による検査 view more" [ref=e265] [cursor=pointer]:
+                  - /url: https://www.tennoji-naishikyo.com/doctor/
+                  - figure [ref=e266]
+                  - paragraph [ref=e267]:
+                    - text: がん専門病院で経験を積んだ、 日本消化器内視鏡学会専門医・
+                    - text: 指導医による検査
+                  - text: view more
+              - listitem [ref=e268]:
+                - link "内視鏡最高ランク オリンパス EVIS「X1」導入 view more" [ref=e269] [cursor=pointer]:
+                  - /url: https://www.tennoji-naishikyo.com/weekend_endoscopy/#a04_1
+                  - figure [ref=e270]
+                  - paragraph [ref=e271]:
+                    - text: 内視鏡最高ランク
+                    - text: オリンパス EVIS「X1」導入
+                  - text: view more
+              - listitem [ref=e272]:
+                - link "より精度の高い 検査へ AIや拡大内視鏡など 最新システムを導入 view more" [ref=e273] [cursor=pointer]:
+                  - /url: https://www.tennoji-naishikyo.com/about_colonoscopy/#a04_6
+                  - figure [ref=e274]
+                  - paragraph [ref=e275]:
+                    - text: より精度の高い 検査へ
+                    - text: AIや拡大内視鏡など
+                    - text: 最新システムを導入
+                  - text: view more
+              - listitem [ref=e276]:
+                - link "検査時に発見した ポリープを即日切除 （日帰り手術） view more" [ref=e277] [cursor=pointer]:
+                  - /url: https://www.tennoji-naishikyo.com/colon_polypectomy/#a01
+                  - figure [ref=e278]
+                  - paragraph [ref=e279]:
+                    - text: 検査時に発見した
+                    - text: ポリープを即日切除
+                    - text: （日帰り手術）
+                  - text: view more
+        - generic [ref=e281]:
+          - generic [ref=e283]:
+            - figure [ref=e284]
+            - paragraph [ref=e285]: Comfort
+          - generic [ref=e286]:
+            - paragraph [ref=e287]:
+              - generic [ref=e288]: "02"
+              - emphasis [ref=e289]: Comfort
+            - heading "無痛内視鏡検査や 快適な院内設備を 整えています。" [level=3] [ref=e290]:
+              - text: 無痛内視鏡検査や
+              - text: 快適な院内設備を 整えています。
+            - list [ref=e291]:
+              - listitem [ref=e292]:
+                - link "鎮静剤を使用した 苦痛のない 内視鏡検査 view more" [ref=e293] [cursor=pointer]:
+                  - /url: https://www.tennoji-naishikyo.com/weekend_endoscopy/#a04_2
+                  - figure [ref=e294]
+                  - paragraph [ref=e295]:
+                    - text: 鎮静剤を使用した
+                    - text: 苦痛のない 内視鏡検査
+                  - text: view more
+              - listitem [ref=e296]:
+                - link "より細く 負担を抑えた 経鼻内視鏡検査 view more" [ref=e297] [cursor=pointer]:
+                  - /url: https://www.tennoji-naishikyo.com/nasal_or_oral_gastroscopy/#a01
+                  - figure [ref=e298]
+                  - paragraph [ref=e299]:
+                    - text: より細く 負担を抑えた
+                    - text: 経鼻内視鏡検査
+                  - text: view more
+              - listitem [ref=e300]:
+                - link "院内の 専用個室で快適に 下剤服用が可能 view more" [ref=e301] [cursor=pointer]:
+                  - /url: https://www.tennoji-naishikyo.com/about_colonoscopy/#a04_1
+                  - figure [ref=e302]
+                  - paragraph [ref=e303]:
+                    - text: 院内の 専用個室で快適に
+                    - text: 下剤服用が可能
+                  - text: view more
+              - listitem [ref=e304]:
+                - link "下剤を飲まない 大腸カメラ検査に対応 view more" [ref=e305] [cursor=pointer]:
+                  - /url: https://www.tennoji-naishikyo.com/colonoscopy_without_laxatives/#a01
+                  - figure [ref=e306]
+                  - paragraph [ref=e307]:
+                    - text: 下剤を飲まない
+                    - text: 大腸カメラ検査に対応
+                  - text: view more
+        - generic [ref=e309]:
+          - generic [ref=e311]:
+            - figure [ref=e312]
+            - paragraph [ref=e313]: Convenience
+          - generic [ref=e314]:
+            - paragraph [ref=e315]:
+              - generic [ref=e316]: "03"
+              - emphasis [ref=e317]: Convenience
+            - heading "いつでも安心して受診できる クリニックを目指しています。" [level=3] [ref=e318]:
+              - text: いつでも安心して受診できる
+              - text: クリニックを目指しています。
+            - list [ref=e319]:
+              - listitem [ref=e320]:
+                - link "胃・大腸カメラの 同日検査が可能 view more" [ref=e321] [cursor=pointer]:
+                  - /url: https://www.tennoji-naishikyo.com/about_colonoscopy/#a04_3
+                  - figure [ref=e322]
+                  - paragraph [ref=e323]:
+                    - text: 胃・大腸カメラの
+                    - text: 同日検査が可能
+                  - text: view more
+              - listitem [ref=e324]:
+                - link "早朝や夕方の 内視鏡検査が 可能 view more" [ref=e325] [cursor=pointer]:
+                  - /url: https://www.tennoji-naishikyo.com/early-morning-evening-endoscopy/
+                  - figure [ref=e326]
+                  - paragraph [ref=e327]: 早朝や夕方の 内視鏡検査が 可能
+                  - text: view more
+              - listitem [ref=e328]:
+                - link "土日の 内視鏡検査が可能 view more" [ref=e329] [cursor=pointer]:
+                  - /url: https://www.tennoji-naishikyo.com/weekend_endoscopy/
+                  - figure [ref=e330]
+                  - paragraph [ref=e331]:
+                    - text: 土日の
+                    - text: 内視鏡検査が可能
+                  - text: view more
+              - listitem [ref=e332]:
+                - link "「天王寺駅７番出口」 徒歩1分 雨に濡れずにご来院 可能 view more" [ref=e333] [cursor=pointer]:
+                  - /url: https://www.tennoji-naishikyo.com/clinic/#access
+                  - figure [ref=e334]
+                  - paragraph [ref=e335]:
+                    - text: 「天王寺駅７番出口」 徒歩1分
+                    - text: 雨に濡れずにご来院 可能
+                  - text: view more
+              - listitem [ref=e336]:
+                - link "即日内視鏡検査に対応 （血便緊急外来・ アニサキス緊急外来） view more" [ref=e337] [cursor=pointer]:
+                  - /url: https://www.tennoji-naishikyo.com/emergency-outpatient-department/
+                  - figure [ref=e338]
+                  - paragraph [ref=e339]:
+                    - text: 即日内視鏡検査に対応
+                    - text: （血便緊急外来・
+                    - text: アニサキス緊急外来）
+                  - text: view more
+              - listitem [ref=e340]:
+                - link "高品質の人間ドックを提供 view more" [ref=e341] [cursor=pointer]:
+                  - /url: https://www.tennoji-naishikyo.com/medical-checkup/
+                  - figure [ref=e342]
+                  - paragraph [ref=e343]: 高品質の人間ドックを提供
+                  - text: view more
+    - generic [ref=e345]:
+      - list [ref=e346]:
+        - listitem [ref=e347]: Tennoji Yasue Gastroenterology & Endoscopy Clinic
+        - listitem [ref=e348]: Tennoji Yasue Gastroenterology & Endoscopy Clinic
+        - listitem [ref=e349]: Tennoji Yasue Gastroenterology & Endoscopy Clinic
+        - listitem [ref=e350]: Tennoji Yasue Gastroenterology & Endoscopy Clinic
+        - listitem [ref=e351]: Tennoji Yasue Gastroenterology & Endoscopy Clinic
+        - listitem [ref=e352]: Tennoji Yasue Gastroenterology & Endoscopy Clinic
+        - listitem [ref=e353]: Tennoji Yasue Gastroenterology & Endoscopy Clinic
+      - list [ref=e354]:
+        - listitem [ref=e355]: Tennoji Yasue Gastroenterology & Endoscopy Clinic
+        - listitem [ref=e356]: Tennoji Yasue Gastroenterology & Endoscopy Clinic
+        - listitem [ref=e357]: Tennoji Yasue Gastroenterology & Endoscopy Clinic
+        - listitem [ref=e358]: Tennoji Yasue Gastroenterology & Endoscopy Clinic
+        - listitem [ref=e359]: Tennoji Yasue Gastroenterology & Endoscopy Clinic
+        - listitem [ref=e360]: Tennoji Yasue Gastroenterology & Endoscopy Clinic
+        - listitem [ref=e361]: Tennoji Yasue Gastroenterology & Endoscopy Clinic
+    - generic [ref=e366]:
+      - heading "Information" [level=2] [ref=e367]
+      - generic [ref=e368]:
+        - generic [ref=e369]:
+          - paragraph [ref=e370]: 消化器内科 / 内視鏡内科 / 肛門内科
+          - paragraph [ref=e371]:
+            - text: 〒543-0056
+            - text: 大阪府大阪市天王寺区堀越町11-11
+            - text: 天王寺ガーデンスクエア3F
+          - link "Googlemaps" [ref=e372] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e373]: Googlemaps
+          - paragraph [ref=e374]:
+            - generic [ref=e375]: Tel.
+            - link "06-6779-1150":
+              - /url: tel:06-6779-1150
+        - generic [ref=e376]:
+          - generic [ref=e377]:
+            - table [ref=e378]:
+              - rowgroup [ref=e379]:
+                - row "外来受付時間 月 火 水 木 金 土 日" [ref=e380]:
+                  - columnheader "外来受付時間" [ref=e381]
+                  - columnheader "月" [ref=e382]
+                  - columnheader "火" [ref=e383]
+                  - columnheader "水" [ref=e384]
+                  - columnheader "木" [ref=e385]
+                  - columnheader "金" [ref=e386]
+                  - columnheader "土" [ref=e387]
+                  - columnheader "日" [ref=e388]
+              - rowgroup [ref=e389]:
+                - row "9:00-12:00 ● / ● ● ● ● ★" [ref=e390]:
+                  - rowheader "9:00-12:00" [ref=e391]
+                  - cell "●" [ref=e392]
+                  - cell / [ref=e393]
+                  - cell "●" [ref=e394]
+                  - cell "●" [ref=e395]
+                  - cell "●" [ref=e396]
+                  - cell "●" [ref=e397]
+                  - cell "★" [ref=e398]
+                - row "15:00-18:30 ● / ● ● ● / /" [ref=e399]:
+                  - rowheader "15:00-18:30" [ref=e400]
+                  - cell "●" [ref=e401]
+                  - cell / [ref=e402]
+                  - cell "●" [ref=e403]
+                  - cell "●" [ref=e404]
+                  - cell "●" [ref=e405]
+                  - cell / [ref=e406]
+                  - cell / [ref=e407]
+            - table [ref=e408]:
+              - rowgroup [ref=e409]:
+                - row "内視鏡検査受付時間 月 火 水 木 金 土 日" [ref=e410]:
+                  - columnheader "内視鏡検査受付時間" [ref=e411]
+                  - columnheader "月" [ref=e412]
+                  - columnheader "火" [ref=e413]
+                  - columnheader "水" [ref=e414]
+                  - columnheader "木" [ref=e415]
+                  - columnheader "金" [ref=e416]
+                  - columnheader "土" [ref=e417]
+                  - columnheader "日" [ref=e418]
+              - rowgroup [ref=e419]:
+                - row "8:00-17:00 ● / ● ● ● ▲ ■" [ref=e420]:
+                  - rowheader "8:00-17:00" [ref=e421]
+                  - cell "●" [ref=e422]
+                  - cell / [ref=e423]
+                  - cell "●" [ref=e424]
+                  - cell "●" [ref=e425]
+                  - cell "●" [ref=e426]
+                  - cell "▲" [ref=e427]
+                  - cell "■" [ref=e428]
+          - paragraph [ref=e429]:
+            - text: "[ 休診日 ] 火曜 / 第2・4日曜 / 祝日"
+            - text: ★ 9:00-12:00（第1・3・5日曜のみ） / ▲ 9:00-16:00/
+            - text: ■ 9:00-16:00（第1・3・5日曜のみ）
+    - generic [ref=e430]:
+      - generic [ref=e433]:
+        - heading "内視鏡検査のご案内 Endoscopy" [level=2] [ref=e434]:
+          - generic [ref=e435]: 内視鏡検査のご案内
+          - emphasis [ref=e436]: Endoscopy
+        - generic [ref=e437]:
+          - paragraph [ref=e438]:
+            - text: 内視鏡検査の最前線を歩む
+            - text: 究極の技術と ホスピタリティ溢れる空間で
+            - text: 内視鏡検査に感動を。
+          - paragraph [ref=e439]:
+            - text: 当院では最新鋭の内視鏡機器を導入し、内視鏡専門医が最先端の内視鏡検査・治療を提供します。
+            - text: また、患者様がライフスタイルを崩さず健康チェックをしていただけるように、早朝や夕方・土日の内視鏡検査にも対応していきます。
+            - text: 初めての内視鏡検査で不安のある方、過去に内視鏡検査を受けて苦しい思いをした方、ぜひ一度当院にて最先端の内視鏡検査を受けていただければと思います。
+        - figure [ref=e440]
+        - figure [ref=e441]
+        - figure [ref=e442]
+      - generic [ref=e444]:
+        - generic [ref=e445]:
+          - paragraph [ref=e448]: Gastroscopy
+          - generic [ref=e449]:
+            - heading "胃カメラ検査 Gastroscopy" [level=3] [ref=e450]:
+              - generic [ref=e451]: 胃カメラ検査
+              - emphasis [ref=e452]: Gastroscopy
+            - generic [ref=e453]:
+              - heading "胃カメラとは" [level=4] [ref=e455] [cursor=pointer]
+              - heading "鼻と口からどっちが良い？" [level=4] [ref=e457] [cursor=pointer]
+              - heading "バリウム検査と胃カメラの違い、どっちが良い？" [level=4] [ref=e459] [cursor=pointer]
+              - heading "土日の胃カメラ" [level=4] [ref=e461] [cursor=pointer]
+              - heading "早朝・夕方の胃カメラ" [level=4] [ref=e463] [cursor=pointer]
+        - generic [ref=e464]:
+          - paragraph [ref=e467]: Colonoscopy
+          - generic [ref=e468]:
+            - heading "大腸カメラ検査 Colonoscopy" [level=3] [ref=e469]:
+              - generic [ref=e470]: 大腸カメラ検査
+              - emphasis [ref=e471]: Colonoscopy
+            - generic [ref=e472]:
+              - heading "大腸カメラ検査とは" [level=4] [ref=e474] [cursor=pointer]
+              - heading "大腸カメラで使用する下剤の種類" [level=4] [ref=e476] [cursor=pointer]
+              - heading "大腸ポリープ切除" [level=4] [ref=e478] [cursor=pointer]
+              - heading "下剤を飲まない大腸カメラ" [level=4] [ref=e480] [cursor=pointer]
+              - heading "土日の大腸カメラ" [level=4] [ref=e482] [cursor=pointer]
+              - heading "早朝・夕方の大腸カメラ" [level=4] [ref=e484] [cursor=pointer]
+    - generic [ref=e486]:
+      - generic [ref=e487]:
+        - paragraph [ref=e488]: menu
+        - heading "診療案内 menu" [level=2] [ref=e489]:
+          - generic [ref=e490]: 診療案内
+          - emphasis [ref=e491]: menu
+        - generic [ref=e494]:
+          - group "1 / 4" [ref=e495]:
+            - link "消化器内科 Gastroenterology 詳しく見る" [ref=e496] [cursor=pointer]:
+              - /url: https://www.tennoji-naishikyo.com/gastroenterology/
+              - figure [ref=e497]
+              - generic [ref=e498]:
+                - heading "消化器内科 Gastroenterology" [level=3] [ref=e499]:
+                  - generic [ref=e500]: 消化器内科
+                  - emphasis [ref=e501]: Gastroenterology
+                - generic [ref=e502]: 詳しく見る
+          - group "2 / 4" [ref=e503]:
+            - link "肛門内科 Anal medicine 詳しく見る" [ref=e504] [cursor=pointer]:
+              - /url: https://www.tennoji-naishikyo.com/proctology/
+              - figure [ref=e505]
+              - generic [ref=e506]:
+                - heading "肛門内科 Anal medicine" [level=3] [ref=e507]:
+                  - generic [ref=e508]: 肛門内科
+                  - emphasis [ref=e509]: Anal medicine
+                - generic [ref=e510]: 詳しく見る
+          - group "3 / 4" [ref=e511]:
+            - link "健康診断 Health check 詳しく見る" [ref=e512] [cursor=pointer]:
+              - /url: https://www.tennoji-naishikyo.com/medical_checkupsite/
+              - figure [ref=e513]
+              - generic [ref=e514]:
+                - heading "健康診断 Health check" [level=3] [ref=e515]:
+                  - generic [ref=e516]: 健康診断
+                  - emphasis [ref=e517]: Health check
+                - generic [ref=e518]: 詳しく見る
+          - group "4 / 4" [ref=e519]:
+            - link "人間ドック Medical checkup 詳しく見る" [ref=e520] [cursor=pointer]:
+              - /url: https://www.tennoji-naishikyo.com/medical_checkupsite/
+              - figure [ref=e521]
+              - generic [ref=e522]:
+                - heading "人間ドック Medical checkup" [level=3] [ref=e523]:
+                  - generic [ref=e524]: 人間ドック
+                  - emphasis [ref=e525]: Medical checkup
+                - generic [ref=e526]: 詳しく見る
+      - link "血便緊急外来 下血緊急外来 アニサキス緊急外来 腸閉塞緊急外来" [ref=e528] [cursor=pointer]:
+        - /url: https://www.tennoji-naishikyo.com/emergency-outpatient-department/
+        - img "血便緊急外来 下血緊急外来 アニサキス緊急外来 腸閉塞緊急外来" [ref=e529]
+    - generic [ref=e532]:
+      - generic [ref=e533]:
+        - heading "Search 症状・疾患から探す" [level=2] [ref=e534]:
+          - generic [ref=e535]: Search
+          - emphasis [ref=e536]: 症状・疾患から探す
+        - paragraph [ref=e537]: お困りごとや気になる症状がございましたら、お気軽にご相談ください。
+      - generic [ref=e539]:
+        - generic [ref=e540]:
+          - button "症状から探す" [ref=e543] [cursor=pointer]
+          - button "疾患から探す" [ref=e547] [cursor=pointer]
+        - generic [ref=e550]:
+          - generic [ref=e551]:
+            - button "食道" [ref=e552] [cursor=pointer]
+            - button "胃" [ref=e553] [cursor=pointer]
+            - button "大腸" [ref=e554] [cursor=pointer]
+          - list [ref=e557]:
+            - listitem [ref=e558]:
+              - link "呑酸 （酸っぱいものが 上がってくる）" [ref=e559] [cursor=pointer]:
+                - /url: https://www.tennoji-naishikyo.com/acid_reflux/
+                - text: 呑酸 （酸っぱいものが
+                - text: 上がってくる）
+            - listitem [ref=e560]:
+              - link "ゲップがよく出る・ 止まらない" [ref=e561] [cursor=pointer]:
+                - /url: https://www.tennoji-naishikyo.com/excessive_belching/
+                - text: ゲップがよく出る・
+                - text: 止まらない
+            - listitem [ref=e562]:
+              - link "吐き気・嘔吐" [ref=e563] [cursor=pointer]:
+                - /url: https://www.tennoji-naishikyo.com/nausea_vomiting/
+    - generic [ref=e564]:
+      - generic [ref=e565]:
+        - figure [ref=e566]
+        - figure [ref=e567]
+        - figure [ref=e568]
+        - figure [ref=e569]
+        - figure [ref=e570]
+        - figure [ref=e571]
+        - figure [ref=e572]
+      - generic [ref=e573]:
+        - figure [ref=e574]
+        - figure [ref=e575]
+        - figure [ref=e576]
+        - figure [ref=e577]
+        - figure [ref=e578]
+        - figure [ref=e579]
+        - figure [ref=e580]
+      - generic [ref=e581]:
+        - figure [ref=e582]
+        - figure [ref=e583]
+        - figure [ref=e584]
+        - figure [ref=e585]
+        - figure [ref=e586]
+        - figure [ref=e587]
+        - figure [ref=e588]
+  - link "pagetop":
+    - /url: "#wrapper"
+    - img "pagetop"
+  - generic [ref=e589]:
+    - link "instagram" [ref=e590] [cursor=pointer]:
+      - /url: https://www.instagram.com/tennoji_naishikyo/
+      - img "instagram" [ref=e591]
+    - link "facebook" [ref=e592] [cursor=pointer]:
+      - /url: https://www.facebook.com/people/%E5%A4%A9%E7%8E%8B%E5%AF%BA%E3%82%84%E3%81%99%E3%81%88%E6%B6%88%E5%8C%96%E5%99%A8%E5%86%85%E7%A7%91%E5%86%85%E8%A6%96%E9%8F%A1%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF/61568227733741/
+      - img "facebook" [ref=e593]
+  - contentinfo [ref=e594]:
+    - generic [ref=e595]:
+      - generic [ref=e597]:
+        - link "天王寺やすえ消化器内科・内視鏡クリニック" [ref=e598] [cursor=pointer]:
+          - /url: https://www.tennoji-naishikyo.com/
+          - img "天王寺やすえ消化器内科・内視鏡クリニック" [ref=e599]
+        - paragraph [ref=e600]:
+          - text: 〒543-0056
+          - text: 大阪府大阪市天王寺区堀越町11-11
+          - text: 天王寺ガーデンスクエア3F
+        - paragraph [ref=e601]:
+          - generic [ref=e602]: Tel.
+          - link "06-6779-1150":
+            - /url: tel:06-6779-1150
+        - generic [ref=e603]:
+          - generic [ref=e604]:
+            - table [ref=e605]:
+              - rowgroup [ref=e606]:
+                - row "外来受付時間 月 火 水 木 金 土 日" [ref=e607]:
+                  - columnheader "外来受付時間" [ref=e608]
+                  - columnheader "月" [ref=e609]
+                  - columnheader "火" [ref=e610]
+                  - columnheader "水" [ref=e611]
+                  - columnheader "木" [ref=e612]
+                  - columnheader "金" [ref=e613]
+                  - columnheader "土" [ref=e614]
+                  - columnheader "日" [ref=e615]
+              - rowgroup [ref=e616]:
+                - row "9:00-12:00 ● / ● ● ● ● ★" [ref=e617]:
+                  - rowheader "9:00-12:00" [ref=e618]
+                  - cell "●" [ref=e619]
+                  - cell / [ref=e620]
+                  - cell "●" [ref=e621]
+                  - cell "●" [ref=e622]
+                  - cell "●" [ref=e623]
+                  - cell "●" [ref=e624]
+                  - cell "★" [ref=e625]
+                - row "15:00-18:30 ● / ● ● ● / /" [ref=e626]:
+                  - rowheader "15:00-18:30" [ref=e627]
+                  - cell "●" [ref=e628]
+                  - cell / [ref=e629]
+                  - cell "●" [ref=e630]
+                  - cell "●" [ref=e631]
+                  - cell "●" [ref=e632]
+                  - cell / [ref=e633]
+                  - cell / [ref=e634]
+            - table [ref=e635]:
+              - rowgroup [ref=e636]:
+                - row "内視鏡検査受付時間 月 火 水 木 金 土 日" [ref=e637]:
+                  - columnheader "内視鏡検査受付時間" [ref=e638]
+                  - columnheader "月" [ref=e639]
+                  - columnheader "火" [ref=e640]
+                  - columnheader "水" [ref=e641]
+                  - columnheader "木" [ref=e642]
+                  - columnheader "金" [ref=e643]
+                  - columnheader "土" [ref=e644]
+                  - columnheader "日" [ref=e645]
+              - rowgroup [ref=e646]:
+                - row "8:00-17:00 ● / ● ● ● ▲ ■" [ref=e647]:
+                  - rowheader "8:00-17:00" [ref=e648]
+                  - cell "●" [ref=e649]
+                  - cell / [ref=e650]
+                  - cell "●" [ref=e651]
+                  - cell "●" [ref=e652]
+                  - cell "●" [ref=e653]
+                  - cell "▲" [ref=e654]
+                  - cell "■" [ref=e655]
+          - paragraph [ref=e656]:
+            - text: "[ 休診日 ] 火曜 / 第2・4日曜 / 祝日"
+            - text: ★ 9:00-12:00（第1・3・5日曜のみ） / ▲ 9:00-16:00/
+            - text: ■ 9:00-16:00（第1・3・5日曜のみ）
+        - generic [ref=e657]:
+          - link "24Hいつでも受付 WEB予約" [ref=e658] [cursor=pointer]:
+            - /url: https://tennoji-ygec.reserve.ne.jp
+            - generic [ref=e659]: 24Hいつでも受付
+            - emphasis [ref=e660]: WEB予約
+          - link "友だち追加で簡単 LINE予約" [ref=e661] [cursor=pointer]:
+            - /url: https://lin.ee/cVUBPUF
+            - generic [ref=e662]: 友だち追加で簡単
+            - emphasis [ref=e663]: LINE予約
+          - link "WEB問診" [ref=e664] [cursor=pointer]:
+            - /url: https://symview.me/medical_interview_flows/hg08913/public?url_kind=1
+            - emphasis [ref=e665]: WEB問診
+      - generic [ref=e667]:
+        - figure [ref=e668]:
+          - img "地図" [ref=e669]
+        - link "Googlemaps" [ref=e670] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e671]: Googlemaps
+        - generic [ref=e672]:
+          - link "大阪国際がんセンター" [ref=e674] [cursor=pointer]:
+            - /url: https://oici.jp/
+            - img "大阪国際がんセンター" [ref=e675]
+          - link "大阪急性期・総合医療センター" [ref=e677] [cursor=pointer]:
+            - /url: https://www.gh.opho.jp/
+            - img "大阪急性期・総合医療センター" [ref=e678]
+          - link "関西医科大学附属病院" [ref=e680] [cursor=pointer]:
+            - /url: https://hp.kmu.ac.jp/
+            - img "関西医科大学附属病院" [ref=e681]
+          - link "大阪赤十字病院" [ref=e683] [cursor=pointer]:
+            - /url: https://www.osaka-med.jrc.or.jp/
+            - img "大阪赤十字病院" [ref=e684]
+          - link "大阪けいさつ病院" [ref=e686] [cursor=pointer]:
+            - /url: https://www.oph.gr.jp/
+            - img "大阪けいさつ病院" [ref=e687]
+          - link "大阪医療センター" [ref=e689] [cursor=pointer]:
+            - /url: https://osaka.hosp.go.jp/
+            - img "大阪医療センター" [ref=e690]
+          - link "大阪医科薬科大学病院" [ref=e692] [cursor=pointer]:
+            - /url: https://hospital.ompu.ac.jp/
+            - img "大阪医科薬科大学病院" [ref=e693]
+          - link "大型犬専門メディア BIG DOG LUCK" [ref=e695] [cursor=pointer]:
+            - /url: https://bigdog-luck.com/d0044/
+            - img "大型犬専門メディア BIG DOG LUCK" [ref=e696]
+          - link "best choice 歯科 byGMOに当院が掲載されました！" [ref=e698] [cursor=pointer]:
+            - /url: https://bc-clinic.ekiten.jp/osaka/osaka-colonoscopy/
+            - img "best choice 歯科 byGMOに当院が掲載されました！" [ref=e699]
+    - generic [ref=e700]:
+      - link "日本橋人形町 消化器・内視鏡クリニック" [ref=e702] [cursor=pointer]:
+        - /url: https://ningyocho-naishikyo.jp/
+        - img "日本橋人形町 消化器・内視鏡クリニック" [ref=e703]
+      - link "東京千住・胃と大腸の消化器内視鏡クリニック" [ref=e704] [cursor=pointer]:
+        - /url: https://www.senju-ge.jp/stomach_lp/?gad_source=1&gclid=Cj0KCQiAuou6BhDhARIsAIfgrn4qGMSCFivZZJBf2CS9GYD1pkoL6QltFOxSU3p-8XZVqJ_avr587hMaAiHCEALw_wcB
+        - img "東京千住・胃と大腸の消化器内視鏡クリニック" [ref=e705]
+      - generic [ref=e706]:
+        - paragraph [ref=e707]:
+          - link "DR.BRIDGE" [ref=e709] [cursor=pointer]:
+            - /url: https://www.dr-bridge.co.jp/
+            - img "DR.BRIDGE" [ref=e710]
+          - emphasis [ref=e711]:
+            - link "クリニックホームページ制作" [ref=e712] [cursor=pointer]:
+              - /url: https://www.iryoto.jp/
+        - paragraph [ref=e713]:
+          - link "特定健診" [ref=e715] [cursor=pointer]:
+            - /url: https://www.imakara.style/kenko/
+            - img "特定健診" [ref=e716]
+          - emphasis [ref=e717]:
+            - link "ダイエット食事イマカラ" [ref=e718] [cursor=pointer]:
+              - /url: https://www.imakara.style/
+      - generic [ref=e719]: © 天王寺やすえ消化器内科・内視鏡クリニック
