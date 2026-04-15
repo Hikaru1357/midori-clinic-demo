@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>クリニック紹介 - みどり内科クリニック</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Noto+Sans+JP:wght@300;400;500;600;700&family=Noto+Serif+JP:wght@400;500;600;700&family=Shippori+Mincho:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   DESIGN SYSTEM — みどり内科クリニック V2
+   Green + Gold luxury medical clinic
+   ============================================================ */
+
+:root {
+  --green-deep: #14532d;
+  --green-primary: #1B7A3D;
+  --green-medium: #22963F;
+  --green-light: #4CAF50;
+  --green-pale: #E8F5E9;
+  --green-bg: #f4faf5;
+  --gold: #B8962E;
+  --gold-light: #D4B85A;
+  --gold-pale: rgba(184,150,46,0.08);
+  --cream: #FAFCFA;
+  --beige: #f0efe8;
+  --text: #1a2e1a;
+  --text-sub: #3a4d3a;
+  --text-light: #5a6a5a;
+  --border: #d4ddd4;
+  --white: #ffffff;
+  --shadow-sm: 0 2px 12px rgba(20,83,45,0.06);
+  --shadow-md: 0 8px 32px rgba(20,83,45,0.08);
+  --shadow-lg: 0 16px 48px rgba(20,83,45,0.12);
+  --font-serif: 'Shippori Mincho', 'Noto Serif JP', serif;
+  --font-sans: 'Noto Sans JP', sans-serif;
+  --font-en: 'Cinzel', serif;
+  --font-en-body: 'Cormorant Garamond', serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 16px; scroll-behavior: smooth; overflow-x: hidden; }
+body { overflow-x: hidden; }
+body {
+  font-family: var(--font-serif);
+  color: var(--text);
+  background: var(--cream);
+  line-height: 2;
+  letter-spacing: 0.04em;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: "palt";
+  overflow-x: hidden;
+}
+img { max-width: 100%; height: auto; display: block; }
+a { color: inherit; text-decoration: none; }
+ul { list-style: none; }
+
+/* ============================================================
+   HEADER
+   ============================================================ */
+.header {
+  position: fixed; top: 0; left: 0; width: 100%; z-index: 100;
+  height: 100px;
+  background: rgba(255,255,255,0.97);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 1px 0 rgba(20,83,45,0.06);
+  transition: box-shadow 0.4s;
+}
+.header-inner {
+  max-width: 1240px; margin: 0 auto; padding: 0 40px;
+  height: 100%; display: flex; align-items: center; justify-content: space-between;
+}
+.logo { display: flex; align-items: center; gap: 14px; }
+.logo-mark {
+  width: 56px; height: 56px; flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+}
+.logo-mark svg { width: 56px; height: 56px; }
+.logo-text { display: flex; flex-direction: column; line-height: 1.3; }
+.logo-name {
+  font-family: var(--font-serif); font-size: 1.1rem; font-weight: 600;
+  color: var(--green-deep); letter-spacing: 0.06em; line-height: 1.3;
+}
+.logo-sub {
+  font-family: var(--font-sans); font-size: 0.5rem; color: var(--text-light);
+  letter-spacing: 0.06em; line-height: 1.3;
+}
+.nav { display: flex; align-items: center; gap: 2px; }
+.nav a {
+  display: flex; flex-direction: column; align-items: center;
+  padding: 10px 16px; position: relative;
+}
+.nav-jp {
+  font-family: var(--font-sans); font-size: 0.825rem; font-weight: 500;
+  color: var(--text); letter-spacing: 0.06em;
+}
+.nav-en {
+  font-family: var(--font-en); font-size: 0.5rem; color: var(--gold);
+  letter-spacing: 0.14em; text-transform: uppercase; margin-top: 1px;
+}
+.nav a::after {
+  content: ''; position: absolute; bottom: 6px; left: 50%; width: 0; height: 2px;
+  background: var(--gold); transition: all 0.35s cubic-bezier(0.4,0,0.2,1); transform: translateX(-50%);
+}
+.nav a:hover::after, .nav a.current::after { width: 55%; }
+.header-right { display: flex; align-items: center; gap: 16px; }
+.header-tel {
+  display: flex; align-items: center; gap: 8px;
+  font-family: var(--font-en-body); font-size: 1.35rem; font-weight: 600;
+  color: var(--green-primary); letter-spacing: 0.02em;
+}
+.header-tel svg { width: 18px; height: 18px; fill: var(--green-primary); }
+.header-tel-sub {
+  font-family: var(--font-sans); font-size: 0.625rem; color: var(--text-light);
+  display: block; text-align: right; line-height: 1.3; margin-top: -2px;
+}
+
+/* Hamburger menu */
+.menu-toggle {
+  display: none; background: none; border: none; cursor: pointer;
+  width: 28px; height: 20px; position: relative; z-index: 1010;
+  flex-shrink: 0;
+}
+.menu-toggle span {
+  display: block; width: 100%; height: 2px; background: var(--green-deep);
+  position: absolute; left: 0; transition: all 0.3s;
+}
+.menu-toggle span:nth-child(1) { top: 0; }
+.menu-toggle span:nth-child(2) { top: 50%; transform: translateY(-50%); }
+.menu-toggle span:nth-child(3) { bottom: 0; }
+.menu-toggle.active span:nth-child(1) { top: 50%; transform: translateY(-50%) rotate(45deg); }
+.menu-toggle.active span:nth-child(2) { opacity: 0; }
+.menu-toggle.active span:nth-child(3) { bottom: 50%; transform: translateY(50%) rotate(-45deg); }
+
+/* Mobile nav overlay */
+.nav-overlay {
+  display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.4); z-index: 1004;
+}
+.nav-overlay.open { display: block; }
+
+/* SP header tel */
+.header-tel-sp { display: none; }
+
+/* ============================================================
+   LAYOUT
+   ============================================================ */
+.container { max-width: 1100px; margin: 0 auto; padding: 0 40px; }
+.container-wide { max-width: 1240px; margin: 0 auto; padding: 0 40px; }
+
+/* ============================================================
+   PAGE HERO — Blurred background image
+   ============================================================ */
+.page-hero {
+  position: relative; height: 280px;
+  display: flex; align-items: center; justify-content: center;
+  overflow: hidden; margin-top: 100px;
+}
+.page-hero-bg {
+  position: absolute; inset: 0;
+  background: url('https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1920&h=600&fit=crop&q=80') center/cover no-repeat;
+  filter: blur(4px) brightness(0.85); transform: scale(1.05);
+}
+.page-hero-overlay { position: absolute; inset: 0; background: rgba(255,255,255,0.55); }
+.page-hero-content { position: relative; z-index: 2; text-align: center; }
+.page-hero-content .section-heading-en {
+  font-family: var(--font-en); font-size: 0.8rem; color: var(--gold);
+  letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 8px;
+  display: block;
+}
+.page-hero-content h1 {
+  font-family: var(--font-serif); font-size: 2rem; font-weight: 600;
+  color: var(--green-deep); letter-spacing: 0.12em;
+}
+
+/* ============================================================
+   BREADCRUMB
+   ============================================================ */
+.breadcrumb {
+  max-width: 1240px; margin: 0 auto; padding: 14px 40px;
+  font-family: var(--font-sans); font-size: 0.6875rem; color: var(--text-light);
+  letter-spacing: 0.02em;
+}
+.breadcrumb a { color: var(--text-light); transition: color 0.3s; }
+.breadcrumb a:hover { color: var(--green-primary); }
+.breadcrumb span.sep { margin: 0 8px; opacity: 0.5; }
+
+/* ============================================================
+   SECTION COMMON
+   ============================================================ */
+.sec { padding: 110px 0; position: relative; }
+.sec-white { background: var(--white); }
+.sec-cream { background: var(--cream); }
+
+/* Section Heading — with large background text */
+.sec-head { text-align: center; margin-bottom: 64px; position: relative; }
+.sec-head-bg {
+  position: absolute; top: 50%; left: 50%; transform: translate(-50%, -55%);
+  font-family: var(--font-en); font-size: clamp(2.5rem, 6vw, 6rem); font-weight: 700;
+  letter-spacing: 0.06em; text-transform: uppercase; white-space: nowrap;
+  color: var(--green-primary); opacity: 0.06; pointer-events: none; z-index: 0;
+  line-height: 1; max-width: 100%; overflow: hidden;
+}
+.sec-head-en {
+  font-family: var(--font-en); font-size: 1rem; color: var(--gold);
+  letter-spacing: 0.22em; text-transform: uppercase; display: block; margin-bottom: 12px;
+  position: relative; z-index: 1;
+}
+.sec-head-jp {
+  font-family: var(--font-serif); font-size: 2.25rem; font-weight: 600;
+  color: var(--green-deep); letter-spacing: 0.12em; display: inline-block;
+  position: relative; z-index: 1;
+}
+
+/* Ornamental diamond + lines */
+.sec-head-ornament {
+  display: flex; align-items: center; justify-content: center; gap: 12px; margin-top: 20px;
+}
+.sec-head-ornament::before, .sec-head-ornament::after {
+  content: ''; width: 40px; height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold));
+}
+.sec-head-ornament::after {
+  background: linear-gradient(90deg, var(--gold), transparent);
+}
+.sec-head-ornament span {
+  width: 7px; height: 7px; background: var(--gold); transform: rotate(45deg);
+  flex-shrink: 0;
+}
+
+/* ============================================================
+   CLINIC INTRO
+   ============================================================ */
+.clinic-intro {
+  max-width: 800px; margin: 0 auto; text-align: center;
+}
+.clinic-intro p {
+  font-family: var(--font-sans); font-size: 0.9375rem; color: var(--text-sub);
+  line-height: 2.2; font-weight: 300;
+}
+
+/* ============================================================
+   CLINIC EXTERIOR GRID
+   ============================================================ */
+.clinic-exterior-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 24px;
+  margin-top: 0;
+}
+.clinic-exterior-grid img {
+  width: 100%; height: 320px; object-fit: cover; border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+.clinic-exterior-grid img:hover {
+  transform: translateY(-4px); box-shadow: var(--shadow-md);
+}
+
+/* ============================================================
+   CLINIC INTERIOR GRID
+   ============================================================ */
+.clinic-interior-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+}
+.clinic-interior-item {
+  position: relative; border-radius: 12px; overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+.clinic-interior-item:hover {
+  transform: translateY(-4px); box-shadow: var(--shadow-md);
+}
+.clinic-interior-item img {
+  width: 100%; height: 240px; object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.4,0,0.2,1);
+}
+.clinic-interior-item:hover img { transform: scale(1.06); }
+.clinic-interior-item .label {
+  position: absolute; bottom: 0; left: 0; right: 0;
+  background: linear-gradient(transparent, rgba(20,83,45,0.7));
+  padding: 40px 16px 14px;
+  font-family: var(--font-sans); font-size: 0.8125rem; font-weight: 500;
+  color: #fff; text-align: center; letter-spacing: 0.06em;
+}
+
+/* ============================================================
+   EQUIPMENT GRID
+   ============================================================ */
+.clinic-equip-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+}
+.clinic-equip-card {
+  background: var(--white); border-radius: 12px; overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.4s cubic-bezier(0.4,0,0.2,1);
+}
+.clinic-equip-card::after {
+  content: ''; display: block; height: 3px;
+  background: linear-gradient(90deg, var(--green-primary), var(--gold-light));
+  transform: scaleX(0); transition: transform 0.4s;
+}
+.clinic-equip-card:hover {
+  transform: translateY(-4px); box-shadow: var(--shadow-md);
+}
+.clinic-equip-card:hover::after { transform: scaleX(1); }
+.placeholder-img {
+  background: var(--green-pale);
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-sans); font-size: 0.8rem; color: var(--text-light);
+}
+.clinic-equip-card-body {
+  padding: 20px 18px 24px;
+}
+.clinic-equip-card-body h4 {
+  font-family: var(--font-serif); font-size: 1rem; font-weight: 600;
+  color: var(--green-deep); letter-spacing: 0.04em; margin-bottom: 8px;
+}
+.clinic-equip-card-body p {
+  font-family: var(--font-sans); font-size: 0.8125rem; color: var(--text-sub);
+  line-height: 1.8; font-weight: 300;
+}
+
+/* ============================================================
+   ACCESS
+   ============================================================ */
+.access-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
+.access-map {
+  border-radius: 16px; overflow: hidden; box-shadow: var(--shadow-sm);
+  aspect-ratio: 4/3; background: var(--green-pale);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--text-light); font-family: var(--font-sans); font-size: 0.875rem;
+}
+.access-info h3 {
+  font-family: var(--font-serif); font-size: 1.25rem; color: var(--green-deep);
+  margin-bottom: 20px;
+}
+.access-table { width: 100%; font-family: var(--font-sans); font-size: 0.8125rem; }
+.access-table tr { border-bottom: 1px solid var(--border); }
+.access-table th {
+  font-weight: 500; color: var(--green-deep); padding: 14px 16px 14px 20px;
+  white-space: nowrap; width: 90px; vertical-align: top; text-align: left;
+  position: relative;
+}
+.access-table th::before {
+  content: ''; position: absolute; left: 0; top: 50%; transform: translateY(-50%);
+  width: 5px; height: 5px; background: var(--gold); border-radius: 50%;
+}
+.access-table td { padding: 14px 0; color: var(--text-sub); line-height: 1.7; font-weight: 300; }
+.access-table a { color: var(--green-primary); }
+.access-table a:hover { text-decoration: underline; }
+
+.access-sub h4 {
+  font-family: var(--font-serif); font-size: 0.9375rem; font-weight: 600;
+  color: var(--green-deep); margin-bottom: 8px; margin-top: 20px;
+}
+.access-sub ul {
+  font-family: var(--font-sans); font-size: 0.875rem; line-height: 1.8;
+  color: var(--text-sub); padding-left: 1.2em; font-weight: 300;
+}
+.access-sub ul li { list-style: disc; margin-bottom: 4px; }
+.access-sub p {
+  font-family: var(--font-sans); font-size: 0.875rem; line-height: 1.8;
+  color: var(--text-sub); font-weight: 300;
+}
+
+/* ============================================================
+   TIMETABLE
+   ============================================================ */
+.timetable {
+  width: 100%; border-collapse: separate; border-spacing: 0;
+  font-family: var(--font-sans); font-size: 0.8125rem;
+  border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-sm);
+}
+.timetable thead th {
+  background: linear-gradient(135deg, var(--green-primary) 0%, var(--green-medium) 100%);
+  color: #fff; font-weight: 500; padding: 14px 10px; text-align: center; font-size: 0.8rem;
+}
+.timetable thead th:first-child { background: var(--green-deep); width: 90px; }
+.timetable thead th.sat { background: var(--green-light); }
+.timetable tbody td, .timetable tbody th {
+  padding: 16px 10px; text-align: center; border-bottom: 1px solid var(--border);
+  background: var(--white);
+}
+.timetable tbody th { text-align: left; padding-left: 14px; font-weight: 500; color: var(--green-deep); }
+.timetable tbody th small { display: block; font-size: 0.625rem; color: var(--text-light); font-weight: 400; }
+.timetable .open { color: var(--green-primary); font-weight: 700; font-size: 1.125rem; }
+.timetable .closed { color: #ccc; font-size: 1rem; }
+.tt-notes { margin-top: 14px; font-family: var(--font-sans); font-size: 0.6875rem; color: var(--text-light); line-height: 1.9; }
+.tt-notes p + p { margin-top: 2px; }
+
+/* ============================================================
+   DAY FLOW — Hanging board (shimizusekei style)
+   ============================================================ */
+/* Outer wrapper: pin + strings + board */
+.day-flow-wrap {
+  position: relative;
+  max-width: 1000px; margin: 0 auto;
+  padding-top: 50px;
+}
+/* Pin at top center */
+.day-flow-wrap::before {
+  content: '';
+  position: absolute; top: 0; left: 50%; transform: translateX(-50%);
+  width: 16px; height: 16px;
+  background: radial-gradient(circle at 40% 35%, #5a9a6a, var(--green-primary));
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2), inset 0 1px 2px rgba(255,255,255,0.3);
+  z-index: 3;
+}
+/* Two strings forming triangle */
+.day-flow-wrap::after {
+  content: '';
+  position: absolute; top: 8px; left: 50%; transform: translateX(-50%);
+  width: 160px; height: 44px;
+  background:
+    linear-gradient(to bottom right, transparent 48.5%, #5a6a5a 49%, #5a6a5a 50.5%, transparent 51%),
+    linear-gradient(to bottom left, transparent 48.5%, #5a6a5a 49%, #5a6a5a 50.5%, transparent 51%);
+  background-size: 50% 100%, 50% 100%;
+  background-position: left, right;
+  background-repeat: no-repeat;
+  opacity: 0.25;
+  z-index: 2;
+}
+/* The board itself */
+.day-flow-board {
+  position: relative; z-index: 1;
+  background: #faf6f0;
+  border-radius: 6px;
+  box-shadow: 0 4px 24px rgba(20,83,45,0.08), 0 1px 3px rgba(0,0,0,0.04);
+  padding: 48px 40px 40px;
+  border-top: 3px solid var(--green-primary);
+  border-bottom: 3px solid var(--green-primary);
+}
+/* Board title */
+.day-flow-board-title {
+  text-align: center; margin-bottom: 36px;
+}
+.day-flow-board-title h3 {
+  font-family: var(--font-serif); font-size: 1.5rem; font-weight: 600;
+  color: var(--green-deep); letter-spacing: 0.08em;
+  padding-bottom: 16px;
+  border-bottom: 2px solid var(--green-primary);
+  display: inline-block;
+}
+/* Card grid inside the board */
+.day-flow-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px 36px;
+}
+/* Card wrapper (no overflow hidden here, so arrow is visible) */
+.day-flow-card {
+  text-align: center;
+  position: relative;
+}
+/* Inner card with clipping for image */
+.day-flow-card-inner {
+  border-radius: 8px; overflow: hidden;
+  border: 1px solid var(--border);
+  transition: box-shadow 0.3s, transform 0.3s;
+  background: var(--white);
+}
+.day-flow-card:hover .day-flow-card-inner {
+  box-shadow: 0 4px 16px rgba(20,83,45,0.10); transform: translateY(-3px);
+}
+/* Green > arrow between cards (PC: right, SP: down) */
+.day-flow-card::after {
+  content: '>';
+  position: absolute;
+  top: 50%; right: -24px; transform: translateY(-50%);
+  font-size: 1.5rem; font-weight: 700;
+  color: var(--green-primary);
+  z-index: 5; line-height: 1;
+}
+/* Hide arrow on last card of each row (3rd, 6th) and very last */
+.day-flow-card:nth-child(3n)::after,
+.day-flow-card:last-child::after { display: none; }
+.day-flow-img {
+  width: 100%; height: 170px; overflow: hidden;
+}
+.day-flow-img img {
+  width: 100%; height: 100%; object-fit: cover;
+  transition: transform 0.4s;
+}
+.day-flow-card:hover .day-flow-img img { transform: scale(1.05); }
+.day-flow-body {
+  padding: 16px 14px 20px;
+}
+.day-flow-title {
+  font-family: var(--font-serif); font-size: 1.05rem; font-weight: 600;
+  color: var(--green-deep); letter-spacing: 0.04em; margin-bottom: 6px;
+}
+.day-flow-time {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-family: var(--font-en-body); font-size: 1.25rem; font-weight: 400;
+  color: var(--green-primary); letter-spacing: 0.02em; margin-bottom: 10px;
+}
+.day-flow-time::before {
+  content: ''; display: inline-block; width: 16px; height: 16px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231B7A3D' stroke-width='2' stroke-linecap='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='M12 6v6l4 2'/%3E%3C/svg%3E") center/contain no-repeat;
+  flex-shrink: 0;
+}
+.day-flow-desc {
+  font-family: var(--font-sans); font-size: 0.78rem; color: var(--text-sub);
+  line-height: 1.8; font-weight: 300; text-align: left;
+}
+
+@media (max-width: 768px) {
+  .day-flow-board { padding: 32px 20px 28px; }
+  .day-flow-grid { grid-template-columns: repeat(2, 1fr); gap: 28px 28px; }
+  .day-flow-wrap::after { width: 120px; height: 36px; }
+  .day-flow-wrap { padding-top: 44px; }
+  /* 2 columns: hide arrow on 2nd, 4th, 6th (end of row) */
+  .day-flow-card:nth-child(3n)::after { display: block; }
+  .day-flow-card:nth-child(2n)::after,
+  .day-flow-card:last-child::after { display: none; }
+}
+@media (max-width: 480px) {
+  .day-flow-grid { grid-template-columns: 1fr; gap: 32px; }
+  .day-flow-board { padding: 28px 16px 24px; }
+  .day-flow-img { height: 200px; }
+  /* 1 column: arrow points down */
+  .day-flow-card::after {
+    content: '∨';
+    top: auto; right: auto;
+    bottom: -22px; left: 50%;
+    transform: translateX(-50%);
+  }
+  .day-flow-card:nth-child(3n)::after { display: block; }
+  .day-flow-card:nth-child(2n)::after { display: block; }
+  .day-flow-card:last-child::after { display: none; }
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.footer {
+  background: var(--green-deep);
+  color: rgba(255,255,255,0.8); position: relative;
+}
+.footer::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px;
+  background: linear-gradient(90deg, var(--green-primary), var(--gold), var(--gold-light), var(--gold), var(--green-primary));
+}
+.footer::after {
+  content: ''; position: absolute; top: 4px; left: 0; right: 0; bottom: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.012'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/svg%3E");
+  pointer-events: none;
+}
+.footer-grid {
+  display: grid; grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+  gap: 40px; padding: 80px 0 60px; position: relative; z-index: 1;
+}
+.footer-logo { display: flex; align-items: center; gap: 12px; margin-bottom: 24px; }
+.footer-logo .logo-mark { width: 48px; height: 48px; }
+.footer-logo .logo-mark svg { width: 48px; height: 48px; }
+.footer-logo .logo-mark svg text { fill: #fff !important; }
+.footer-logo .logo-mark svg circle { stroke: rgba(255,255,255,0.5) !important; }
+.footer-logo .logo-sub { color: rgba(255,255,255,0.6); }
+.footer-logo .logo-name { color: #fff; }
+.footer-logo-name {
+  font-family: var(--font-serif); font-size: 1rem; color: #fff; font-weight: 600;
+}
+.footer-brand p {
+  font-family: var(--font-sans); font-size: 0.75rem; line-height: 1.9; margin-bottom: 14px;
+  font-weight: 300;
+}
+.footer-tel {
+  font-family: var(--font-en-body); font-size: 1.2rem; color: #fff; font-weight: 600;
+  display: flex; align-items: center; gap: 8px;
+}
+.footer-tel svg { width: 15px; height: 15px; fill: #fff; }
+.footer-col h4 {
+  font-family: var(--font-serif); font-size: 0.8125rem; color: #fff;
+  margin-bottom: 20px; padding-bottom: 12px; position: relative;
+  letter-spacing: 0.06em;
+}
+.footer-col h4::after {
+  content: ''; position: absolute; bottom: 0; left: 0; width: 22px; height: 2px;
+  background: var(--gold);
+}
+.footer-col li { margin-bottom: 8px; }
+.footer-col a {
+  font-family: var(--font-sans); font-size: 0.75rem; color: rgba(255,255,255,0.75);
+  transition: all 0.3s; font-weight: 300;
+}
+.footer-col a:hover { color: var(--gold-light); padding-left: 6px; }
+.footer-hours {
+  font-family: var(--font-sans); font-size: 0.75rem; line-height: 1.9; font-weight: 300;
+}
+.footer-hours p + p { margin-top: 2px; }
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.06); padding: 22px 0; text-align: center;
+  position: relative; z-index: 1;
+}
+.footer-bottom p {
+  font-family: var(--font-sans); font-size: 0.6875rem; color: rgba(255,255,255,0.35);
+}
+
+/* ============================================================
+   FADE-IN ANIMATION
+   ============================================================ */
+.fade-in {
+  opacity: 0; transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.fade-in.visible {
+  opacity: 1; transform: translateY(0);
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 1024px) {
+  .nav { gap: 0; }
+  .nav a { padding: 8px 10px; }
+  .nav-jp { font-size: 0.75rem; }
+  .header-tel { font-size: 1.1rem; }
+  .clinic-equip-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .header { height: 64px; }
+  .header-inner { padding: 0 16px; }
+  .logo-mark { width: 42px; height: 42px; }
+  .logo-mark svg { width: 42px; height: 42px; }
+  .logo-name { font-size: 0.95rem; }
+  .logo-sub { font-size: 0.4375rem; }
+  .menu-toggle { display: block; }
+  .nav {
+    display: none; position: fixed; top: 0; right: 0; width: 80%; max-width: 320px;
+    height: 100vh; background: var(--white); flex-direction: column;
+    padding: 80px 28px 40px; box-shadow: -4px 0 24px rgba(0,0,0,0.12);
+    z-index: 1005; gap: 0; overflow-y: auto;
+  }
+  .nav.open { display: flex; }
+  .nav a {
+    flex-direction: row; justify-content: space-between; align-items: center;
+    padding: 16px 0; border-bottom: 1px solid var(--border);
+  }
+  .nav a .nav-en { order: 2; }
+  .header-right .header-tel { display: none; }
+  .header-tel-sp { display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; }
+  .breadcrumb { padding: 10px 20px; font-size: 0.625rem; }
+  .container, .container-wide { padding: 0 20px; }
+  .sec { padding: 64px 0; }
+  .sec-head { margin-bottom: 40px; }
+  .sec-head-jp { font-size: 1.4rem; }
+  .sec-head-en { font-size: 0.75rem; }
+  .sec-head-bg { font-size: clamp(2.5rem, 12vw, 5rem); }
+
+  /* Page hero */
+  .page-hero { height: 200px; margin-top: 64px; }
+  .page-hero-content h1 { font-size: 1.5rem; }
+
+  /* Clinic grids */
+  .clinic-exterior-grid { grid-template-columns: 1fr; }
+  .clinic-exterior-grid img { height: 240px; }
+  .clinic-interior-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  .clinic-interior-item img { height: 180px; }
+  .clinic-equip-grid { grid-template-columns: 1fr; gap: 16px; }
+
+  /* Access */
+  .access-grid { grid-template-columns: 1fr; gap: 32px; }
+
+  /* Timetable */
+  .timetable { font-size: 0.6875rem; }
+  .timetable thead th, .timetable tbody td, .timetable tbody th { padding: 10px 6px; }
+
+  /* Footer */
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+}
+
+@media (max-width: 480px) {
+  .clinic-interior-grid { grid-template-columns: 1fr; }
+  .clinic-interior-item img { height: 200px; }
+  .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+  .page-hero-content h1 { font-size: 1.3rem; }
+}
+/* Texture backgrounds */
+.sec-green-pale {
+  position: relative;
+  background: url('blog_bg_sp.jpg') repeat;
+  background-size: 400px auto;
+  overflow: hidden;
+}
+.sec-green-pale::before {
+  content: '';
+  position: absolute; inset: 0; z-index: 0; pointer-events: none;
+  background: rgba(234,245,237,0.45);
+}
+.sec-green-pale > .container { position: relative; z-index: 1; }
+</style>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="header">
+  <div class="header-inner">
+    <a href="design-top.html" class="logo">
+      <div class="logo-mark">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="50" r="48" fill="none" stroke="#1B7A3D" stroke-width="1.5" opacity="0.4"/>
+          <circle cx="50" cy="50" r="42" fill="none" stroke="#1B7A3D" stroke-width="0.5" opacity="0.2"/>
+          <text x="50" y="62" text-anchor="middle" font-family="'Cormorant Garamond', serif" font-size="48" font-weight="400" font-style="italic" fill="#1B7A3D" letter-spacing="-2">M</text>
+          <text x="50" y="82" text-anchor="middle" font-family="'Cinzel', serif" font-size="7" fill="#1B7A3D" letter-spacing="3" opacity="0.6">MIDORI</text>
+        </svg>
+      </div>
+      <div class="logo-text">
+        <span class="logo-sub">消化器内科・内視鏡内科</span>
+        <span class="logo-name">みどり内科クリニック</span>
+      </div>
+    </a>
+    <nav class="nav">
+      <a href="design-top.html"><span class="nav-jp">ホーム</span><span class="nav-en">Home</span></a>
+      <a href="preview-shinryou.html"><span class="nav-jp">診療科目</span><span class="nav-en">Medical</span></a>
+      <a href="preview-kensa.html"><span class="nav-jp">検査</span><span class="nav-en">Examination</span></a>
+      <a href="preview-doctor.html"><span class="nav-jp">ドクター紹介</span><span class="nav-en">Doctor</span></a>
+      <a href="preview-clinic.html" class="current"><span class="nav-jp">クリニック紹介</span><span class="nav-en">Clinic</span></a>
+      <a href="preview-blog.html"><span class="nav-jp">お役立ち情報</span><span class="nav-en">Column</span></a>
+      <a href="design-top.html#access"><span class="nav-jp">アクセス</span><span class="nav-en">Access</span></a>
+    </nav>
+    <div class="header-right">
+      <a href="tel:03-0000-0000" class="header-tel">
+        <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.25 1.01l-2.2 2.2z"/></svg>
+        <div>
+          <span>03-0000-0000</span>
+          <span class="header-tel-sub">受付は診療終了30分前まで</span>
+        </div>
+      </a>
+      <a href="tel:03-0000-0000" class="header-tel-sp" aria-label="電話">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="var(--green-primary)"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.25 1.01l-2.2 2.2z"/></svg>
+      </a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="メニュー">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+<div class="nav-overlay" id="nav-overlay"></div>
+
+<!-- ========== Page Hero ========== -->
+<div class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content">
+    <span class="section-heading-en">Clinic</span>
+    <h1>クリニック紹介</h1>
+  </div>
+</div>
+
+<!-- ========== Breadcrumb ========== -->
+<div class="breadcrumb">
+  <a href="design-top.html">ホーム</a><span class="sep">&gt;</span><span>クリニック紹介</span>
+</div>
+
+<!-- ========== Clinic Intro ========== -->
+<section class="sec sec-white">
+  <div class="container">
+    <div class="clinic-intro fade-in">
+      <p>みどり内科クリニックは、患者様に安心して受診いただけるよう、清潔で快適な院内環境を整えております。最新の医療設備を導入し、正確な診断と質の高い医療の提供に努めています。バリアフリー設計で、ご高齢の方や車椅子の方にも安心してお越しいただけます。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========== Exterior ========== -->
+<section class="sec sec-green-pale">
+  <div class="container">
+    <div class="fade-in">
+      <div class="sec-head">
+        <div class="sec-head-bg">Exterior</div>
+        <span class="sec-head-en">Exterior</span>
+        <h2 class="sec-head-jp">外観</h2>
+        <div class="sec-head-ornament"><span></span></div>
+      </div>
+    </div>
+    <div class="clinic-exterior-grid fade-in">
+      <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=600&h=400&fit=crop" alt="クリニック外観1">
+      <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600&h=400&fit=crop" alt="クリニック外観2">
+    </div>
+  </div>
+</section>
+
+<!-- ========== Interior ========== -->
+<section class="sec sec-white">
+  <div class="container">
+    <div class="fade-in">
+      <div class="sec-head">
+        <div class="sec-head-bg">Interior</div>
+        <span class="sec-head-en">Interior</span>
+        <h2 class="sec-head-jp">院内風景</h2>
+        <div class="sec-head-ornament"><span></span></div>
+      </div>
+    </div>
+    <div class="clinic-interior-grid fade-in">
+      <div class="clinic-interior-item">
+        <img src="https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?w=400&h=300&fit=crop" alt="受付・待合室">
+        <span class="label">受付・待合室</span>
+      </div>
+      <div class="clinic-interior-item">
+        <img src="https://images.unsplash.com/photo-1666214280557-f1b5022eb634?w=400&h=300&fit=crop" alt="診察室">
+        <span class="label">診察室</span>
+      </div>
+      <div class="clinic-interior-item">
+        <img src="https://images.unsplash.com/photo-1581595220892-b0739db3ba8c?w=400&h=300&fit=crop" alt="内視鏡室">
+        <span class="label">内視鏡室</span>
+      </div>
+      <div class="clinic-interior-item">
+        <img src="https://images.unsplash.com/photo-1629909615184-74f495363b67?w=400&h=300&fit=crop" alt="リカバリールーム">
+        <span class="label">リカバリールーム</span>
+      </div>
+      <div class="clinic-interior-item">
+        <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=400&h=300&fit=crop" alt="廊下・通路">
+        <span class="label">廊下・通路</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== Equipment ========== -->
+<section class="sec sec-green-pale">
+  <div class="container">
+    <div class="fade-in">
+      <div class="sec-head">
+        <div class="sec-head-bg">Equipment</div>
+        <span class="sec-head-en">Equipment</span>
+        <h2 class="sec-head-jp">医療設備</h2>
+        <div class="sec-head-ornament"><span></span></div>
+      </div>
+    </div>
+    <div class="clinic-equip-grid fade-in">
+      <div class="clinic-equip-card">
+        <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?w=400&h=240&fit=crop&q=80" alt="オリンパス 内視鏡システム EVIS X1" style="width:100%;height:180px;object-fit:cover;">
+        <div class="clinic-equip-card-body">
+          <h4>オリンパス 内視鏡システム EVIS X1</h4>
+          <p>最新の高精細内視鏡で微小な病変も発見</p>
+        </div>
+      </div>
+      <div class="clinic-equip-card">
+        <img src="https://images.unsplash.com/photo-1583912267550-d974311a9a6e?w=400&h=240&fit=crop&q=80" alt="炭酸ガス送気装置" style="width:100%;height:180px;object-fit:cover;">
+        <div class="clinic-equip-card-body">
+          <h4>炭酸ガス送気装置</h4>
+          <p>検査後のお腹の張りを大幅に軽減</p>
+        </div>
+      </div>
+      <div class="clinic-equip-card">
+        <img src="https://images.unsplash.com/photo-1629909615184-74f495363b67?w=400&h=240&fit=crop&q=80" alt="超音波診断装置" style="width:100%;height:180px;object-fit:cover;">
+        <div class="clinic-equip-card-body">
+          <h4>超音波診断装置</h4>
+          <p>腹部臓器をリアルタイムで観察</p>
+        </div>
+      </div>
+      <div class="clinic-equip-card">
+        <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=400&h=240&fit=crop&q=80" alt="デジタルX線撮影装置" style="width:100%;height:180px;object-fit:cover;">
+        <div class="clinic-equip-card-body">
+          <h4>デジタルX線撮影装置</h4>
+          <p>低被ばくで鮮明な画像を撮影</p>
+        </div>
+      </div>
+      <div class="clinic-equip-card">
+        <img src="https://images.unsplash.com/photo-1559757175-5700dde675bc?w=400&h=240&fit=crop&q=80" alt="心電図検査装置" style="width:100%;height:180px;object-fit:cover;">
+        <div class="clinic-equip-card-body">
+          <h4>心電図検査装置</h4>
+          <p>不整脈や心疾患のスクリーニングに使用</p>
+        </div>
+      </div>
+      <div class="clinic-equip-card">
+        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&h=240&fit=crop&q=80" alt="自動血球計数装置" style="width:100%;height:180px;object-fit:cover;">
+        <div class="clinic-equip-card-body">
+          <h4>自動血球計数装置</h4>
+          <p>血液検査の迅速な分析が可能</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== Access ========== -->
+<section class="sec sec-white">
+  <div class="container">
+    <div class="fade-in">
+      <div class="sec-head">
+        <div class="sec-head-bg">Access</div>
+        <span class="sec-head-en">Access</span>
+        <h2 class="sec-head-jp">アクセス</h2>
+        <div class="sec-head-ornament"><span></span></div>
+      </div>
+    </div>
+    <div class="access-grid fade-in">
+      <div class="access-map">
+        <div class="placeholder-img" style="width:100%;height:100%;">Google Map</div>
+      </div>
+      <div class="access-info">
+        <h3>みどり内科クリニック</h3>
+        <table class="access-table">
+          <tr><th>住所</th><td>〒107-0062<br>東京都港区南青山1-2-3<br>メディカルビル3F</td></tr>
+          <tr><th>電話</th><td><a href="tel:03-0000-0000">03-0000-0000</a></td></tr>
+          <tr><th>最寄駅</th><td>東京メトロ 青山一丁目駅 徒歩3分</td></tr>
+          <tr><th>駐車場</th><td>提携駐車場あり（2時間まで無料）</td></tr>
+        </table>
+        <div class="access-sub">
+          <h4>交通アクセス</h4>
+          <ul>
+            <li>東京メトロ銀座線・半蔵門線・都営大江戸線「青山一丁目駅」5番出口より徒歩3分</li>
+            <li>東京メトロ千代田線「乃木坂駅」3番出口より徒歩7分</li>
+          </ul>
+          <h4>周辺の目印</h4>
+          <p>青山一丁目交差点を南へ進み、コンビニエンスストアの隣のメディカルビル3階です。1階に薬局がございます。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== Hours ========== -->
+<section class="sec sec-green-pale">
+  <div class="container">
+    <div class="fade-in">
+      <div class="sec-head">
+        <div class="sec-head-bg">Hours</div>
+        <span class="sec-head-en">Hours</span>
+        <h2 class="sec-head-jp">診療時間</h2>
+        <div class="sec-head-ornament"><span></span></div>
+      </div>
+    </div>
+    <div class="fade-in" style="max-width:700px;margin:0 auto;">
+      <table class="timetable">
+        <thead>
+          <tr><th></th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th class="sat">土</th></tr>
+        </thead>
+        <tbody>
+          <tr><th>午前<small>9:00〜12:30</small></th><td class="open">●</td><td class="open">●</td><td class="open">●</td><td class="open">●</td><td class="open">●</td><td class="open">●</td></tr>
+          <tr><th>午後<small>14:00〜18:00</small></th><td class="open">●</td><td class="open">●</td><td class="closed">−</td><td class="open">●</td><td class="open">●</td><td class="closed">−</td></tr>
+        </tbody>
+      </table>
+      <div class="tt-notes">
+        <p>受付は診療終了30分前まで</p>
+        <p>休診日：水曜午後・土曜午後・日曜・祝日</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container-wide">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <div class="logo-mark"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="50" r="48" fill="none" stroke="#1B7A3D" stroke-width="1.5" opacity="0.4"/>
+          <circle cx="50" cy="50" r="42" fill="none" stroke="#1B7A3D" stroke-width="0.5" opacity="0.2"/>
+          <text x="50" y="62" text-anchor="middle" font-family="'Cormorant Garamond', serif" font-size="48" font-weight="400" font-style="italic" fill="#1B7A3D" letter-spacing="-2">M</text>
+          <text x="50" y="82" text-anchor="middle" font-family="'Cinzel', serif" font-size="7" fill="#1B7A3D" letter-spacing="3" opacity="0.6">MIDORI</text>
+        </svg></div>
+          <div class="logo-text">
+            <span class="logo-sub">消化器内科・内視鏡内科</span>
+            <span class="logo-name">みどり内科クリニック</span>
+          </div>
+        </div>
+        <p>〒107-0062<br>東京都港区南青山1-2-3<br>メディカルビル3F</p>
+        <div class="footer-tel"><svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.25 1.01l-2.2 2.2z"/></svg> 03-0000-0000</div>
+      </div>
+      <div class="footer-col">
+        <h4>ページ一覧</h4>
+        <ul><li><a href="design-top.html">ホーム</a></li><li><a href="preview-shinryou.html">診療科目</a></li><li><a href="preview-kensa.html">検査</a></li><li><a href="preview-doctor.html">ドクター紹介</a></li><li><a href="preview-clinic.html">クリニック紹介</a></li><li><a href="preview-blog.html">お役立ち情報</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h4>診療科目</h4>
+        <ul><li><a href="preview-shinryou.html">消化器内科</a></li><li><a href="preview-shinryou.html">内視鏡内科</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h4>検査</h4>
+        <ul><li><a href="preview-kensa.html">胃カメラ</a></li><li><a href="preview-kensa.html">大腸カメラ</a></li><li><a href="preview-kensa.html">腹部エコー</a></li><li><a href="preview-kensa.html">血液検査</a></li><li><a href="preview-kensa.html">レントゲン</a></li><li><a href="preview-kensa.html">健康診断</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h4>診療時間</h4>
+        <div class="footer-hours">
+          <p>午前 9:00〜12:30</p><p>午後 14:00〜18:00</p>
+          <p>休診：水曜午後・日曜・祝日</p><p>受付は診療終了30分前まで</p>
+          <p style="margin-top:10px;font-size:0.625rem;opacity:0.5;">※内視鏡検査は完全予約制です</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom"><div class="container"><p>&copy; 2026 みどり内科クリニック All Rights Reserved.</p></div></div>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Header scroll shadow
+  var header = document.querySelector('.header');
+  window.addEventListener('scroll', function() {
+    header.style.boxShadow = window.scrollY > 60 ? '0 4px 20px rgba(20,83,45,0.08)' : '0 1px 0 rgba(20,83,45,0.06)';
+  }, {passive:true});
+
+  // Hamburger menu
+  var toggle = document.getElementById('menu-toggle');
+  var nav = document.querySelector('.nav');
+  var overlay = document.getElementById('nav-overlay');
+  if (toggle && nav) {
+    toggle.addEventListener('click', function() {
+      toggle.classList.toggle('active');
+      nav.classList.toggle('open');
+      if (overlay) overlay.classList.toggle('open');
+      document.body.style.overflow = nav.classList.contains('open') ? 'hidden' : '';
+    });
+    if (overlay) overlay.addEventListener('click', function() {
+      toggle.classList.remove('active');
+      nav.classList.remove('open');
+      overlay.classList.remove('open');
+      document.body.style.overflow = '';
+    });
+    nav.querySelectorAll('a').forEach(function(a) {
+      a.addEventListener('click', function() {
+        toggle.classList.remove('active');
+        nav.classList.remove('open');
+        if (overlay) overlay.classList.remove('open');
+        document.body.style.overflow = '';
+      });
+    });
+  }
+
+  // Fade-in on scroll
+  var faders = document.querySelectorAll('.fade-in');
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  faders.forEach(function(el) { observer.observe(el); });
+});
+</script>
+</body>
+</html>

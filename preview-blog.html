@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>お役立ち情報 - みどり内科クリニック</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Noto+Sans+JP:wght@300;400;500;600;700&family=Noto+Serif+JP:wght@400;500;600;700&family=Shippori+Mincho:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   DESIGN SYSTEM — みどり内科クリニック V2
+   Green + Gold luxury medical clinic
+   ============================================================ */
+
+:root {
+  --green-deep: #14532d;
+  --green-primary: #1B7A3D;
+  --green-medium: #22963F;
+  --green-light: #4CAF50;
+  --green-pale: #E8F5E9;
+  --green-bg: #f4faf5;
+  --gold: #B8962E;
+  --gold-light: #D4B85A;
+  --gold-pale: rgba(184,150,46,0.08);
+  --cream: #FAFCFA;
+  --beige: #f0efe8;
+  --text: #1a2e1a;
+  --text-sub: #3a4d3a;
+  --text-light: #5a6a5a;
+  --border: #d4ddd4;
+  --white: #ffffff;
+  --shadow-sm: 0 2px 12px rgba(20,83,45,0.06);
+  --shadow-md: 0 8px 32px rgba(20,83,45,0.08);
+  --shadow-lg: 0 16px 48px rgba(20,83,45,0.12);
+  --font-serif: 'Shippori Mincho', 'Noto Serif JP', serif;
+  --font-sans: 'Noto Sans JP', sans-serif;
+  --font-en: 'Cinzel', serif;
+  --font-en-body: 'Cormorant Garamond', serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 16px; scroll-behavior: smooth; overflow-x: hidden; }
+body { overflow-x: hidden; }
+body {
+  font-family: var(--font-serif);
+  color: var(--text);
+  background: var(--cream);
+  line-height: 2;
+  letter-spacing: 0.04em;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: "palt";
+  overflow-x: hidden;
+}
+img { max-width: 100%; height: auto; display: block; }
+a { color: inherit; text-decoration: none; }
+ul { list-style: none; }
+
+/* ============================================================
+   HEADER
+   ============================================================ */
+.header {
+  position: fixed; top: 0; left: 0; width: 100%; z-index: 100;
+  height: 100px;
+  background: rgba(255,255,255,0.97);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 1px 0 rgba(20,83,45,0.06);
+  transition: box-shadow 0.4s;
+}
+.header-inner {
+  max-width: 1240px; margin: 0 auto; padding: 0 40px;
+  height: 100%; display: flex; align-items: center; justify-content: space-between;
+}
+.logo { display: flex; align-items: center; gap: 14px; }
+.logo-mark {
+  width: 56px; height: 56px; flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+}
+.logo-mark svg { width: 56px; height: 56px; }
+.logo-text { display: flex; flex-direction: column; line-height: 1.3; }
+.logo-name {
+  font-family: var(--font-serif); font-size: 1.1rem; font-weight: 600;
+  color: var(--green-deep); letter-spacing: 0.06em; line-height: 1.3;
+}
+.logo-sub {
+  font-family: var(--font-sans); font-size: 0.5rem; color: var(--text-light);
+  letter-spacing: 0.06em; line-height: 1.3;
+}
+.nav { display: flex; align-items: center; gap: 2px; }
+.nav a {
+  display: flex; flex-direction: column; align-items: center;
+  padding: 10px 16px; position: relative;
+}
+.nav-jp {
+  font-family: var(--font-sans); font-size: 0.825rem; font-weight: 500;
+  color: var(--text); letter-spacing: 0.06em;
+}
+.nav-en {
+  font-family: var(--font-en); font-size: 0.5rem; color: var(--gold);
+  letter-spacing: 0.14em; text-transform: uppercase; margin-top: 1px;
+}
+.nav a::after {
+  content: ''; position: absolute; bottom: 6px; left: 50%; width: 0; height: 2px;
+  background: var(--gold); transition: all 0.35s cubic-bezier(0.4,0,0.2,1); transform: translateX(-50%);
+}
+.nav a:hover::after, .nav a.current::after { width: 55%; }
+.header-right { display: flex; align-items: center; gap: 16px; }
+.header-tel {
+  display: flex; align-items: center; gap: 8px;
+  font-family: var(--font-en-body); font-size: 1.35rem; font-weight: 600;
+  color: var(--green-primary); letter-spacing: 0.02em;
+}
+.header-tel svg { width: 18px; height: 18px; fill: var(--green-primary); }
+.header-tel-sub {
+  font-family: var(--font-sans); font-size: 0.625rem; color: var(--text-light);
+  display: block; text-align: right; line-height: 1.3; margin-top: -2px;
+}
+
+/* Hamburger menu */
+.menu-toggle {
+  display: none; background: none; border: none; cursor: pointer;
+  width: 28px; height: 20px; position: relative; z-index: 1010;
+  flex-shrink: 0;
+}
+.menu-toggle span {
+  display: block; width: 100%; height: 2px; background: var(--green-deep);
+  position: absolute; left: 0; transition: all 0.3s;
+}
+.menu-toggle span:nth-child(1) { top: 0; }
+.menu-toggle span:nth-child(2) { top: 50%; transform: translateY(-50%); }
+.menu-toggle span:nth-child(3) { bottom: 0; }
+.menu-toggle.active span:nth-child(1) { top: 50%; transform: translateY(-50%) rotate(45deg); }
+.menu-toggle.active span:nth-child(2) { opacity: 0; }
+.menu-toggle.active span:nth-child(3) { bottom: 50%; transform: translateY(50%) rotate(-45deg); }
+
+/* Mobile nav overlay */
+.nav-overlay {
+  display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.4); z-index: 1004;
+}
+.nav-overlay.open { display: block; }
+
+/* SP header tel */
+.header-tel-sp { display: none; }
+
+/* ============================================================
+   CONTAINERS
+   ============================================================ */
+.container { max-width: 1100px; margin: 0 auto; padding: 0 40px; }
+.container-wide { max-width: 1240px; margin: 0 auto; padding: 0 40px; }
+
+/* ============================================================
+   PAGE HERO — Blurred background image
+   ============================================================ */
+.page-hero {
+  position: relative; height: 280px;
+  display: flex; align-items: center; justify-content: center;
+  overflow: hidden; margin-top: 100px;
+}
+.page-hero-bg {
+  position: absolute; inset: 0;
+  background: url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1920&h=600&fit=crop&q=80') center/cover no-repeat;
+  filter: blur(4px) brightness(0.85); transform: scale(1.05);
+}
+.page-hero-overlay { position: absolute; inset: 0; background: rgba(255,255,255,0.55); }
+.page-hero-content { position: relative; z-index: 2; text-align: center; }
+.page-hero-content .section-heading-en {
+  font-family: var(--font-en); font-size: 0.8rem; color: var(--gold);
+  letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 8px;
+  display: block;
+}
+.page-hero-content h1 {
+  font-family: var(--font-serif); font-size: 2rem; font-weight: 600;
+  color: var(--green-deep); letter-spacing: 0.12em;
+}
+
+/* ============================================================
+   BREADCRUMB
+   ============================================================ */
+.breadcrumb {
+  max-width: 1240px; margin: 0 auto; padding: 14px 40px;
+  font-family: var(--font-sans); font-size: 0.6875rem; color: var(--text-light);
+  letter-spacing: 0.02em;
+}
+.breadcrumb a { color: var(--text-light); transition: color 0.3s; }
+.breadcrumb a:hover { color: var(--green-primary); }
+.breadcrumb span.sep { margin: 0 8px; opacity: 0.5; }
+
+/* ============================================================
+   BLOG PAGE LAYOUT
+   ============================================================ */
+.sec { padding: 80px 0; position: relative; }
+.sec-white { background: var(--white); }
+
+.blog-page-grid {
+  display: grid; grid-template-columns: 1fr 300px; gap: 48px;
+  align-items: start;
+}
+
+/* Blog card list */
+.blog-list-grid {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px;
+}
+.blog-card {
+  background: var(--white); border-radius: 16px; overflow: hidden;
+  box-shadow: var(--shadow-sm); transition: all 0.5s cubic-bezier(0.4,0,0.2,1);
+  position: relative; cursor: pointer;
+}
+.blog-card::after {
+  content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 3px;
+  background: linear-gradient(90deg, var(--green-primary), var(--gold-light));
+  transform: scaleX(0); transition: transform 0.4s;
+}
+.blog-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-md); }
+.blog-card:hover::after { transform: scaleX(1); }
+.blog-card-img { height: 200px; overflow: hidden; position: relative; }
+.blog-card-img img {
+  width: 100%; height: 100%; object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.4,0,0.2,1);
+}
+.blog-card:hover .blog-card-img img { transform: scale(1.06); }
+.blog-card-img::after {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(180deg, transparent 60%, rgba(20,83,45,0.06) 100%);
+}
+.blog-card-body { padding: 22px 22px 26px; }
+.blog-card-meta {
+  display: flex; align-items: center; gap: 10px; margin-bottom: 10px;
+  font-family: var(--font-sans); font-size: 0.6875rem; color: var(--text-light);
+}
+.blog-card-meta .cat {
+  background: var(--green-pale); color: var(--green-primary); padding: 2px 10px;
+  border-radius: 3px; font-size: 0.625rem; font-weight: 600;
+}
+.blog-card-title {
+  font-family: var(--font-serif); font-size: 0.95rem; font-weight: 600;
+  color: var(--text); line-height: 1.65; margin-bottom: 10px; letter-spacing: 0.02em;
+}
+.blog-card-title a { color: inherit; transition: color 0.3s; }
+.blog-card-title a:hover { color: var(--green-primary); }
+.blog-card-excerpt {
+  font-family: var(--font-sans); font-size: 0.75rem; color: var(--text-light);
+  line-height: 1.8; font-weight: 300;
+  display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
+}
+
+/* Pagination */
+.pagination {
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+  margin-top: 48px;
+}
+.pagination a, .pagination span {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 40px; height: 40px; border-radius: 6px;
+  font-family: var(--font-en-body); font-size: 1rem; font-weight: 600;
+  color: var(--text-sub); transition: all 0.3s;
+  border: 1px solid var(--border);
+}
+.pagination a:hover {
+  border-color: var(--green-primary); color: var(--green-primary);
+  background: rgba(27,122,61,0.04);
+}
+.pagination .current {
+  background: var(--green-primary); color: #fff; border-color: var(--green-primary);
+}
+
+/* ============================================================
+   SIDEBAR
+   ============================================================ */
+.sidebar-widget {
+  background: var(--white); border-radius: 16px; padding: 28px 24px;
+  box-shadow: var(--shadow-sm); margin-bottom: 24px;
+}
+.sidebar-widget h3 {
+  font-family: var(--font-serif); font-size: 1rem; font-weight: 600;
+  color: var(--green-deep); margin-bottom: 18px; padding-bottom: 12px;
+  position: relative; letter-spacing: 0.06em;
+}
+.sidebar-widget h3::after {
+  content: ''; position: absolute; bottom: 0; left: 0; width: 22px; height: 2px;
+  background: var(--gold);
+}
+.sidebar-widget ul li {
+  border-bottom: 1px solid var(--border);
+}
+.sidebar-widget ul li:last-child { border-bottom: none; }
+.sidebar-widget ul li a {
+  display: block; padding: 12px 0;
+  font-family: var(--font-sans); font-size: 0.8125rem; color: var(--text-sub);
+  font-weight: 400; transition: all 0.3s; line-height: 1.6;
+}
+.sidebar-widget ul li a:hover {
+  color: var(--green-primary); padding-left: 6px;
+}
+
+/* Timetable in sidebar */
+.timetable {
+  width: 100%; border-collapse: separate; border-spacing: 0;
+  font-family: var(--font-sans); font-size: 0.75rem;
+  border-radius: 10px; overflow: hidden; box-shadow: var(--shadow-sm);
+}
+.timetable thead th {
+  background: linear-gradient(135deg, var(--green-primary) 0%, var(--green-medium) 100%);
+  color: #fff; font-weight: 500; padding: 10px 6px; text-align: center; font-size: 0.7rem;
+}
+.timetable thead th:first-child { background: var(--green-deep); width: 70px; }
+.timetable thead th.sat { background: var(--green-light); }
+.timetable tbody td, .timetable tbody th {
+  padding: 10px 6px; text-align: center; border-bottom: 1px solid var(--border);
+  background: var(--white);
+}
+.timetable tbody th { text-align: left; padding-left: 10px; font-weight: 500; color: var(--green-deep); }
+.timetable tbody th small { display: block; font-size: 0.5625rem; color: var(--text-light); font-weight: 400; }
+.timetable .open { color: var(--green-primary); font-weight: 700; font-size: 1rem; }
+.timetable .closed { color: #ccc; font-size: 0.9rem; }
+.timetable-notes {
+  margin-top: 12px; font-family: var(--font-sans); font-size: 0.6875rem;
+  color: var(--text-light); line-height: 1.8;
+}
+.timetable-notes p + p { margin-top: 2px; }
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.footer {
+  background: var(--green-deep);
+  color: rgba(255,255,255,0.8); position: relative;
+}
+.footer::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px;
+  background: linear-gradient(90deg, var(--green-primary), var(--gold), var(--gold-light), var(--gold), var(--green-primary));
+}
+.footer::after {
+  content: ''; position: absolute; top: 4px; left: 0; right: 0; bottom: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.012'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/svg%3E");
+  pointer-events: none;
+}
+.footer-grid {
+  display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr 1.2fr;
+  gap: 40px; padding: 80px 0 60px; position: relative; z-index: 1;
+}
+.footer-logo { display: flex; align-items: center; gap: 12px; margin-bottom: 24px; }
+.footer-logo .logo-mark { width: 48px; height: 48px; }
+.footer-logo .logo-mark svg { width: 48px; height: 48px; }
+.footer-logo .logo-mark svg text { fill: #fff !important; }
+.footer-logo .logo-mark svg circle { stroke: rgba(255,255,255,0.5) !important; }
+.footer-logo .logo-sub { color: rgba(255,255,255,0.6); }
+.footer-logo .logo-name { color: #fff; }
+.footer-logo-name {
+  font-family: var(--font-serif); font-size: 1rem; color: #fff; font-weight: 600;
+}
+.footer-brand p {
+  font-family: var(--font-sans); font-size: 0.75rem; line-height: 1.9; margin-bottom: 14px;
+  font-weight: 300;
+}
+.footer-tel {
+  font-family: var(--font-en-body); font-size: 1.2rem; color: #fff; font-weight: 600;
+  display: flex; align-items: center; gap: 8px;
+}
+.footer-tel svg { width: 15px; height: 15px; fill: #fff; }
+.footer-col h4 {
+  font-family: var(--font-serif); font-size: 0.8125rem; color: #fff;
+  margin-bottom: 20px; padding-bottom: 12px; position: relative;
+  letter-spacing: 0.06em;
+}
+.footer-col h4::after {
+  content: ''; position: absolute; bottom: 0; left: 0; width: 22px; height: 2px;
+  background: var(--gold);
+}
+.footer-col li { margin-bottom: 8px; }
+.footer-col a {
+  font-family: var(--font-sans); font-size: 0.75rem; color: rgba(255,255,255,0.75);
+  transition: all 0.3s; font-weight: 300;
+}
+.footer-col a:hover { color: var(--gold-light); padding-left: 6px; }
+.footer-hours {
+  font-family: var(--font-sans); font-size: 0.75rem; line-height: 1.9; font-weight: 300;
+}
+.footer-hours p + p { margin-top: 2px; }
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.06); padding: 22px 0; text-align: center;
+  position: relative; z-index: 1;
+}
+.footer-bottom p {
+  font-family: var(--font-sans); font-size: 0.6875rem; color: rgba(255,255,255,0.35);
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 1024px) {
+  .nav { gap: 0; }
+  .nav a { padding: 8px 10px; }
+  .nav-jp { font-size: 0.75rem; }
+  .header-tel { font-size: 1.1rem; }
+  .blog-page-grid { grid-template-columns: 1fr 260px; gap: 32px; }
+  .footer-grid { grid-template-columns: 1.5fr 1fr 1fr 1.2fr; }
+}
+
+@media (max-width: 768px) {
+  .header { height: 64px; }
+  .header-inner { padding: 0 16px; }
+  .logo-mark { width: 42px; height: 42px; }
+  .logo-mark svg { width: 42px; height: 42px; }
+  .logo-name { font-size: 0.95rem; }
+  .logo-sub { font-size: 0.4375rem; }
+  .menu-toggle { display: block; }
+  .nav {
+    display: none; position: fixed; top: 0; right: 0; width: 80%; max-width: 320px;
+    height: 100vh; background: var(--white); flex-direction: column;
+    padding: 80px 28px 40px; box-shadow: -4px 0 24px rgba(0,0,0,0.12);
+    z-index: 1005; gap: 0; overflow-y: auto;
+  }
+  .nav.open { display: flex; }
+  .nav a {
+    flex-direction: row; justify-content: space-between; align-items: center;
+    padding: 16px 0; border-bottom: 1px solid var(--border);
+  }
+  .nav a .nav-en { order: 2; }
+  .header-right .header-tel { display: none; }
+  .header-tel-sp { display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; }
+  .page-hero { height: 200px; margin-top: 64px; }
+  .page-hero-content h1 { font-size: 1.5rem; }
+  .breadcrumb { padding: 10px 20px; font-size: 0.625rem; }
+  .container, .container-wide { padding: 0 20px; }
+  .sec { padding: 48px 0; }
+  .blog-page-grid { grid-template-columns: 1fr; gap: 40px; }
+  .blog-list-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+}
+
+@media (max-width: 480px) {
+  .blog-list-grid { grid-template-columns: 1fr; gap: 20px; }
+  .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+  .page-hero { height: 180px; }
+  .page-hero-content h1 { font-size: 1.3rem; }
+}
+/* Texture backgrounds */
+.sec-green-pale {
+  position: relative;
+  background: url('blog_bg_sp.jpg') repeat;
+  background-size: 400px auto;
+  overflow: hidden;
+}
+.sec-green-pale::before {
+  content: '';
+  position: absolute; inset: 0; z-index: 0; pointer-events: none;
+  background: rgba(234,245,237,0.45);
+}
+.sec-green-pale > .container { position: relative; z-index: 1; }
+</style>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="header">
+  <div class="header-inner">
+    <a href="design-top.html" class="logo">
+      <div class="logo-mark">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="50" r="48" fill="none" stroke="#1B7A3D" stroke-width="1.5" opacity="0.4"/>
+          <circle cx="50" cy="50" r="42" fill="none" stroke="#1B7A3D" stroke-width="0.5" opacity="0.2"/>
+          <text x="50" y="62" text-anchor="middle" font-family="'Cormorant Garamond', serif" font-size="48" font-weight="400" font-style="italic" fill="#1B7A3D" letter-spacing="-2">M</text>
+          <text x="50" y="82" text-anchor="middle" font-family="'Cinzel', serif" font-size="7" fill="#1B7A3D" letter-spacing="3" opacity="0.6">MIDORI</text>
+        </svg>
+      </div>
+      <div class="logo-text">
+        <span class="logo-sub">消化器内科・内視鏡内科</span>
+        <span class="logo-name">みどり内科クリニック</span>
+      </div>
+    </a>
+    <nav class="nav">
+      <a href="design-top.html"><span class="nav-jp">ホーム</span><span class="nav-en">Home</span></a>
+      <a href="preview-shinryou.html"><span class="nav-jp">診療科目</span><span class="nav-en">Medical</span></a>
+      <a href="preview-kensa.html"><span class="nav-jp">検査</span><span class="nav-en">Examination</span></a>
+      <a href="preview-doctor.html"><span class="nav-jp">ドクター紹介</span><span class="nav-en">Doctor</span></a>
+      <a href="preview-clinic.html"><span class="nav-jp">クリニック紹介</span><span class="nav-en">Clinic</span></a>
+      <a href="preview-blog.html" class="current"><span class="nav-jp">お役立ち情報</span><span class="nav-en">Column</span></a>
+      <a href="design-top.html#access"><span class="nav-jp">アクセス</span><span class="nav-en">Access</span></a>
+    </nav>
+    <div class="header-right">
+      <a href="tel:03-0000-0000" class="header-tel">
+        <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.25 1.01l-2.2 2.2z"/></svg>
+        <div>
+          <span>03-0000-0000</span>
+          <span class="header-tel-sub">受付は診療終了30分前まで</span>
+        </div>
+      </a>
+      <a href="tel:03-0000-0000" class="header-tel-sp" aria-label="電話">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="var(--green-primary)"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.25 1.01l-2.2 2.2z"/></svg>
+      </a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="メニュー">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+<div class="nav-overlay" id="nav-overlay"></div>
+
+<!-- ========== Page Hero ========== -->
+<div class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content">
+    <span class="section-heading-en">Column</span>
+    <h1>お役立ち情報</h1>
+  </div>
+</div>
+
+<!-- Breadcrumb -->
+<div class="breadcrumb">
+  <a href="design-top.html">ホーム</a>
+  <span class="sep">&gt;</span>
+  <span>お役立ち情報</span>
+</div>
+
+<!-- ========== Blog List ========== -->
+<section <class="sec sec-white">
+  <div class="container">
+    <div class="blog-page-grid">
+      <div class="blog-main">
+        <div class="blog-list-grid">
+
+          <!-- Card 1 -->
+          <div class="blog-card">
+            <div class="blog-card-img">
+              <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&h=400&fit=crop" alt="胃カメラ検査を受ける前に知っておきたいこと">
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-card-meta">
+                <span>2026.03.10</span>
+                <span class="cat">検査のご案内</span>
+              </div>
+              <h3 class="blog-card-title"><a href="preview-kensa.html">胃カメラ検査を受ける前に知っておきたいこと</a></h3>
+              <p class="blog-card-excerpt">胃カメラ検査は食道・胃・十二指腸の病変を直接観察できる重要な検査です。検査前の準備や当日の流れについて詳しく解説します。</p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="blog-card">
+            <div class="blog-card-img">
+              <img src="https://images.unsplash.com/photo-1559757175-5700dde675bc?w=600&h=400&fit=crop" alt="ピロリ菌と胃がんの関係について">
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-card-meta">
+                <span>2026.03.05</span>
+                <span class="cat">消化器の病気</span>
+              </div>
+              <h3 class="blog-card-title"><a href="#">ピロリ菌と胃がんの関係について</a></h3>
+              <p class="blog-card-excerpt">ピロリ菌は胃がんの大きなリスク因子です。感染の仕組みや除菌治療の方法について、わかりやすくお伝えします。</p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="blog-card">
+            <div class="blog-card-img">
+              <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&h=400&fit=crop" alt="大腸がん検診の重要性と検査の流れ">
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-card-meta">
+                <span>2026.02.28</span>
+                <span class="cat">検査のご案内</span>
+              </div>
+              <h3 class="blog-card-title"><a href="#">大腸がん検診の重要性と検査の流れ</a></h3>
+              <p class="blog-card-excerpt">大腸がんは早期発見により治癒率の高いがんです。大腸カメラ検査の流れや前日の準備について詳しく解説します。</p>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="blog-card">
+            <div class="blog-card-img">
+              <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=600&h=400&fit=crop" alt="逆流性食道炎の原因と対策">
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-card-meta">
+                <span>2026.02.20</span>
+                <span class="cat">健康コラム</span>
+              </div>
+              <h3 class="blog-card-title"><a href="#">逆流性食道炎の原因と対策</a></h3>
+              <p class="blog-card-excerpt">逆流性食道炎は胃酸が食道に逆流することで起こる疾患です。生活習慣の見直しや治療法について解説します。</p>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="blog-card">
+            <div class="blog-card-img">
+              <img src="https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?w=600&h=400&fit=crop" alt="過敏性腸症候群（IBS）とは">
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-card-meta">
+                <span>2026.02.15</span>
+                <span class="cat">消化器の病気</span>
+              </div>
+              <h3 class="blog-card-title"><a href="#">過敏性腸症候群（IBS）とは</a></h3>
+              <p class="blog-card-excerpt">過敏性腸症候群はストレスや生活習慣が関与する機能性の消化器疾患です。症状や治療のポイントをお伝えします。</p>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="blog-card">
+            <div class="blog-card-img">
+              <img src="https://images.unsplash.com/photo-1530497610245-94d3c16cda28?w=600&h=400&fit=crop" alt="脂肪肝を放置すると危険？">
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-card-meta">
+                <span>2026.02.10</span>
+                <span class="cat">健康コラム</span>
+              </div>
+              <h3 class="blog-card-title"><a href="#">脂肪肝を放置すると危険？</a></h3>
+              <p class="blog-card-excerpt">脂肪肝は自覚症状がほとんどないまま進行し、肝硬変や肝がんにつながるリスクがあります。早めの対策が重要です。</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination">
+          <span class="current">1</span>
+          <a href="#">2</a>
+          <a href="#">&raquo;</a>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <!-- Categories -->
+        <div class="sidebar-widget">
+          <h3>カテゴリー</h3>
+          <ul>
+            <li><a href="#">健康コラム <span style="float:right;color:var(--text-light);">(2)</span></a></li>
+            <li><a href="#">検査のご案内 <span style="float:right;color:var(--text-light);">(2)</span></a></li>
+            <li><a href="#">消化器の病気 <span style="float:right;color:var(--text-light);">(2)</span></a></li>
+          </ul>
+        </div>
+
+        <!-- Recent Posts -->
+        <div class="sidebar-widget">
+          <h3>最近の記事</h3>
+          <ul>
+            <li><a href="preview-kensa.html">胃カメラ検査を受ける前に知っておきたいこと</a></li>
+            <li><a href="#">ピロリ菌と胃がんの関係について</a></li>
+            <li><a href="#">大腸がん検診の重要性と検査の流れ</a></li>
+            <li><a href="#">逆流性食道炎の原因と対策</a></li>
+            <li><a href="#">過敏性腸症候群（IBS）とは</a></li>
+          </ul>
+        </div>
+
+        <!-- Timetable -->
+        <div class="sidebar-widget">
+          <h3>診療時間</h3>
+          <table class="timetable">
+            <thead>
+              <tr><th></th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th class="sat">土</th></tr>
+            </thead>
+            <tbody>
+              <tr><th>午前<br><small>9:00〜12:30</small></th><td class="open">○</td><td class="open">○</td><td class="open">○</td><td class="open">○</td><td class="open">○</td><td class="open">○</td></tr>
+              <tr><th>午後<br><small>14:00〜18:00</small></th><td class="open">○</td><td class="open">○</td><td class="closed">−</td><td class="open">○</td><td class="open">○</td><td class="closed">−</td></tr>
+            </tbody>
+          </table>
+          <div class="timetable-notes">
+            <p>受付は診療終了30分前まで</p>
+            <p>休診日：水曜午後・日曜・祝日</p>
+          </div>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container-wide">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <div class="logo-mark"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="50" r="48" fill="none" stroke="#1B7A3D" stroke-width="1.5" opacity="0.4"/>
+          <circle cx="50" cy="50" r="42" fill="none" stroke="#1B7A3D" stroke-width="0.5" opacity="0.2"/>
+          <text x="50" y="62" text-anchor="middle" font-family="'Cormorant Garamond', serif" font-size="48" font-weight="400" font-style="italic" fill="#1B7A3D" letter-spacing="-2">M</text>
+          <text x="50" y="82" text-anchor="middle" font-family="'Cinzel', serif" font-size="7" fill="#1B7A3D" letter-spacing="3" opacity="0.6">MIDORI</text>
+        </svg></div>
+          <div class="logo-text">
+            <span class="logo-sub">消化器内科・内視鏡内科</span>
+            <span class="logo-name">みどり内科クリニック</span>
+          </div>
+        </div>
+        <p>〒107-0062<br>東京都港区南青山1-2-3<br>メディカルビル3F</p>
+        <div class="footer-tel"><svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.25 1.01l-2.2 2.2z"/></svg> 03-0000-0000</div>
+      </div>
+      <div class="footer-col">
+        <h4>ページ一覧</h4>
+        <ul><li><a href="design-top.html">ホーム</a></li><li><a href="preview-shinryou.html">診療科目</a></li><li><a href="preview-kensa.html">検査</a></li><li><a href="preview-doctor.html">ドクター紹介</a></li><li><a href="#">クリニック紹介</a></li><li><a href="preview-blog.html">お役立ち情報</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h4>診療科目</h4>
+        <ul><li><a href="preview-shinryou.html">消化器内科</a></li><li><a href="preview-shinryou.html">内視鏡内科</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h4>検査</h4>
+        <ul><li><a href="preview-kensa.html">胃カメラ</a></li><li><a href="preview-kensa.html">大腸カメラ</a></li><li><a href="preview-kensa.html">腹部エコー</a></li><li><a href="preview-kensa.html">血液検査</a></li><li><a href="preview-kensa.html">レントゲン</a></li><li><a href="preview-kensa.html">健康診断</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h4>診療時間</h4>
+        <div class="footer-hours">
+          <p>午前 9:00〜12:30</p><p>午後 14:00〜18:00</p>
+          <p>休診：水曜午後・日曜・祝日</p><p>受付は診療終了30分前まで</p>
+          <p style="margin-top:10px;font-size:0.625rem;opacity:0.5;">※内視鏡検査は完全予約制です</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom"><div class="container"><p>&copy; 2026 みどり内科クリニック All Rights Reserved.</p></div></div>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Header scroll
+  var header = document.querySelector('.header');
+  window.addEventListener('scroll', function() {
+    header.style.boxShadow = window.scrollY > 60 ? '0 4px 20px rgba(20,83,45,0.08)' : '0 1px 0 rgba(20,83,45,0.06)';
+  }, {passive:true});
+
+  // Hamburger menu
+  var toggle = document.getElementById('menu-toggle');
+  var nav = document.querySelector('.nav');
+  var overlay = document.getElementById('nav-overlay');
+  if (toggle && nav) {
+    toggle.addEventListener('click', function() {
+      toggle.classList.toggle('active');
+      nav.classList.toggle('open');
+      if (overlay) overlay.classList.toggle('open');
+      document.body.style.overflow = nav.classList.contains('open') ? 'hidden' : '';
+    });
+    if (overlay) overlay.addEventListener('click', function() {
+      toggle.classList.remove('active');
+      nav.classList.remove('open');
+      overlay.classList.remove('open');
+      document.body.style.overflow = '';
+    });
+    nav.querySelectorAll('a').forEach(function(a) {
+      a.addEventListener('click', function() {
+        toggle.classList.remove('active');
+        nav.classList.remove('open');
+        if (overlay) overlay.classList.remove('open');
+        document.body.style.overflow = '';
+      });
+    });
+  }
+});
+</script>
+</body>
+</html>

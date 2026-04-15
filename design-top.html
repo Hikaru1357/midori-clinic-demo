@@ -1,0 +1,1693 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>みどり内科クリニック V2 - トップページデザイン</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Noto+Sans+JP:wght@300;400;500;600;700&family=Noto+Serif+JP:wght@400;500;600;700&family=Shippori+Mincho:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<script src="https://mcp.figma.com/mcp/html-to-design/capture.js" async></script>
+<style>
+/* ============================================================
+   DESIGN MOCKUP — みどり内科クリニック V2
+   Green + Gold luxury medical clinic
+   ============================================================ */
+
+:root {
+  --green-deep: #14532d;
+  --green-primary: #1B7A3D;
+  --green-medium: #22963F;
+  --green-light: #4CAF50;
+  --green-pale: #E8F5E9;
+  --green-bg: #f4faf5;
+  --gold: #B8962E;
+  --gold-light: #D4B85A;
+  --gold-pale: rgba(184,150,46,0.08);
+  --cream: #FAFCFA;
+  --beige: #f0efe8;
+  --text: #1a2e1a;
+  --text-sub: #3a4d3a;
+  --text-light: #5a6a5a;
+  --border: #d4ddd4;
+  --white: #ffffff;
+  --shadow-sm: 0 2px 12px rgba(20,83,45,0.06);
+  --shadow-md: 0 8px 32px rgba(20,83,45,0.08);
+  --shadow-lg: 0 16px 48px rgba(20,83,45,0.12);
+  --font-serif: 'Shippori Mincho', 'Noto Serif JP', serif;
+  --font-sans: 'Noto Sans JP', sans-serif;
+  --font-en: 'Cinzel', serif;
+  --font-en-body: 'Cormorant Garamond', serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 16px; scroll-behavior: smooth; overflow-x: hidden; }
+body { overflow-x: hidden; }
+body {
+  font-family: var(--font-serif);
+  color: var(--text);
+  background: var(--cream);
+  line-height: 2;
+  letter-spacing: 0.04em;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: "palt";
+  overflow-x: hidden;
+}
+img { max-width: 100%; height: auto; display: block; }
+a { color: inherit; text-decoration: none; }
+ul { list-style: none; }
+
+/* ============================================================
+   HEADER
+   ============================================================ */
+.header {
+  position: fixed; top: 0; left: 0; width: 100%; z-index: 100;
+  height: 100px;
+  background: rgba(255,255,255,0.97);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 1px 0 rgba(20,83,45,0.06);
+  transition: box-shadow 0.4s;
+}
+.header-inner {
+  max-width: 1240px; margin: 0 auto; padding: 0 40px;
+  height: 100%; display: flex; align-items: center; justify-content: space-between;
+}
+.logo { display: flex; align-items: center; gap: 14px; }
+.logo-mark {
+  width: 56px; height: 56px; flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+}
+.logo-mark svg { width: 56px; height: 56px; }
+.logo-text { display: flex; flex-direction: column; line-height: 1.3; }
+.logo-name {
+  font-family: var(--font-serif); font-size: 1.1rem; font-weight: 600;
+  color: var(--green-deep); letter-spacing: 0.06em; line-height: 1.3;
+}
+.logo-sub {
+  font-family: var(--font-sans); font-size: 0.5rem; color: var(--text-light);
+  letter-spacing: 0.06em; line-height: 1.3;
+}
+.nav { display: flex; align-items: center; gap: 2px; }
+.nav a {
+  display: flex; flex-direction: column; align-items: center;
+  padding: 10px 16px; position: relative;
+}
+.nav-jp {
+  font-family: var(--font-sans); font-size: 0.825rem; font-weight: 500;
+  color: var(--text); letter-spacing: 0.06em;
+}
+.nav-en {
+  font-family: var(--font-en); font-size: 0.5rem; color: var(--gold);
+  letter-spacing: 0.14em; text-transform: uppercase; margin-top: 1px;
+}
+.nav a::after {
+  content: ''; position: absolute; bottom: 6px; left: 50%; width: 0; height: 2px;
+  background: var(--gold); transition: all 0.35s cubic-bezier(0.4,0,0.2,1); transform: translateX(-50%);
+}
+.nav a:hover::after, .nav a.current::after { width: 55%; }
+.header-right { display: flex; align-items: center; gap: 16px; }
+.header-tel {
+  display: flex; align-items: center; gap: 8px;
+  font-family: var(--font-en-body); font-size: 1.35rem; font-weight: 600;
+  color: var(--green-primary); letter-spacing: 0.02em;
+}
+.header-tel svg { width: 18px; height: 18px; fill: var(--green-primary); }
+.header-tel-sub {
+  font-family: var(--font-sans); font-size: 0.625rem; color: var(--text-light);
+  display: block; text-align: right; line-height: 1.3; margin-top: -2px;
+}
+
+/* ============================================================
+   HERO — Full-screen slider with overlay
+   ============================================================ */
+.hero {
+  position: relative; width: 100%; height: 100vh; min-height: 700px; max-height: 920px;
+  margin-top: 100px; overflow: hidden;
+}
+.hero-swiper { width: 100%; height: 100%; }
+.hero-swiper .swiper-slide { position: relative; overflow: hidden; }
+.hero-swiper .swiper-slide img {
+  width: 100%; height: 100%; object-fit: cover;
+  animation: kenburns 10s ease-out forwards;
+}
+@keyframes kenburns {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.12); }
+}
+.hero-overlay {
+  position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 2;
+  background:
+    linear-gradient(to right, rgba(255,255,255,0.85) 0%, rgba(255,255,255,0.55) 40%, rgba(255,255,255,0.1) 65%, transparent 100%),
+    linear-gradient(to top, rgba(255,255,255,0.3) 0%, transparent 20%);
+}
+.hero-content {
+  position: absolute; top: 50%; left: 0; transform: translateY(-55%);
+  z-index: 3; width: 100%; padding: 0 80px;
+}
+.hero-inner { max-width: 1240px; margin: 0 auto; }
+.hero-badge {
+  display: inline-block; background: var(--green-primary); color: #fff;
+  font-family: var(--font-sans); font-size: 0.8125rem; font-weight: 500;
+  padding: 8px 24px; border-radius: 4px; margin-bottom: 24px;
+  letter-spacing: 0.08em;
+  box-shadow: 0 2px 12px rgba(27,122,61,0.3);
+}
+.hero-heading {
+  font-family: var(--font-serif); font-size: 2.8rem; font-weight: 600;
+  color: var(--green-deep); line-height: 1.6; letter-spacing: 0.1em;
+  text-shadow:
+    0 0 2px #fff, 0 0 4px #fff, 0 0 8px #fff,
+    0 0 12px #fff, 0 0 20px rgba(255,255,255,0.8),
+    0 0 30px rgba(255,255,255,0.5);
+}
+.hero-heading span { display: block; }
+.hero-desc {
+  font-family: var(--font-sans); font-size: 0.9375rem; font-weight: 400;
+  color: var(--text); line-height: 2; margin-top: 24px;
+  max-width: 520px; letter-spacing: 0.06em;
+  text-shadow:
+    0 0 2px #fff, 0 0 6px #fff, 0 0 12px rgba(255,255,255,0.7);
+}
+/* Hero timetable overlay */
+.hero-timetable {
+  position: absolute; bottom: 50px; right: 80px; z-index: 3;
+  background: rgba(255,255,255,0.94); backdrop-filter: blur(12px);
+  border-radius: 16px; padding: 28px 32px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+  border: 1px solid rgba(184,150,46,0.12);
+  max-width: 440px;
+}
+.hero-tt-title {
+  font-family: var(--font-serif); font-size: 0.9375rem; color: var(--green-primary);
+  text-align: center; margin-bottom: 4px; letter-spacing: 0.08em; font-weight: 600;
+}
+.hero-tt-en {
+  font-family: var(--font-en); font-size: 0.5625rem; color: var(--gold);
+  text-align: center; letter-spacing: 0.2em; text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.hero-tt-line {
+  width: 24px; height: 1px; background: var(--gold); margin: 0 auto 16px; opacity: 0.5;
+}
+/* Hero pagination */
+.hero-swiper .swiper-pagination { bottom: 50px !important; left: 80px !important; width: auto !important; text-align: left !important; z-index: 4; }
+/* Hero 3 Points – parallelogram style */
+.hero-points {
+  position: absolute; bottom: 36px; left: 60px; z-index: 3;
+  display: flex; gap: 14px;
+}
+.hero-point-card {
+  background: rgba(255,255,255,0.93); backdrop-filter: blur(6px);
+  padding: 22px 32px 20px 28px; text-align: left; min-width: 190px;
+  transform: skewX(-8deg);
+  box-shadow: 4px 4px 16px rgba(0,0,0,0.10);
+  transition: background 0.3s, box-shadow 0.3s;
+  position: relative;
+}
+.hero-point-card:hover { background: rgba(255,255,255,1); box-shadow: 4px 4px 20px rgba(0,0,0,0.15); }
+.hero-point-card-inner {
+  transform: skewX(8deg);
+}
+.hero-point-num {
+  display: flex; align-items: baseline; gap: 12px;
+  margin-bottom: 10px;
+}
+.hero-point-n {
+  font-family: var(--font-en-body); font-size: 2.4rem; font-weight: 300;
+  color: var(--green-primary); line-height: 1; letter-spacing: -0.02em;
+  flex-shrink: 0;
+}
+.hero-point-line {
+  flex: 1; height: 1px; background: var(--green-primary); opacity: 0.35;
+  position: relative; top: -4px;
+}
+.hero-point-label {
+  font-family: var(--font-en); font-size: 0.55rem; color: var(--green-primary);
+  letter-spacing: 0.12em; text-transform: uppercase; opacity: 0.7;
+  margin-bottom: 2px; display: block;
+}
+.hero-point-text {
+  font-family: var(--font-serif); font-size: 0.82rem; font-weight: 600;
+  color: var(--green-deep); line-height: 1.65; letter-spacing: 0.04em;
+}
+
+.hero-swiper .swiper-pagination-bullet {
+  width: 40px; height: 3px; border-radius: 2px; background: rgba(27,122,61,0.2);
+  opacity: 1; transition: all 0.5s; margin: 0 5px !important;
+}
+.hero-swiper .swiper-pagination-bullet-active {
+  background: var(--green-primary); width: 56px; box-shadow: 0 0 12px rgba(27,122,61,0.25);
+}
+
+/* ============================================================
+   SECTION COMMON
+   ============================================================ */
+.sec { padding: 110px 0; position: relative; }
+.sec-white { background: var(--white); }
+.sec-cream { background: var(--cream); }
+.sec-green-pale {
+  position: relative;
+  background: url('blog_bg_sp.jpg') repeat;
+  background-size: 400px auto;
+  overflow: hidden;
+}
+.sec-green-pale::before {
+  content: ''; position: absolute; inset: 0; z-index: 0; pointer-events: none;
+  background: rgba(234,245,237,0.45);
+}
+.sec-green-pale::after {
+  content: ''; position: absolute; inset: 0; z-index: 0; pointer-events: none;
+  background:
+    radial-gradient(ellipse 800px 600px at 10% 20%, rgba(27,122,61,0.08) 0%, transparent 70%),
+    radial-gradient(ellipse 600px 500px at 85% 70%, rgba(27,122,61,0.06) 0%, transparent 70%);
+}
+.sec-green-pale > .container { position: relative; z-index: 1; }
+.sec-green-pale > .container-wide { position: relative; z-index: 1; }
+
+/* Texture background utility */
+.sec-texture {
+  position: relative;
+  background: url('blog_bg_sp.jpg') repeat;
+  background-size: 400px auto;
+}
+.sec-texture::before {
+  content: ''; position: absolute; inset: 0; z-index: 0; pointer-events: none;
+  background: rgba(255,255,255,0.55);
+}
+.sec-texture > .container { position: relative; z-index: 1; }
+.container { max-width: 1100px; margin: 0 auto; padding: 0 40px; }
+.container-wide { max-width: 1240px; margin: 0 auto; padding: 0 40px; }
+
+/* Breadcrumb */
+.breadcrumb {
+  max-width: 1240px; margin: 0 auto; padding: 14px 40px;
+  font-family: var(--font-sans); font-size: 0.6875rem; color: var(--text-light);
+  letter-spacing: 0.02em;
+}
+.breadcrumb a { color: var(--text-light); transition: color 0.3s; }
+.breadcrumb a:hover { color: var(--green-primary); }
+.breadcrumb span.sep { margin: 0 8px; opacity: 0.5; }
+
+/* Section Heading — with large background text */
+.sec-head { text-align: center; margin-bottom: 64px; position: relative; }
+.sec-head-bg {
+  position: absolute; top: 50%; left: 50%; transform: translate(-50%, -55%);
+  font-family: var(--font-en); font-size: clamp(2.5rem, 6vw, 6rem); font-weight: 700;
+  letter-spacing: 0.06em; text-transform: uppercase; white-space: nowrap;
+  color: var(--green-primary); opacity: 0.06; pointer-events: none; z-index: 0;
+  line-height: 1; max-width: 100%; overflow: hidden;
+}
+.sec-head-en {
+  font-family: var(--font-en); font-size: 1rem; color: var(--gold);
+  letter-spacing: 0.22em; text-transform: uppercase; display: block; margin-bottom: 12px;
+  position: relative; z-index: 1;
+}
+.sec-head-jp {
+  font-family: var(--font-serif); font-size: 2.25rem; font-weight: 600;
+  color: var(--green-deep); letter-spacing: 0.12em; display: inline-block;
+  position: relative; z-index: 1;
+}
+
+/* Hamburger menu */
+.menu-toggle {
+  display: none; background: none; border: none; cursor: pointer;
+  width: 28px; height: 20px; position: relative; z-index: 1010;
+  flex-shrink: 0;
+}
+.menu-toggle span {
+  display: block; width: 100%; height: 2px; background: var(--green-deep);
+  position: absolute; left: 0; transition: all 0.3s;
+}
+.menu-toggle span:nth-child(1) { top: 0; }
+.menu-toggle span:nth-child(2) { top: 50%; transform: translateY(-50%); }
+.menu-toggle span:nth-child(3) { bottom: 0; }
+.menu-toggle.active span:nth-child(1) { top: 50%; transform: translateY(-50%) rotate(45deg); }
+.menu-toggle.active span:nth-child(2) { opacity: 0; }
+.menu-toggle.active span:nth-child(3) { bottom: 50%; transform: translateY(50%) rotate(-45deg); }
+
+/* Mobile nav overlay */
+.nav-overlay {
+  display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.4); z-index: 1004;
+}
+.nav-overlay.open { display: block; }
+
+/* SP header tel */
+.header-tel-sp { display: none; }
+/* Ornamental diamond + lines */
+.sec-head-ornament {
+  display: flex; align-items: center; justify-content: center; gap: 12px; margin-top: 20px;
+}
+.sec-head-ornament::before, .sec-head-ornament::after {
+  content: ''; width: 40px; height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold));
+}
+.sec-head-ornament::after {
+  background: linear-gradient(90deg, var(--gold), transparent);
+}
+.sec-head-ornament span {
+  width: 7px; height: 7px; background: var(--gold); transform: rotate(45deg);
+  flex-shrink: 0;
+}
+.sec-desc {
+  text-align: center; font-family: var(--font-sans); font-size: 0.9375rem;
+  color: var(--text-sub); line-height: 2; max-width: 640px; margin: -40px auto 64px;
+  font-weight: 300;
+}
+
+/* Wave separator */
+.wave-top {
+  position: absolute; top: -1px; left: 0; width: 100%; height: 50px; z-index: 1;
+  pointer-events: none;
+}
+.wave-top svg { width: 100%; height: 100%; display: block; }
+
+/* ============================================================
+   NEWS
+   ============================================================ */
+.news-list { max-width: 800px; margin: 0 auto; }
+.news-item {
+  display: flex; align-items: center; gap: 18px;
+  padding: 20px 20px; border-radius: 8px;
+  transition: all 0.35s; border-left: 3px solid transparent;
+  cursor: pointer;
+}
+.news-item + .news-item { border-top: 1px solid var(--border); }
+.news-item:hover {
+  background: rgba(27,122,61,0.03); border-left-color: var(--green-primary);
+  padding-left: 28px;
+}
+.news-date {
+  font-family: var(--font-en-body); font-size: 1rem; color: var(--text-light);
+  letter-spacing: 0.03em; white-space: nowrap; min-width: 105px;
+}
+.news-cat {
+  display: inline-block; font-family: var(--font-sans); font-size: 0.7rem; font-weight: 600;
+  color: #fff; background: linear-gradient(135deg, var(--green-primary), var(--green-medium));
+  padding: 4px 16px; border-radius: 3px; letter-spacing: 0.04em;
+  white-space: nowrap; min-width: 80px; text-align: center;
+}
+.news-title {
+  font-family: var(--font-sans); font-size: 1rem; color: var(--text);
+  font-weight: 400; letter-spacing: 0.02em;
+}
+
+/* ============================================================
+   FEATURES — tennoji style (number + line + category + catchcopy + cards)
+   ============================================================ */
+.features-section {
+  padding-bottom: 0;
+}
+.features-section > .container {
+  max-width: 1300px;
+}
+.features-section .sec-head {
+  margin-bottom: 20px;
+}
+/* Main heading: 当院の6つの特長 */
+.features-main-heading {
+  text-align: center; margin-bottom: 12px;
+}
+.features-main-heading h2 {
+  font-family: var(--font-serif); font-size: 1.875rem; font-weight: 500;
+  color: var(--green-deep); letter-spacing: 0.12em; display: inline;
+}
+.features-main-heading .num {
+  font-family: var(--font-en-body); font-size: 4rem; font-weight: 400;
+  color: var(--green-primary); line-height: 1; vertical-align: baseline;
+  margin: 0 2px;
+}
+.features-main-sub {
+  text-align: center; font-family: var(--font-en); font-size: 0.8125rem;
+  color: var(--gold); letter-spacing: 0.2em; text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.features-main-line {
+  width: 1px; height: 32px; background: var(--green-deep); margin: 10px auto 0;
+  opacity: 0.3;
+}
+
+/* Feature group — alternating left/right layout */
+.f-group {
+  padding: 70px 0; position: relative;
+  display: grid; grid-template-columns: 1fr 1.3fr; gap: 0 60px;
+  align-items: center;
+}
+.f-group:first-of-type { padding-top: 40px; }
+.f-group + .f-group { border-top: none; }
+
+/* Text side */
+.f-group-text { padding: 0 20px; }
+.f-group-header {
+  display: flex; align-items: center; gap: 16px; margin-bottom: 20px;
+}
+.f-group-num {
+  font-family: var(--font-en-body); font-size: 4rem; font-weight: 400;
+  color: var(--green-primary); line-height: 1; letter-spacing: -0.02em;
+  opacity: 0.6;
+}
+.f-group-line {
+  width: 36px; height: 1px; background: var(--green-deep); opacity: 0.3;
+}
+.f-group-en {
+  font-family: var(--font-en); font-size: 0.6875rem; color: var(--text-sub);
+  letter-spacing: 0.15em; text-transform: uppercase;
+}
+.f-group-catch {
+  font-family: var(--font-serif); font-size: 1.85rem; font-weight: 500;
+  color: var(--green-deep); line-height: 1.75; letter-spacing: 0.06em;
+  margin-bottom: 24px;
+}
+.f-group-desc {
+  font-family: var(--font-sans); font-size: 1rem; color: var(--text-sub);
+  line-height: 2.1; font-weight: 300;
+}
+
+/* Image side — single image with trapezoid clip */
+.f-group-images {
+  overflow: hidden;
+}
+.f-group-images img {
+  width: 100%; height: 360px; object-fit: cover; display: block;
+}
+/* Odd groups (1,3,5): image on RIGHT → left side of image is pointed (trapezoid pointing left) */
+.f-group:nth-child(odd) .f-group-images img {
+  clip-path: polygon(12% 0, 100% 0, 100% 100%, 0% 100%);
+}
+/* Even groups (2,4,6): image on LEFT → right side of image is pointed (trapezoid pointing right) */
+.f-group:nth-child(even) .f-group-images img {
+  clip-path: polygon(0 0, 100% 0, 88% 100%, 0 100%);
+}
+
+/* Even groups: reverse order (image left, text right) */
+.f-group:nth-child(even) { direction: rtl; }
+.f-group:nth-child(even) > * { direction: ltr; }
+
+/* Large background category text */
+.f-group-bg {
+  position: absolute; top: 50%; right: -20px; transform: translateY(-50%);
+  font-family: var(--font-en); font-size: clamp(3rem, 5vw, 5rem); font-weight: 700;
+  color: var(--green-primary); opacity: 0.04; letter-spacing: 0.06em;
+  text-transform: uppercase; white-space: nowrap; pointer-events: none;
+  line-height: 1;
+}
+.f-group:nth-child(even) .f-group-bg { right: auto; left: -20px; }
+
+/* ============================================================
+   FLOW TEXT — Marquee
+   ============================================================ */
+.flow-text {
+  overflow: hidden; white-space: nowrap; padding: 48px 0;
+  background: var(--white); position: relative;
+}
+.flow-text-inner {
+  display: inline-flex; animation: marquee 40s linear infinite;
+}
+.flow-text-inner span {
+  font-family: var(--font-en); font-size: 6.5rem; font-weight: 400;
+  color: var(--green-primary); opacity: 0.07; letter-spacing: 0.06em;
+  padding-right: 80px; user-select: none;
+}
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* ============================================================
+   GREETING — Doctor section
+   ============================================================ */
+.greeting { display: grid; grid-template-columns: 1fr 1.1fr; gap: 64px; align-items: center; }
+.greeting-img {
+  position: relative; border-radius: 16px; overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+.greeting-img::after {
+  content: ''; position: absolute; bottom: -10px; right: -10px;
+  width: 100%; height: 100%; border: 2px solid var(--gold); border-radius: 16px;
+  opacity: 0.15; z-index: -1; pointer-events: none;
+}
+.greeting-img img { width: 100%; height: 440px; object-fit: cover; }
+.greeting-text h3 {
+  font-family: var(--font-serif); font-size: 1.5rem; font-weight: 500;
+  color: var(--green-deep); line-height: 1.85; margin-bottom: 28px; letter-spacing: 0.06em;
+}
+.greeting-text p {
+  font-family: var(--font-sans); font-size: 0.9rem; color: var(--text-sub);
+  line-height: 2.1; margin-bottom: 16px; font-weight: 300;
+}
+.greeting-sign { text-align: right; margin-top: 28px; }
+.greeting-sign .role {
+  font-family: var(--font-sans); font-size: 0.75rem; color: var(--text-light);
+}
+.greeting-sign .name {
+  font-family: var(--font-serif); font-size: 1.5rem; color: var(--green-deep);
+  font-weight: 600; display: inline-block; position: relative;
+}
+.greeting-sign .name::after {
+  content: ''; display: block; width: 100%; height: 1px; background: var(--gold);
+  margin-top: 4px; opacity: 0.3;
+}
+.greeting-btn {
+  display: inline-flex; align-items: center; gap: 8px; margin-top: 28px;
+  padding: 13px 32px; border: 2px solid var(--green-primary); border-radius: 6px;
+  font-family: var(--font-sans); font-size: 0.8125rem; font-weight: 500;
+  color: var(--green-primary); letter-spacing: 0.06em;
+  transition: all 0.35s; position: relative; overflow: hidden; z-index: 1;
+}
+.greeting-btn::before {
+  content: ''; position: absolute; inset: 0; background: var(--green-primary);
+  z-index: -1; transform: scaleX(0); transform-origin: right; transition: transform 0.4s cubic-bezier(0.4,0,0.2,1);
+}
+.greeting-btn:hover { color: #fff; }
+.greeting-btn:hover::before { transform: scaleX(1); transform-origin: left; }
+
+/* ============================================================
+   DEPARTMENTS — Arch-top cards (tennoji style)
+   ============================================================ */
+.dept-section { position: relative; isolation: isolate; }
+.dept-section .sec-head { position: relative; z-index: 2; }
+/* Large background "menu" text */
+.dept-bg-en {
+  position: absolute; top: 40px; left: 50%; transform: translateX(-50%);
+  font-family: var(--font-en); font-size: clamp(3rem, 7vw, 7rem); font-weight: 700;
+  letter-spacing: 0.06em; text-transform: uppercase; white-space: nowrap;
+  background: linear-gradient(180deg, rgba(27,122,61,0.06) 0%, rgba(27,122,61,0.01) 100%);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text; pointer-events: none; z-index: 0; line-height: 1;
+  max-width: 100%; overflow: hidden;
+}
+.dept-grid {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px;
+  position: relative; z-index: 2;
+}
+.dept-card {
+  display: block; text-decoration: none; color: inherit;
+  filter: drop-shadow(0 4px 20px rgba(20,83,45,0.1));
+  transition: all 0.4s cubic-bezier(0.4,0,0.2,1); cursor: pointer;
+}
+.dept-card:hover { transform: translateY(-6px); filter: drop-shadow(0 10px 32px rgba(20,83,45,0.16)); }
+.dept-img {
+  border-radius: 140px 140px 0 0; overflow: hidden; height: 280px;
+  position: relative;
+}
+/* Board内の診療科目カードはアーチなし */
+.board-panel .dept-img {
+  border-radius: 8px 8px 0 0;
+}
+.dept-img img {
+  width: 100%; height: 100%; object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.4,0,0.2,1);
+}
+.dept-card:hover .dept-img img { transform: scale(1.06); }
+.dept-body {
+  background: var(--white); padding: 32px 24px 36px; text-align: center;
+  border-radius: 0 0 4px 4px;
+}
+.dept-body h4 {
+  font-family: var(--font-serif); font-size: 1.35rem; font-weight: 600;
+  color: var(--green-deep); letter-spacing: 0.06em; margin-bottom: 4px;
+}
+.dept-body .dept-en {
+  font-family: var(--font-en); font-size: 0.7rem; color: var(--gold);
+  letter-spacing: 0.14em; text-transform: uppercase; display: block; margin-bottom: 12px;
+}
+.dept-body .dept-desc {
+  font-family: var(--font-sans); font-size: 0.8rem; color: var(--text-sub);
+  line-height: 1.8; font-weight: 300; text-align: left; margin-bottom: 18px;
+}
+.dept-btn {
+  display: flex; align-items: center; justify-content: center;
+  width: 100%; padding: 16px 0; border: 1px solid var(--border); border-radius: 6px;
+  font-family: var(--font-sans); font-size: 0.8125rem; font-weight: 500;
+  color: var(--text-sub); letter-spacing: 0.06em;
+  transition: all 0.3s;
+}
+.dept-card:hover .dept-btn {
+  border-color: var(--green-primary); color: var(--green-primary);
+}
+/* Grid variations */
+.dept-grid-2 { grid-template-columns: repeat(2, 1fr); max-width: 720px; margin: 0 auto; }
+.dept-grid-3 { grid-template-columns: repeat(3, 1fr); }
+
+/* ============================================================
+   HANGING BOARD
+   ============================================================ */
+.board-wrap {
+  position: relative; max-width: 1000px; margin: 0 auto; padding-top: 50px;
+}
+.board-wrap::before {
+  content: ''; position: absolute; top: 0; left: 50%; transform: translateX(-50%);
+  width: 16px; height: 16px;
+  background: radial-gradient(circle at 40% 35%, #5a9a6a, var(--green-primary));
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2), inset 0 1px 2px rgba(255,255,255,0.3);
+  z-index: 3;
+}
+.board-wrap::after {
+  content: ''; position: absolute; top: 8px; left: 50%; transform: translateX(-50%);
+  width: 160px; height: 44px;
+  background:
+    linear-gradient(to bottom right, transparent 48.5%, #5a6a5a 49%, #5a6a5a 50.5%, transparent 51%),
+    linear-gradient(to bottom left, transparent 48.5%, #5a6a5a 49%, #5a6a5a 50.5%, transparent 51%);
+  background-size: 50% 100%, 50% 100%;
+  background-position: left, right;
+  background-repeat: no-repeat;
+  opacity: 0.25; z-index: 2;
+}
+.board-panel {
+  position: relative; z-index: 1;
+  background: #faf6f0; border-radius: 6px;
+  box-shadow: 0 4px 24px rgba(20,83,45,0.08), 0 1px 3px rgba(0,0,0,0.04);
+  padding: 48px 40px 40px;
+  border-top: 3px solid var(--green-primary);
+  border-bottom: 3px solid var(--green-primary);
+}
+.board-title {
+  text-align: center; margin-bottom: 36px;
+}
+.board-title h3 {
+  font-family: var(--font-serif); font-size: 1.5rem; font-weight: 600;
+  color: var(--green-deep); letter-spacing: 0.08em;
+  padding-bottom: 16px; border-bottom: 2px solid var(--green-primary);
+  display: inline-block;
+}
+
+/* ============================================================
+   TIMETABLE + VISIT INFO
+   ============================================================ */
+.schedule-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
+.timetable {
+  width: 100%; border-collapse: separate; border-spacing: 0;
+  font-family: var(--font-sans); font-size: 0.8125rem;
+  border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-sm);
+}
+.timetable thead th {
+  background: linear-gradient(135deg, var(--green-primary) 0%, var(--green-medium) 100%);
+  color: #fff; font-weight: 500; padding: 14px 10px; text-align: center; font-size: 0.8rem;
+}
+.timetable thead th:first-child { background: var(--green-deep); width: 90px; }
+.timetable thead th.sat { background: var(--green-light); }
+.timetable tbody td, .timetable tbody th {
+  padding: 16px 10px; text-align: center; border-bottom: 1px solid var(--border);
+  background: var(--white);
+}
+.timetable tbody th { text-align: left; padding-left: 14px; font-weight: 500; color: var(--green-deep); }
+.timetable tbody th small { display: block; font-size: 0.625rem; color: var(--text-light); font-weight: 400; }
+.timetable .open { color: var(--green-primary); font-weight: 700; font-size: 1.125rem; }
+.timetable .closed { color: #ccc; font-size: 1rem; }
+.tt-notes { margin-top: 14px; font-family: var(--font-sans); font-size: 0.6875rem; color: var(--text-light); line-height: 1.9; }
+.tt-notes p + p { margin-top: 2px; }
+
+.visit-info h3 {
+  font-family: var(--font-serif); font-size: 1.25rem; color: var(--green-deep);
+  margin-bottom: 28px; letter-spacing: 0.06em;
+}
+.visit-info dt {
+  font-family: var(--font-serif); font-size: 0.9375rem; font-weight: 600;
+  color: var(--green-deep); margin-bottom: 4px; padding-left: 18px; position: relative;
+}
+.visit-info dt::before {
+  content: ''; position: absolute; left: 0; top: 10px;
+  width: 7px; height: 7px; background: var(--gold); border-radius: 50%;
+}
+.visit-info dd {
+  font-family: var(--font-sans); font-size: 0.8125rem; color: var(--text-sub);
+  margin-bottom: 22px; padding-left: 18px; line-height: 1.8; font-weight: 300;
+}
+
+/* ============================================================
+   BLOG CARDS
+   ============================================================ */
+.blog-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 28px; }
+.b-card {
+  background: var(--white); border-radius: 16px; overflow: hidden;
+  box-shadow: var(--shadow-sm); transition: all 0.5s cubic-bezier(0.4,0,0.2,1);
+  position: relative; cursor: pointer;
+}
+.b-card::after {
+  content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 3px;
+  background: linear-gradient(90deg, var(--green-primary), var(--gold-light));
+  transform: scaleX(0); transition: transform 0.4s;
+}
+.b-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-md); }
+.b-card:hover::after { transform: scaleX(1); }
+.b-card-img { height: 210px; overflow: hidden; position: relative; }
+.b-card-img img {
+  width: 100%; height: 100%; object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.4,0,0.2,1);
+}
+.b-card:hover .b-card-img img { transform: scale(1.06); }
+.b-card-img::after {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(180deg, transparent 60%, rgba(20,83,45,0.06) 100%);
+}
+.b-card-body { padding: 24px 24px 28px; }
+.b-card-meta {
+  display: flex; align-items: center; gap: 10px; margin-bottom: 10px;
+  font-family: var(--font-sans); font-size: 0.6875rem; color: var(--text-light);
+}
+.b-card-meta .cat {
+  background: var(--green-pale); color: var(--green-primary); padding: 2px 10px;
+  border-radius: 3px; font-size: 0.625rem; font-weight: 600;
+}
+.b-card-title {
+  font-family: var(--font-serif); font-size: 1rem; font-weight: 600;
+  color: var(--text); line-height: 1.65; margin-bottom: 10px; letter-spacing: 0.02em;
+}
+.b-card-excerpt {
+  font-family: var(--font-sans); font-size: 0.75rem; color: var(--text-light);
+  line-height: 1.8; font-weight: 300;
+  display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
+}
+.sec-more {
+  text-align: center; margin-top: 48px;
+}
+.sec-more a {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 13px 36px; border: 2px solid var(--green-primary); border-radius: 6px;
+  font-family: var(--font-sans); font-size: 0.8125rem; font-weight: 500;
+  color: var(--green-primary); letter-spacing: 0.06em;
+  transition: all 0.35s; position: relative; overflow: hidden; z-index: 1;
+}
+.sec-more a::before {
+  content: ''; position: absolute; inset: 0; background: var(--green-primary);
+  z-index: -1; transform: scaleX(0); transform-origin: right; transition: transform 0.4s cubic-bezier(0.4,0,0.2,1);
+}
+.sec-more a:hover { color: #fff; }
+.sec-more a:hover::before { transform: scaleX(1); transform-origin: left; }
+
+/* ============================================================
+   ACCESS
+   ============================================================ */
+.access-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
+.access-map {
+  border-radius: 16px; overflow: hidden; box-shadow: var(--shadow-sm);
+  aspect-ratio: 4/3; background: var(--green-pale);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--text-light); font-family: var(--font-sans); font-size: 0.875rem;
+}
+.access-info h3 {
+  font-family: var(--font-serif); font-size: 1.25rem; color: var(--green-deep);
+  margin-bottom: 20px;
+}
+.access-table { width: 100%; font-family: var(--font-sans); font-size: 0.8125rem; }
+.access-table tr { border-bottom: 1px solid var(--border); }
+.access-table th {
+  font-weight: 500; color: var(--green-deep); padding: 14px 16px 14px 20px;
+  white-space: nowrap; width: 90px; vertical-align: top; text-align: left;
+  position: relative;
+}
+.access-table th::before {
+  content: ''; position: absolute; left: 0; top: 50%; transform: translateY(-50%);
+  width: 5px; height: 5px; background: var(--gold); border-radius: 50%;
+}
+.access-table td { padding: 14px 0; color: var(--text-sub); line-height: 1.7; font-weight: 300; }
+
+/* ============================================================
+   CTA
+   ============================================================ */
+.cta {
+  padding: 80px 0; text-align: center; position: relative; overflow: hidden;
+  background: var(--green-pale);
+}
+.cta h2 {
+  font-family: var(--font-serif); font-size: 1.75rem; color: var(--green-deep);
+  letter-spacing: 0.1em; position: relative; margin-bottom: 20px;
+}
+.cta > .container > p {
+  font-family: var(--font-sans); font-size: 0.9375rem; color: var(--text-sub);
+  margin-bottom: 36px; font-weight: 300;
+}
+.cta-btn {
+  display: inline-flex; align-items: center; gap: 12px;
+  padding: 20px 56px; border-radius: 60px; font-family: var(--font-en-body);
+  font-size: 1.5rem; font-weight: 600; color: #fff; letter-spacing: 0.03em;
+  background: var(--green-primary);
+  border: 2px solid var(--green-primary);
+  transition: all 0.4s cubic-bezier(0.4,0,0.2,1);
+}
+.cta-btn:hover {
+  background: transparent; color: var(--green-primary);
+}
+.cta-btn:hover svg { fill: var(--green-primary); }
+.cta-btn svg { width: 22px; height: 22px; fill: #fff; transition: fill 0.3s; }
+.cta-hours {
+  margin-top: 14px; font-family: var(--font-sans); font-size: 0.75rem;
+  color: var(--text-light);
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.footer {
+  background: var(--green-deep);
+  color: rgba(255,255,255,0.8); position: relative;
+}
+.footer::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px;
+  background: linear-gradient(90deg, var(--green-primary), var(--gold), var(--gold-light), var(--gold), var(--green-primary));
+}
+.footer::after {
+  content: ''; position: absolute; top: 4px; left: 0; right: 0; bottom: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.012'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/svg%3E");
+  pointer-events: none;
+}
+.footer-grid {
+  display: grid; grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+  gap: 40px; padding: 80px 0 60px; position: relative; z-index: 1;
+}
+.footer-logo { display: flex; align-items: center; gap: 12px; margin-bottom: 24px; }
+.footer-logo .logo-mark { width: 48px; height: 48px; }
+.footer-logo .logo-mark svg { width: 48px; height: 48px; }
+.footer-logo .logo-mark svg text { fill: #fff !important; }
+.footer-logo .logo-mark svg circle { stroke: rgba(255,255,255,0.5) !important; }
+.footer-logo .logo-sub { color: rgba(255,255,255,0.6); }
+.footer-logo .logo-name { color: #fff; }
+.footer-logo-name {
+  font-family: var(--font-serif); font-size: 1rem; color: #fff; font-weight: 600;
+}
+.footer-brand p {
+  font-family: var(--font-sans); font-size: 0.75rem; line-height: 1.9; margin-bottom: 14px;
+  font-weight: 300;
+}
+.footer-tel {
+  font-family: var(--font-en-body); font-size: 1.2rem; color: #fff; font-weight: 600;
+  display: flex; align-items: center; gap: 8px;
+}
+.footer-tel svg { width: 15px; height: 15px; fill: #fff; }
+.footer-col h4 {
+  font-family: var(--font-serif); font-size: 0.8125rem; color: #fff;
+  margin-bottom: 20px; padding-bottom: 12px; position: relative;
+  letter-spacing: 0.06em;
+}
+.footer-col h4::after {
+  content: ''; position: absolute; bottom: 0; left: 0; width: 22px; height: 2px;
+  background: var(--gold);
+}
+.footer-col li { margin-bottom: 8px; }
+.footer-col a {
+  font-family: var(--font-sans); font-size: 0.75rem; color: rgba(255,255,255,0.75);
+  transition: all 0.3s; font-weight: 300;
+}
+.footer-col a:hover { color: var(--gold-light); padding-left: 6px; }
+.footer-hours {
+  font-family: var(--font-sans); font-size: 0.75rem; line-height: 1.9; font-weight: 300;
+}
+.footer-hours p + p { margin-top: 2px; }
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.06); padding: 22px 0; text-align: center;
+  position: relative; z-index: 1;
+}
+.footer-bottom p {
+  font-family: var(--font-sans); font-size: 0.6875rem; color: rgba(255,255,255,0.35);
+}
+
+/* Side CTA */
+.side-cta {
+  position: fixed; right: 0; top: 50%; transform: translateY(-50%); z-index: 90;
+  display: flex; flex-direction: column; gap: 2px;
+}
+.side-cta a {
+  writing-mode: vertical-rl; text-orientation: upright;
+  padding: 22px 13px; font-family: var(--font-sans); font-size: 0.6875rem; font-weight: 600;
+  color: #fff; letter-spacing: 0.16em; transition: all 0.3s; min-width: 50px;
+  display: flex; align-items: center; justify-content: center;
+}
+.side-cta a:hover { min-width: 56px; opacity: 0.9; }
+.side-cta-tel { background: linear-gradient(180deg, var(--green-primary), var(--green-deep)); border-radius: 8px 0 0 8px; }
+
+/* Demo note */
+/* ============================================================
+   PHOTO SLIDER — infinite scroll gallery
+   ============================================================ */
+.photo-slider {
+  overflow: hidden; padding: 0; width: 100%;
+  background: var(--white);
+}
+.photo-slider-track {
+  display: flex; gap: 6px;
+  animation: photoScroll 60s linear infinite;
+  width: max-content;
+}
+.photo-slider-track img {
+  height: 220px; width: auto; object-fit: cover; flex-shrink: 0;
+  border-radius: 0;
+}
+@keyframes photoScroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.demo-note {
+  font-family: var(--font-sans); font-size: 0.75rem; color: var(--text-light);
+  margin-top: 6px;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 1024px) {
+  .nav { gap: 0; }
+  .nav a { padding: 8px 10px; }
+  .nav-jp { font-size: 0.75rem; }
+  .header-tel { font-size: 1.1rem; }
+  .hero-heading { font-size: 2.4rem; }
+  .dept-grid { grid-template-columns: repeat(3, 1fr); }
+  .dept-grid-2 { grid-template-columns: repeat(2, 1fr); }
+  .dept-bg-en { font-size: 8rem; }
+  .side-cta { display: none; }
+  .hero-points { left: 30px; bottom: 24px; gap: 10px; }
+  .hero-point-card { min-width: 150px; padding: 16px 22px 14px 20px; }
+  .hero-point-n { font-size: 1.8rem; }
+  .hero-point-text { font-size: 0.72rem; }
+}
+
+@media (max-width: 768px) {
+  .header { height: 64px; }
+  .header-inner { padding: 0 16px; }
+  .logo-mark { width: 42px; height: 42px; }
+  .logo-mark svg { width: 42px; height: 42px; }
+  .logo-name { font-size: 0.95rem; }
+  .logo-sub { font-size: 0.4375rem; }
+  .menu-toggle { display: block; }
+  .nav {
+    display: none; position: fixed; top: 0; right: 0; width: 80%; max-width: 320px;
+    height: 100vh; background: var(--white); flex-direction: column;
+    padding: 80px 28px 40px; box-shadow: -4px 0 24px rgba(0,0,0,0.12);
+    z-index: 1005; gap: 0; overflow-y: auto;
+  }
+  .nav.open { display: flex; }
+  .nav a {
+    flex-direction: row; justify-content: space-between; align-items: center;
+    padding: 16px 0; border-bottom: 1px solid var(--border);
+  }
+  .nav a .nav-en { order: 2; }
+  .header-right .header-tel { display: none; }
+  .header-tel-sp { display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; }
+  .breadcrumb { padding: 10px 20px; font-size: 0.625rem; }
+  /* Hero: stacked layout - image top, text bottom */
+  .hero { height: auto; min-height: auto; max-height: none; margin-top: 64px; display: flex; flex-direction: column; }
+  .hero-swiper { height: 56vw; min-height: 220px; max-height: 320px; }
+  .hero-overlay { display: none; }
+  .hero-content {
+    position: relative; top: auto; left: auto; transform: none;
+    background: var(--white); padding: 36px 24px 40px; text-align: center;
+  }
+  .hero-inner { max-width: 100%; }
+  .hero-badge { font-size: 0.6875rem; padding: 6px 18px; margin-bottom: 16px; }
+  .hero-heading {
+    font-size: 1.5rem; color: var(--green-deep);
+    letter-spacing: 0.06em; line-height: 1.7; margin-bottom: 14px;
+    text-shadow: none;
+  }
+  .hero-desc { text-shadow: none; }
+  .hero-desc { font-size: 0.8125rem; color: var(--text-sub); max-width: 100%; margin: 0 auto; }
+  .hero-timetable { display: none; }
+  .hero-points { display: none; }
+  .hero-swiper .swiper-pagination { left: 50% !important; bottom: 12px !important; transform: translateX(-50%); }
+  .container, .container-wide { padding: 0 20px; }
+  .sec { padding: 64px 0; }
+  .sec-head { margin-bottom: 40px; }
+  .sec-head-jp { font-size: 1.4rem; }
+  .sec-head-en { font-size: 0.75rem; }
+  .sec-head-bg { font-size: clamp(2.5rem, 12vw, 5rem); }
+  .sec-desc { margin: -20px auto 40px; font-size: 0.8125rem; }
+  /* News */
+  .news-item { flex-wrap: wrap; gap: 8px 12px; padding: 16px 12px; }
+  .news-date { min-width: auto; font-size: 0.75rem; }
+  .news-title { width: 100%; font-size: 0.8125rem; }
+  /* Features */
+  .features-main-heading h2 { font-size: 1.4rem; }
+  .features-main-heading .num { font-size: 2.8rem; }
+  .f-group {
+    grid-template-columns: 1fr; gap: 24px; padding: 48px 0;
+  }
+  .f-group:first-of-type { padding-top: 28px; }
+  .f-group:nth-child(even) { direction: ltr; }
+  .f-group-num { font-size: 2.4rem; }
+  .f-group-catch { font-size: 1.15rem; }
+  .f-group-images img { height: 220px; clip-path: none !important; border-radius: 10px; }
+  .f-group-bg { display: none; }
+  .features-section .sec-head { margin-bottom: 12px; }
+  /* Flow text */
+  .flow-text { padding: 28px 0; }
+  .flow-text-inner span { font-size: 3.5rem; padding-right: 40px; }
+  /* Greeting */
+  .greeting { grid-template-columns: 1fr; gap: 32px; }
+  .greeting-img img { height: 280px; }
+  .greeting-img::after { display: none; }
+  .greeting-text h3 { font-size: 1.2rem; }
+  /* Departments & Exams */
+  .dept-bg-en { font-size: clamp(2.5rem, 10vw, 4.5rem); top: 20px; overflow: hidden; max-width: 100%; }
+  .dept-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  .dept-grid-2 { grid-template-columns: repeat(2, 1fr); max-width: none; }
+  .dept-grid-3 { grid-template-columns: repeat(2, 1fr); }
+  .dept-img { height: 160px; border-radius: 80px 80px 0 0; }
+  .dept-body { padding: 20px 14px 24px; }
+  .dept-body h4 { font-size: 0.95rem; }
+  .dept-btn { padding: 10px 0; font-size: 0.6875rem; }
+  /* Schedule */
+  .schedule-grid { grid-template-columns: 1fr; gap: 40px; }
+  .timetable { font-size: 0.6875rem; }
+  .timetable thead th, .timetable tbody td, .timetable tbody th { padding: 10px 6px; }
+  /* Blog */
+  .blog-grid { grid-template-columns: 1fr; gap: 20px; }
+  .b-card-img { height: 180px; }
+  /* Access */
+  .access-grid { grid-template-columns: 1fr; gap: 32px; }
+  /* CTA */
+  .cta { padding: 56px 0; }
+  .cta h2 { font-size: 1.25rem; }
+  .cta-btn { padding: 16px 36px; font-size: 1.2rem; }
+  /* Footer */
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+  /* SP fixed bar */
+  body { padding-bottom: 0; }
+}
+
+@media (max-width: 480px) {
+  .hero-heading { font-size: 1.3rem; }
+  .dept-grid, .dept-grid-2, .dept-grid-3 { grid-template-columns: 1fr; gap: 16px; }
+  .dept-img { height: 180px; border-radius: 100px 100px 0 0; }
+  .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+  .b-card-img { height: 160px; }
+}
+</style>
+</head>
+<body>
+
+<!-- Side CTA -->
+<div class="side-cta">
+  <a href="#" class="side-cta-tel">電話</a>
+</div>
+
+<!-- ===== HEADER ===== -->
+<header class="header">
+  <div class="header-inner">
+    <a href="design-top.html" class="logo">
+      <div class="logo-mark">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="50" r="48" fill="none" stroke="#1B7A3D" stroke-width="1.5" opacity="0.4"/>
+          <circle cx="50" cy="50" r="42" fill="none" stroke="#1B7A3D" stroke-width="0.5" opacity="0.2"/>
+          <text x="50" y="62" text-anchor="middle" font-family="'Cormorant Garamond', serif" font-size="48" font-weight="400" font-style="italic" fill="#1B7A3D" letter-spacing="-2">M</text>
+          <text x="50" y="82" text-anchor="middle" font-family="'Cinzel', serif" font-size="7" fill="#1B7A3D" letter-spacing="3" opacity="0.6">MIDORI</text>
+        </svg>
+      </div>
+      <div class="logo-text">
+        <span class="logo-sub">消化器内科・内視鏡内科</span>
+        <span class="logo-name">みどり内科クリニック</span>
+      </div>
+    </a>
+    <nav class="nav">
+      <a href="design-top.html" class="current"><span class="nav-jp">ホーム</span><span class="nav-en">Home</span></a>
+      <a href="preview-shinryou.html"><span class="nav-jp">診療科目</span><span class="nav-en">Medical</span></a>
+      <a href="preview-kensa.html"><span class="nav-jp">検査</span><span class="nav-en">Examination</span></a>
+      <a href="preview-doctor.html"><span class="nav-jp">ドクター紹介</span><span class="nav-en">Doctor</span></a>
+      <a href="preview-clinic.html"><span class="nav-jp">クリニック紹介</span><span class="nav-en">Clinic</span></a>
+      <a href="preview-blog.html"><span class="nav-jp">お役立ち情報</span><span class="nav-en">Column</span></a>
+      <a href="design-top.html#access"><span class="nav-jp">アクセス</span><span class="nav-en">Access</span></a>
+    </nav>
+    <div class="header-right">
+      <a href="#" class="header-tel">
+        <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.25 1.01l-2.2 2.2z"/></svg>
+        <div>
+          <span>03-0000-0000</span>
+          <span class="header-tel-sub">受付は診療終了30分前まで</span>
+        </div>
+      </a>
+      <a href="tel:03-0000-0000" class="header-tel-sp" aria-label="電話">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="var(--green-primary)"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.25 1.01l-2.2 2.2z"/></svg>
+      </a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="メニュー">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+<div class="nav-overlay" id="nav-overlay"></div>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="swiper hero-swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1920&h=900&fit=crop&q=85" alt=""></div>
+      <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1920&h=900&fit=crop&q=85" alt=""></div>
+      <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1666214280557-f1b5022eb634?w=1920&h=900&fit=crop&q=85" alt=""></div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-inner">
+      <div class="hero-badge">消化器内科・内視鏡内科</div>
+      <h1 class="hero-heading"><span>患者様に寄り添った</span><span>安心の消化器診療を</span></h1>
+      <p class="hero-desc">消化器疾患の専門的な診療から苦痛の少ない内視鏡検査まで<br>豊富な経験を持つ専門医が、あなたの健康をお守りします。</p>
+    </div>
+  </div>
+  <!-- 3 Points overlay (PC only) -->
+  <div class="hero-points">
+    <div class="hero-point-card">
+      <div class="hero-point-card-inner">
+        <div class="hero-point-num"><span class="hero-point-n">01</span><span class="hero-point-line"></span></div>
+        <span class="hero-point-label">POINT</span>
+        <p class="hero-point-text">消化器病専門医による<br>丁寧な診療</p>
+      </div>
+    </div>
+    <div class="hero-point-card">
+      <div class="hero-point-card-inner">
+        <div class="hero-point-num"><span class="hero-point-n">02</span><span class="hero-point-line"></span></div>
+        <span class="hero-point-label">POINT</span>
+        <p class="hero-point-text">最新機器による<br>精密な内視鏡検査</p>
+      </div>
+    </div>
+    <div class="hero-point-card">
+      <div class="hero-point-card-inner">
+        <div class="hero-point-num"><span class="hero-point-n">03</span><span class="hero-point-line"></span></div>
+        <span class="hero-point-label">POINT</span>
+        <p class="hero-point-text">胃・大腸カメラの<br>同日検査が可能</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-timetable">
+    <p class="hero-tt-en">Consultation Hours</p>
+    <p class="hero-tt-title">診療時間</p>
+    <div class="hero-tt-line"></div>
+    <table class="timetable" style="box-shadow:none;border-radius:8px;">
+      <thead><tr><th></th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th class="sat">土</th></tr></thead>
+      <tbody>
+        <tr><th>午前<small>9:00〜12:30</small></th><td class="open">●</td><td class="open">●</td><td class="open">●</td><td class="open">●</td><td class="open">●</td><td class="open">●</td></tr>
+        <tr><th>午後<small>14:00〜18:00</small></th><td class="open">●</td><td class="open">●</td><td class="closed">−</td><td class="open">●</td><td class="open">●</td><td class="closed">−</td></tr>
+      </tbody>
+    </table>
+    <div class="tt-notes"><p>休診：水曜午後・日曜・祝日</p></div>
+  </div>
+</section>
+
+<!-- Breadcrumb -->
+<div class="breadcrumb">
+  <a href="design-top.html">ホーム</a>
+</div>
+
+<!-- ===== NEWS ===== -->
+<section class="sec sec-white">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-head-bg">News</div>
+      <span class="sec-head-en">News</span>
+      <h2 class="sec-head-jp">お知らせ</h2>
+      <div class="sec-head-ornament"><span></span></div>
+    </div>
+    <div class="news-list">
+      <div class="news-item"><span class="news-date">2026.04.01</span><span class="news-cat">お知らせ</span><span class="news-title">ホームページを開設いたしました</span></div>
+      <div class="news-item"><span class="news-date">2026.03.15</span><span class="news-cat">お知らせ</span><span class="news-title">消化器内科・内視鏡内科の診療を開始いたしました</span></div>
+      <div class="news-item"><span class="news-date">2026.03.01</span><span class="news-cat">検査情報</span><span class="news-title">最新内視鏡システム EVIS X1 を導入しました</span></div>
+      <div class="news-item"><span class="news-date">2026.02.15</span><span class="news-cat">お知らせ</span><span class="news-title">大腸カメラ検査の鎮静剤対応を開始いたしました</span></div>
+    </div>
+    <div class="sec-more" style="margin-top:36px;"><a href="#">お知らせ一覧 →</a></div>
+  </div>
+</section>
+
+<!-- ===== FEATURES ===== -->
+<section class="sec sec-green-pale features-section">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-head-bg">Features</div>
+      <div class="features-main-heading">
+        <h2>当院の<span class="num">6</span>つの特長</h2>
+      </div>
+      <p class="features-main-sub">Clinic Features</p>
+      <div class="features-main-line"></div>
+    </div>
+
+    <!-- 01 — 消化器内科 -->
+    <div class="f-group">
+      <div class="f-group-bg">Specialist</div>
+      <div class="f-group-text">
+        <div class="f-group-header">
+          <span class="f-group-num">01</span>
+          <span class="f-group-line"></span>
+          <span class="f-group-en">Specialist</span>
+        </div>
+        <p class="f-group-catch">消化器病専門医による<br>総合的な診療</p>
+        <p class="f-group-desc">消化器病専門医・内視鏡専門医の資格を持つ医師が、診察から検査・治療までを一貫して担当。豊富な臨床経験に基づき、確かな診断と適切な治療をご提供します。</p>
+      </div>
+      <div class="f-group-images">
+        <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=700&h=500&fit=crop&q=80" alt="専門医による診療">
+      </div>
+    </div>
+
+    <!-- 02 — 消化器内科 -->
+    <div class="f-group">
+      <div class="f-group-bg">Gastro</div>
+      <div class="f-group-text">
+        <div class="f-group-header">
+          <span class="f-group-num">02</span>
+          <span class="f-group-line"></span>
+          <span class="f-group-en">Gastroenterology</span>
+        </div>
+        <p class="f-group-catch">幅広い消化器症状に<br>専門的に対応</p>
+        <p class="f-group-desc">腹痛・胃もたれ・逆流性食道炎・ピロリ菌・便秘・過敏性腸症候群など、消化器のさまざまな症状に対応。問診から検査・治療・経過観察まで、専門的にサポートいたします。</p>
+      </div>
+      <div class="f-group-images">
+        <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=700&h=500&fit=crop&q=80" alt="消化器症状の診療">
+      </div>
+    </div>
+
+    <!-- 03 — 内視鏡内科 -->
+    <div class="f-group">
+      <div class="f-group-bg">Endoscopy</div>
+      <div class="f-group-text">
+        <div class="f-group-header">
+          <span class="f-group-num">03</span>
+          <span class="f-group-line"></span>
+          <span class="f-group-en">Endoscopy</span>
+        </div>
+        <p class="f-group-catch">鎮静剤を使用した<br>苦痛の少ない内視鏡検査</p>
+        <p class="f-group-desc">鎮静剤を使用し「半分眠った状態」での検査が可能です。患者様の負担を和らげながら、最新鋭の内視鏡システムでより精密な観察と正確な診断を行います。</p>
+      </div>
+      <div class="f-group-images">
+        <img src="https://images.unsplash.com/photo-1581595220892-b0739db3ba8c?w=700&h=500&fit=crop&q=80" alt="内視鏡検査">
+      </div>
+    </div>
+
+    <!-- 04 — 内視鏡内科 -->
+    <div class="f-group">
+      <div class="f-group-bg">Same Day</div>
+      <div class="f-group-text">
+        <div class="f-group-header">
+          <span class="f-group-num">04</span>
+          <span class="f-group-line"></span>
+          <span class="f-group-en">Same Day</span>
+        </div>
+        <p class="f-group-catch">胃・大腸カメラの<br>同日検査が可能</p>
+        <p class="f-group-desc">同日に胃カメラと大腸カメラの両方を実施可能です。通院回数を減らし、お忙しい方にも便利にご利用いただけます。検査中にポリープが見つかった場合は日帰り切除にも対応します。</p>
+      </div>
+      <div class="f-group-images">
+        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=700&h=500&fit=crop&q=80" alt="同日検査">
+      </div>
+    </div>
+
+    <!-- 05 — 共通 -->
+    <div class="f-group">
+      <div class="f-group-bg">Access</div>
+      <div class="f-group-text">
+        <div class="f-group-header">
+          <span class="f-group-num">05</span>
+          <span class="f-group-line"></span>
+          <span class="f-group-en">Access</span>
+        </div>
+        <p class="f-group-catch">駅から徒歩3分の<br>好アクセス</p>
+        <p class="f-group-desc">青山一丁目駅から徒歩3分にありますので、お仕事帰りの患者様にもアクセスしやすい立地です。お車でお越しの方は提携駐車場をご利用いただけます。</p>
+      </div>
+      <div class="f-group-images">
+        <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=700&h=500&fit=crop&q=80" alt="クリニック外観">
+      </div>
+    </div>
+
+    <!-- 06 — 共通 -->
+    <div class="f-group">
+      <div class="f-group-bg">Hygiene</div>
+      <div class="f-group-text">
+        <div class="f-group-header">
+          <span class="f-group-num">06</span>
+          <span class="f-group-line"></span>
+          <span class="f-group-en">Hygiene</span>
+        </div>
+        <p class="f-group-catch">徹底した<br>衛生管理</p>
+        <p class="f-group-desc">内視鏡は検査ごとに日本消化器内視鏡学会のガイドラインに準拠した高水準の洗浄・消毒を実施。院内の換気や空気清浄にも配慮し、安心して受診いただける環境です。</p>
+      </div>
+      <div class="f-group-images">
+        <img src="https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?w=700&h=500&fit=crop&q=80" alt="衛生管理">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FLOW TEXT ===== -->
+<div class="flow-text">
+  <div class="flow-text-inner">
+    <span>Midori Gastroenterology Clinic</span>
+    <span>Midori Gastroenterology Clinic</span>
+    <span>Midori Gastroenterology Clinic</span>
+    <span>Midori Gastroenterology Clinic</span>
+    <span>Midori Gastroenterology Clinic</span>
+    <span>Midori Gastroenterology Clinic</span>
+  </div>
+</div>
+
+<!-- ===== GREETING ===== -->
+<section class="sec sec-white sec-texture">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-head-bg">Greeting</div>
+      <span class="sec-head-en">Greeting</span>
+      <h2 class="sec-head-jp">院長ご挨拶</h2>
+      <div class="sec-head-ornament"><span></span></div>
+    </div>
+    <div class="greeting">
+      <div class="greeting-img">
+        <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=560&h=440&fit=crop&q=85" alt="院長">
+      </div>
+      <div class="greeting-text">
+        <h3>地域の皆様の<br>「おなかの健康」を守ります</h3>
+        <p>当院は消化器内科・内視鏡内科を専門とするクリニックです。「胃が痛い」「お腹の調子が悪い」といった日常的な消化器症状から、胃カメラ・大腸カメラによる精密検査まで、幅広く対応しております。</p>
+        <p>患者様お一人おひとりに丁寧に向き合い、わかりやすい説明と苦痛の少ない検査で、安心して受診いただける環境づくりに努めてまいります。</p>
+        <p class="demo-note">※当サイトはデモサイトです。実在するクリニックではありません。</p>
+        <div class="greeting-sign">
+          <span class="role">院長</span><br>
+          <span class="name">緑川 太郎</span>
+        </div>
+        <a href="preview-doctor.html" class="greeting-btn">ドクター紹介 →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DEPARTMENTS ===== -->
+<section class="sec sec-white dept-section">
+  <div class="container">
+    <div class="board-wrap">
+      <div class="board-panel">
+        <div class="board-title"><h3>診療科目</h3></div>
+        <div class="dept-grid dept-grid-2">
+          <a href="preview-shinryou.html#shokaki" class="dept-card">
+            <div class="dept-img"><img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=400&h=340&fit=crop&q=85" alt="消化器内科"></div>
+            <div class="dept-body">
+              <h4>消化器内科</h4>
+              <span class="dept-en">Gastroenterology</span>
+              <p class="dept-desc">腹痛・胃もたれ・胸やけ・逆流性食道炎・ピロリ菌感染症・便秘・下痢・過敏性腸症候群（IBS）など、消化器のさまざまな症状を専門的に診療いたします。</p>
+              <div class="dept-btn">詳しく見る</div>
+            </div>
+          </a>
+          <a href="preview-shinryou.html#naishikyo" class="dept-card">
+            <div class="dept-img"><img src="https://images.unsplash.com/photo-1581595220892-b0739db3ba8c?w=400&h=340&fit=crop&q=85" alt="内視鏡内科"></div>
+            <div class="dept-body">
+              <h4>内視鏡内科</h4>
+              <span class="dept-en">Endoscopy</span>
+              <p class="dept-desc">胃カメラ・大腸カメラによる精密な内視鏡検査を実施。鎮静剤を使用した苦痛の少ない検査や、胃・大腸の同日検査、ポリープの日帰り切除にも対応しています。</p>
+              <div class="dept-btn">詳しく見る</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EXAMINATIONS ===== -->
+<section class="sec sec-green-pale dept-section">
+  <div class="dept-bg-en">Examination</div>
+  <div class="container-wide">
+    <div class="sec-head">
+      <span class="sec-head-en">Examination</span>
+      <h2 class="sec-head-jp">検査</h2>
+      <div class="sec-head-ornament"><span></span></div>
+    </div>
+    <div class="dept-grid dept-grid-3">
+      <a href="preview-kensa.html#panel-gastro" class="dept-card">
+        <div class="dept-img"><img src="https://images.unsplash.com/photo-1581595220892-b0739db3ba8c?w=400&h=340&fit=crop&q=85" alt="胃カメラ"></div>
+        <div class="dept-body">
+          <h4>胃カメラ</h4>
+          <span class="dept-en">Gastroscopy</span>
+          <p class="dept-desc">食道・胃・十二指腸を直接観察する検査です。経鼻・経口を選択可能。鎮静剤使用で苦痛を軽減し、早期がんやピロリ菌感染の発見に役立ちます。</p>
+          <div class="dept-btn">詳しく見る</div>
+        </div>
+      </a>
+      <a href="preview-kensa.html#panel-colon" class="dept-card">
+        <div class="dept-img"><img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&h=340&fit=crop&q=85" alt="大腸カメラ"></div>
+        <div class="dept-body">
+          <h4>大腸カメラ</h4>
+          <span class="dept-en">Colonoscopy</span>
+          <p class="dept-desc">大腸全体を観察し、ポリープや大腸がんの早期発見を行います。検査中にポリープが見つかった場合はその場で日帰り切除が可能です。</p>
+          <div class="dept-btn">詳しく見る</div>
+        </div>
+      </a>
+      <a href="preview-kensa.html#panel-echo" class="dept-card">
+        <div class="dept-img"><img src="https://images.unsplash.com/photo-1629909615184-74f495363b67?w=400&h=340&fit=crop&q=85" alt="腹部エコー"></div>
+        <div class="dept-body">
+          <h4>腹部エコー</h4>
+          <span class="dept-en">Ultrasound</span>
+          <p class="dept-desc">肝臓・胆のう・膵臓・腎臓・脾臓などの腹部臓器を超音波で観察します。痛みがなく被ばくもない、体に優しい検査です。</p>
+          <div class="dept-btn">詳しく見る</div>
+        </div>
+      </a>
+      <a href="preview-kensa.html#panel-blood" class="dept-card">
+        <div class="dept-img"><img src="https://images.unsplash.com/photo-1559757175-5700dde675bc?w=400&h=340&fit=crop&q=85" alt="血液検査"></div>
+        <div class="dept-body">
+          <h4>血液検査</h4>
+          <span class="dept-en">Blood Test</span>
+          <p class="dept-desc">肝機能・腎機能・脂質・血糖値・貧血・炎症反応・腫瘍マーカーなどを測定。生活習慣病の早期発見や消化器疾患の診断に活用します。</p>
+          <div class="dept-btn">詳しく見る</div>
+        </div>
+      </a>
+      <a href="preview-kensa.html#panel-xray" class="dept-card">
+        <div class="dept-img"><img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=400&h=340&fit=crop&q=85" alt="レントゲン"></div>
+        <div class="dept-body">
+          <h4>レントゲン</h4>
+          <span class="dept-en">X-Ray</span>
+          <p class="dept-desc">胸部・腹部のX線撮影により、肺や腸の状態を素早く確認します。腸閉塞や腸管ガスの異常など、緊急性の高い疾患の初期評価に有用です。</p>
+          <div class="dept-btn">詳しく見る</div>
+        </div>
+      </a>
+      <a href="preview-kensa.html#panel-checkup" class="dept-card">
+        <div class="dept-img"><img src="https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?w=400&h=340&fit=crop&q=85" alt="健康診断"></div>
+        <div class="dept-body">
+          <h4>健康診断</h4>
+          <span class="dept-en">Health Check</span>
+          <p class="dept-desc">一般健診・特定健診・雇入時健診に対応。オプションで胃カメラや腹部エコーの追加も可能です。消化器専門クリニックならではの精密な健診をご提供します。</p>
+          <div class="dept-btn">詳しく見る</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TIMETABLE + VISIT ===== -->
+<section class="sec sec-white">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-head-bg">Information</div>
+      <span class="sec-head-en">Information</span>
+      <h2 class="sec-head-jp">診療時間・ご来院の方へ</h2>
+      <div class="sec-head-ornament"><span></span></div>
+    </div>
+    <div class="schedule-grid">
+      <div>
+        <table class="timetable">
+          <thead><tr><th></th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th class="sat">土</th></tr></thead>
+          <tbody>
+            <tr><th>午前<small>9:00〜12:30</small></th><td class="open">●</td><td class="open">●</td><td class="open">●</td><td class="open">●</td><td class="open">●</td><td class="open">●</td></tr>
+            <tr><th>午後<small>14:00〜18:00</small></th><td class="open">●</td><td class="open">●</td><td class="closed">−</td><td class="open">●</td><td class="open">●</td><td class="closed">−</td></tr>
+          </tbody>
+        </table>
+        <div class="tt-notes">
+          <p>受付は診療終了30分前まで</p>
+          <p>休診日：水曜午後・日曜・祝日</p>
+          <p>内視鏡検査は完全予約制</p>
+        </div>
+      </div>
+      <div class="visit-info">
+        <h3>ご来院の方へ</h3>
+        <dl>
+          <dt>初診の方</dt><dd>保険証をお持ちの上、受付時間内にお越しください。</dd>
+          <dt>受付時間</dt><dd>午前 9:00〜12:00 / 午後 14:00〜17:30</dd>
+          <dt>予約について</dt><dd>内視鏡検査は完全予約制です。お電話にてご予約ください。</dd>
+          <dt>お支払い方法</dt><dd>各種保険取扱い・各種クレジットカード対応</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PHOTO SLIDER ===== -->
+<div class="photo-slider">
+  <div class="photo-slider-track">
+    <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=440&h=280&fit=crop&q=80" alt="受付">
+    <img src="https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?w=440&h=280&fit=crop&q=80" alt="待合室">
+    <img src="https://images.unsplash.com/photo-1666214280557-f1b5022eb634?w=440&h=280&fit=crop&q=80" alt="診察室">
+    <img src="https://images.unsplash.com/photo-1581595220892-b0739db3ba8c?w=440&h=280&fit=crop&q=80" alt="内視鏡室">
+    <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=440&h=280&fit=crop&q=80" alt="廊下">
+    <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=440&h=280&fit=crop&q=80" alt="スタッフ">
+    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=440&h=280&fit=crop&q=80" alt="設備">
+    <img src="https://images.unsplash.com/photo-1629909615184-74f495363b67?w=440&h=280&fit=crop&q=80" alt="外観">
+    <!-- duplicate for seamless loop -->
+    <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=440&h=280&fit=crop&q=80" alt="">
+    <img src="https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?w=440&h=280&fit=crop&q=80" alt="">
+    <img src="https://images.unsplash.com/photo-1666214280557-f1b5022eb634?w=440&h=280&fit=crop&q=80" alt="">
+    <img src="https://images.unsplash.com/photo-1581595220892-b0739db3ba8c?w=440&h=280&fit=crop&q=80" alt="">
+    <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=440&h=280&fit=crop&q=80" alt="">
+    <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=440&h=280&fit=crop&q=80" alt="">
+    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=440&h=280&fit=crop&q=80" alt="">
+    <img src="https://images.unsplash.com/photo-1629909615184-74f495363b67?w=440&h=280&fit=crop&q=80" alt="">
+  </div>
+</div>
+
+<!-- ===== BLOG ===== -->
+<section class="sec sec-green-pale">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-head-bg">Column</div>
+      <span class="sec-head-en">Column</span>
+      <h2 class="sec-head-jp">お役立ち情報</h2>
+      <div class="sec-head-ornament"><span></span></div>
+    </div>
+    <p class="sec-desc">消化器の健康に関する情報をわかりやすくお届けします。</p>
+    <div class="blog-grid">
+      <div class="b-card">
+        <div class="b-card-img"><img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=480&h=320&fit=crop&q=80" alt=""></div>
+        <div class="b-card-body">
+          <div class="b-card-meta"><span>2026.03.10</span><span class="cat">検査のご案内</span></div>
+          <h3 class="b-card-title">胃カメラ検査を受ける前に知っておきたいこと</h3>
+          <p class="b-card-excerpt">胃カメラ検査は食道・胃・十二指腸の病変を直接観察できる重要な検査です。検査前の準備や当日の流れについて解説します。</p>
+        </div>
+      </div>
+      <div class="b-card">
+        <div class="b-card-img"><img src="https://images.unsplash.com/photo-1559757175-5700dde675bc?w=480&h=320&fit=crop&q=80" alt=""></div>
+        <div class="b-card-body">
+          <div class="b-card-meta"><span>2026.03.05</span><span class="cat">消化器の病気</span></div>
+          <h3 class="b-card-title">ピロリ菌と胃がんの関係について</h3>
+          <p class="b-card-excerpt">ピロリ菌は胃がんの大きなリスク因子です。感染の仕組みや除菌治療の方法についてお伝えします。</p>
+        </div>
+      </div>
+      <div class="b-card">
+        <div class="b-card-img"><img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=480&h=320&fit=crop&q=80" alt=""></div>
+        <div class="b-card-body">
+          <div class="b-card-meta"><span>2026.02.28</span><span class="cat">検査のご案内</span></div>
+          <h3 class="b-card-title">大腸がん検診の重要性と検査の流れ</h3>
+          <p class="b-card-excerpt">大腸がんは早期発見で治癒率の高いがんです。大腸カメラ検査の流れと前日準備を解説します。</p>
+        </div>
+      </div>
+    </div>
+    <div class="sec-more"><a href="preview-blog.html">記事一覧を見る →</a></div>
+  </div>
+</section>
+
+<!-- ===== ACCESS ===== -->
+<section class="sec sec-white sec-texture" id="access">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-head-bg">Access</div>
+      <span class="sec-head-en">Access</span>
+      <h2 class="sec-head-jp">アクセス</h2>
+      <div class="sec-head-ornament"><span></span></div>
+    </div>
+    <div class="access-grid">
+      <div class="access-map">Google Map</div>
+      <div class="access-info">
+        <h3>みどり内科クリニック</h3>
+        <table class="access-table">
+          <tr><th>住所</th><td>〒107-0062<br>東京都港区南青山1-2-3<br>メディカルビル3F</td></tr>
+          <tr><th>電話</th><td>03-0000-0000</td></tr>
+          <tr><th>最寄駅</th><td>東京メトロ 青山一丁目駅 徒歩3分</td></tr>
+          <tr><th>駐車場</th><td>提携駐車場あり（2時間まで無料）</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="cta">
+  <div class="container">
+    <h2>まずはお気軽にご相談ください</h2>
+    <p>消化器の不調や内視鏡検査について、お気軽にお電話ください。</p>
+    <a href="#" class="cta-btn">
+      <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.25 1.01l-2.2 2.2z"/></svg>
+      03-0000-0000
+    </a>
+    <p class="cta-hours">受付は診療終了30分前まで</p>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container-wide">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <div class="logo-mark"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="50" r="48" fill="none" stroke="#1B7A3D" stroke-width="1.5" opacity="0.4"/>
+          <circle cx="50" cy="50" r="42" fill="none" stroke="#1B7A3D" stroke-width="0.5" opacity="0.2"/>
+          <text x="50" y="62" text-anchor="middle" font-family="'Cormorant Garamond', serif" font-size="48" font-weight="400" font-style="italic" fill="#1B7A3D" letter-spacing="-2">M</text>
+          <text x="50" y="82" text-anchor="middle" font-family="'Cinzel', serif" font-size="7" fill="#1B7A3D" letter-spacing="3" opacity="0.6">MIDORI</text>
+        </svg></div>
+          <div class="logo-text">
+            <span class="logo-sub">消化器内科・内視鏡内科</span>
+            <span class="logo-name">みどり内科クリニック</span>
+          </div>
+        </div>
+        <p>〒107-0062<br>東京都港区南青山1-2-3<br>メディカルビル3F</p>
+        <div class="footer-tel"><svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.25 1.01l-2.2 2.2z"/></svg> 03-0000-0000</div>
+      </div>
+      <div class="footer-col">
+        <h4>ページ一覧</h4>
+        <ul><li><a href="design-top.html">ホーム</a></li><li><a href="preview-shinryou.html">診療科目</a></li><li><a href="preview-kensa.html">検査</a></li><li><a href="preview-doctor.html">ドクター紹介</a></li><li><a href="preview-clinic.html">クリニック紹介</a></li><li><a href="preview-blog.html">お役立ち情報</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h4>診療科目</h4>
+        <ul><li><a href="preview-shinryou.html">消化器内科</a></li><li><a href="preview-shinryou.html">内視鏡内科</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h4>検査</h4>
+        <ul><li><a href="preview-kensa.html">胃カメラ</a></li><li><a href="preview-kensa.html">大腸カメラ</a></li><li><a href="preview-kensa.html">腹部エコー</a></li><li><a href="preview-kensa.html">血液検査</a></li><li><a href="preview-kensa.html">レントゲン</a></li><li><a href="preview-kensa.html">健康診断</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h4>診療時間</h4>
+        <div class="footer-hours">
+          <p>午前 9:00〜12:30</p><p>午後 14:00〜18:00</p>
+          <p>休診：水曜午後・日曜・祝日</p><p>受付は診療終了30分前まで</p>
+          <p style="margin-top:10px;font-size:0.625rem;opacity:0.5;">※内視鏡検査は完全予約制です</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom"><div class="container"><p>&copy; 2026 みどり内科クリニック All Rights Reserved.</p></div></div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  new Swiper('.hero-swiper', {
+    effect: 'fade', fadeEffect: { crossFade: true },
+    loop: true, speed: 1200,
+    autoplay: { delay: 5000, disableOnInteraction: false },
+    pagination: { el: '.hero-swiper .swiper-pagination', clickable: true },
+  });
+  // Header scroll
+  var header = document.querySelector('.header');
+  window.addEventListener('scroll', function() {
+    header.style.boxShadow = window.scrollY > 60 ? '0 4px 20px rgba(20,83,45,0.08)' : '0 1px 0 rgba(20,83,45,0.06)';
+  }, {passive:true});
+
+  // Hamburger menu
+  var toggle = document.getElementById('menu-toggle');
+  var nav = document.querySelector('.nav');
+  var overlay = document.getElementById('nav-overlay');
+  if (toggle && nav) {
+    toggle.addEventListener('click', function() {
+      toggle.classList.toggle('active');
+      nav.classList.toggle('open');
+      if (overlay) overlay.classList.toggle('open');
+      document.body.style.overflow = nav.classList.contains('open') ? 'hidden' : '';
+    });
+    if (overlay) overlay.addEventListener('click', function() {
+      toggle.classList.remove('active');
+      nav.classList.remove('open');
+      overlay.classList.remove('open');
+      document.body.style.overflow = '';
+    });
+    nav.querySelectorAll('a').forEach(function(a) {
+      a.addEventListener('click', function() {
+        toggle.classList.remove('active');
+        nav.classList.remove('open');
+        if (overlay) overlay.classList.remove('open');
+        document.body.style.overflow = '';
+      });
+    });
+  }
+});
+</script>
+</body>
+</html>
