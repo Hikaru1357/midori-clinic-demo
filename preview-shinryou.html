@@ -897,11 +897,11 @@ document.addEventListener('DOMContentLoaded', function() {
       document.body.style.overflow = '';
     });
     nav.querySelectorAll('a').forEach(function(a) {
-      a.addEventListener('click', function() {
+      a.addEventListener('click', function(e) { var href = a.getAttribute('href'); e.preventDefault();
         toggle.classList.remove('active');
         nav.classList.remove('open');
         if (overlay) overlay.classList.remove('open');
-        document.body.style.overflow = '';
+        document.body.style.overflow = ''; setTimeout(function() { window.location.href = href; }, 50);
       });
     });
   }
