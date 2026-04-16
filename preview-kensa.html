@@ -588,7 +588,6 @@ ul { list-style: none; }
     </div>
   </div>
 </header>
-<div class="nav-overlay" id="nav-overlay"></div>
 
 <!-- ========== Page Hero ========== -->
 <div class="page-hero">
@@ -980,28 +979,19 @@ document.addEventListener('DOMContentLoaded', function() {
   // Hamburger menu
   var toggle = document.getElementById('menu-toggle');
   var nav = document.querySelector('.nav');
-  var overlay = document.getElementById('nav-overlay');
   if (toggle && nav) {
-    toggle.addEventListener('click', function() {
+    toggle.addEventListener('click', function(e) {
+      e.stopPropagation();
       toggle.classList.toggle('active');
       nav.classList.toggle('open');
-      if (overlay) overlay.classList.toggle('open');
-      document.body.style.overflow = nav.classList.contains('open') ? 'hidden' : '';
     });
-    if (overlay) overlay.addEventListener('click', function() {
-      toggle.classList.remove('active');
-      nav.classList.remove('open');
-      overlay.classList.remove('open');
-      document.body.style.overflow = '';
-    });
-    nav.querySelectorAll('a').forEach(function(a) {
-      a.addEventListener('click', function(e) { var href = a.getAttribute('href'); e.preventDefault();
+    document.addEventListener('click', function(e) {
+      if (nav.classList.contains('open') && !nav.contains(e.target) && !toggle.contains(e.target)) {
         toggle.classList.remove('active');
         nav.classList.remove('open');
-        if (overlay) overlay.classList.remove('open');
-        document.body.style.overflow = ''; setTimeout(function() { window.location.href = href; }, 50);
-      });
+      }
     });
+  });
   }
 
   // Kensa tabs
