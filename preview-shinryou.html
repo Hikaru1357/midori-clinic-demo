@@ -607,6 +607,13 @@ ul { list-style: none; }
   .fp-cta h2 { font-size: 1.25rem; }
   .cta-tel-btn { padding: 16px 36px; font-size: 1.2rem; }
 
+  /* Day flow: 2 columns */
+  .day-flow-grid { grid-template-columns: repeat(2, 1fr); gap: 28px; }
+  .day-flow-board { padding: 32px 20px 28px; }
+  .day-flow-card:nth-child(3n)::after { display: block; }
+  .day-flow-card:nth-child(2n)::after,
+  .day-flow-card:last-child::after { display: none; }
+
   /* Footer */
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
 }
@@ -614,6 +621,17 @@ ul { list-style: none; }
 @media (max-width: 480px) {
   .footer-grid { grid-template-columns: 1fr; gap: 28px; }
   .shinryou-img img { height: 180px; }
+  /* Day flow: 1 column + down arrows */
+  .day-flow-grid { grid-template-columns: 1fr; gap: 32px; }
+  .day-flow-board { padding: 28px 16px 24px; }
+  .day-flow-card::after {
+    content: '∨';
+    top: auto; right: auto;
+    bottom: -22px; left: 50%;
+    transform: translateX(-50%);
+  }
+  .day-flow-card:nth-child(3n)::after { display: block; }
+  .day-flow-card:last-child::after { display: none; }
 }
 /* Texture backgrounds */
 .sec-green-pale {
