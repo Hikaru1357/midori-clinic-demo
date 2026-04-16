@@ -118,6 +118,16 @@ ul { list-style: none; }
   font-family: var(--font-sans); font-size: 0.625rem; color: var(--text-light);
   display: block; text-align: right; line-height: 1.3; margin-top: -2px;
 }
+.header-web {
+  display: inline-flex; align-items: center; justify-content: center;
+  padding: 10px 20px; border-radius: 6px;
+  background: var(--green-primary); color: #fff;
+  font-family: var(--font-sans); font-size: 0.8rem; font-weight: 600;
+  letter-spacing: 0.06em; transition: background 0.3s;
+  white-space: nowrap;
+}
+.header-web:hover { background: var(--green-medium); color: #fff; }
+.nav-web-btn { display: none; }
 
 /* ============================================================
    HERO — Full-screen slider with overlay
@@ -990,6 +1000,14 @@ ul { list-style: none; }
   }
   .nav a .nav-en { display: none; }
   .header-right .header-tel { display: none; }
+  .header-right .header-web { display: none; }
+  .nav-web-btn {
+    display: block !important;
+    margin-top: 16px; background: var(--green-primary); color: #fff !important;
+    border-radius: 6px; text-align: center; padding: 14px 0 !important;
+    border-bottom: none !important;
+  }
+  .nav-web-btn .nav-jp { color: #fff; }
   .header-tel-sp { display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; }
   .breadcrumb { padding: 10px 20px; font-size: 0.625rem; }
   /* Hero: stacked layout - image top, text bottom */
@@ -1113,6 +1131,7 @@ ul { list-style: none; }
       <a href="preview-clinic.html"><span class="nav-jp">クリニック紹介</span><span class="nav-en">Clinic</span></a>
       <a href="preview-blog.html"><span class="nav-jp">お役立ち情報</span><span class="nav-en">Column</span></a>
       <a href="design-top.html#access"><span class="nav-jp">アクセス</span><span class="nav-en">Access</span></a>
+      <a href="#" class="nav-web-btn"><span class="nav-jp">WEB予約</span></a>
     </nav>
     <div class="header-right">
       <a href="#" class="header-tel">
@@ -1122,6 +1141,7 @@ ul { list-style: none; }
           <span class="header-tel-sub">受付は診療終了30分前まで</span>
         </div>
       </a>
+      <a href="#" class="header-web">WEB予約</a>
       <a href="tel:03-0000-0000" class="header-tel-sp" aria-label="電話">
         <svg viewBox="0 0 24 24" width="22" height="22" fill="var(--green-primary)"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.25 1.01l-2.2 2.2z"/></svg>
       </a>
@@ -1206,7 +1226,7 @@ ul { list-style: none; }
     </div>
     <div class="news-list">
       <div class="news-item"><span class="news-date">2026.04.01</span><span class="news-cat">お知らせ</span><span class="news-title">ホームページを開設いたしました</span></div>
-      <div class="news-item"><span class="news-date">2026.03.15</span><span class="news-cat">お知らせ</span><span class="news-title">消化器内科・内視鏡内科の診療を開始いたしました</span></div>
+      <div class="news-item"><span class="news-date">2026.03.15</span><span class="news-cat">お知らせ</span><span class="news-title">内視鏡検査のWEB予約を開始しました</span></div>
       <div class="news-item"><span class="news-date">2026.03.01</span><span class="news-cat">検査情報</span><span class="news-title">最新内視鏡システム EVIS X1 を導入しました</span></div>
       <div class="news-item"><span class="news-date">2026.02.15</span><span class="news-cat">お知らせ</span><span class="news-title">大腸カメラ検査の鎮静剤対応を開始いたしました</span></div>
     </div>
@@ -1498,7 +1518,7 @@ ul { list-style: none; }
         <dl>
           <dt>初診の方</dt><dd>保険証をお持ちの上、受付時間内にお越しください。</dd>
           <dt>受付時間</dt><dd>午前 9:00〜12:00 / 午後 14:00〜17:30</dd>
-          <dt>予約について</dt><dd>内視鏡検査は完全予約制です。お電話にてご予約ください。</dd>
+          <dt>予約について</dt><dd>内視鏡検査は完全予約制です。お電話またはWEB予約をご利用ください。</dd>
           <dt>お支払い方法</dt><dd>各種保険取扱い・各種クレジットカード対応</dd>
         </dl>
       </div>
