@@ -558,6 +558,33 @@ ul { list-style: none; }
 }
 .sec-green-pale > .container { position: relative; z-index: 1; }
 .sec-green-dark::before { background: rgba(234,245,237,0.2); }
+
+/* Side CTA + SP Bottom Bar */
+.side-cta {
+  position: fixed; right: 0; top: 50%; transform: translateY(-50%); z-index: 90;
+  display: flex; flex-direction: column; gap: 2px;
+}
+.side-cta a {
+  writing-mode: vertical-rl; text-orientation: upright;
+  padding: 22px 13px; font-family: var(--font-sans); font-size: 0.6875rem; font-weight: 600;
+  color: #fff; letter-spacing: 0.16em; transition: all 0.3s; min-width: 50px;
+  display: flex; align-items: center; justify-content: center;
+}
+.side-cta a:hover { min-width: 56px; opacity: 0.9; }
+.side-cta-tel { background: linear-gradient(180deg, var(--green-primary), var(--green-deep)); border-radius: 8px 0 0 0; }
+.side-cta-web { background: linear-gradient(180deg, var(--gold), #9a7a20); border-radius: 0 0 0 8px; }
+.sp-bottom-bar {
+  display: none; position: fixed; bottom: 0; left: 0; right: 0; z-index: 90;
+}
+.sp-bottom-bar-inner { display: grid; grid-template-columns: 1fr 1fr; }
+.sp-bottom-bar a {
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+  padding: 16px 0; font-family: var(--font-sans); font-size: 0.85rem; font-weight: 600;
+  color: #fff; text-align: center; letter-spacing: 0.04em;
+}
+.sp-bottom-bar a svg { width: 18px; height: 18px; fill: #fff; flex-shrink: 0; }
+.sp-bottom-tel { background: var(--green-primary); }
+.sp-bottom-web { background: var(--gold); }
 </style>
 </head>
 <body class="page-template-page-kensa">
