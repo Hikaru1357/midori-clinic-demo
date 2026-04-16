@@ -453,6 +453,15 @@ ul { list-style: none; }
 }
 .cta-tel-btn:hover svg { fill: var(--green-primary); }
 .cta-tel-btn svg { width: 22px; height: 22px; fill: #fff; transition: fill 0.3s; }
+.cta-web-btn {
+  display: inline-block; margin-top: 16px;
+  padding: 14px 40px; border-radius: 6px;
+  background: var(--white); color: var(--green-primary);
+  font-family: var(--font-sans); font-size: 1rem; font-weight: 600;
+  letter-spacing: 0.06em; transition: all 0.3s;
+  border: 2px solid var(--white);
+}
+.cta-web-btn:hover { background: transparent; color: var(--white); }
 .cta-hours {
   margin-top: 14px;
   font-family: var(--font-sans);
@@ -659,7 +668,6 @@ ul { list-style: none; }
       <a href="preview-clinic.html"><span class="nav-jp">クリニック紹介</span><span class="nav-en">Clinic</span></a>
       <a href="preview-blog.html"><span class="nav-jp">お役立ち情報</span><span class="nav-en">Column</span></a>
       <a href="design-top.html#access"><span class="nav-jp">アクセス</span><span class="nav-en">Access</span></a>
-      <a href="#" class="nav-web-btn"><span class="nav-jp">WEB予約</span></a>
     </nav>
     <div class="header-right">
       <a href="#" class="header-tel">
@@ -669,7 +677,6 @@ ul { list-style: none; }
           <span class="header-tel-sub">受付は診療終了30分前まで</span>
         </div>
       </a>
-      <a href="#" class="header-web">WEB予約</a>
       <a href="tel:03-0000-0000" class="header-tel-sp" aria-label="電話">
         <svg viewBox="0 0 24 24" width="22" height="22" fill="var(--green-primary)"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.25 1.01l-2.2 2.2z"/></svg>
       </a>
@@ -835,6 +842,7 @@ ul { list-style: none; }
       03-0000-0000
     </a>
     <p class="cta-hours">受付は診療終了30分前まで</p>
+    <a href="#" class="cta-web-btn">WEB予約はこちら</a>
   </div>
 </section>
 
