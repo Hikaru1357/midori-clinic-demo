@@ -77,7 +77,8 @@
       "Bash(sed -i '' 's/class=\"sec sec-cream\"/class=\"sec sec-green-pale\"/g' preview-clinic.html)",
       "Bash(sed -i '' 's/class=\"sec sec-white\">/<&/' preview-blog.html)",
       "Bash(gh auth *)",
-      "Bash(gh repo *)"
+      "Bash(gh repo *)",
+      "Bash(python3 -c ' *)"
     ]
   },
   "enabledMcpjsonServers": [
