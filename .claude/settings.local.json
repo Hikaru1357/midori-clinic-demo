@@ -78,7 +78,9 @@
       "Bash(sed -i '' 's/class=\"sec sec-white\">/<&/' preview-blog.html)",
       "Bash(gh auth *)",
       "Bash(gh repo *)",
-      "Bash(python3 -c ' *)"
+      "Bash(python3 -c ' *)",
+      "Bash(python3 -c \"from PIL import Image; print\\('pillow ok'\\)\")",
+      "Bash(python3 -c \"import cairosvg; print\\('cairosvg ok'\\)\")"
     ]
   },
   "enabledMcpjsonServers": [
