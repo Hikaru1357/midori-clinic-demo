@@ -852,6 +852,9 @@ ul { list-style: none; }
   border: 2px solid var(--white);
 }
 .cta-web-btn:hover { background: transparent; color: var(--white); }
+.cta-img-section { padding: 80px 0; background: var(--cream); }
+.cta-img-link { display: block; transition: transform 0.3s, box-shadow 0.3s; }
+.cta-img-link:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.1); }
 .cta-hours {
   margin-top: 14px; font-family: var(--font-sans); font-size: 0.75rem;
   color: var(--text-light);
@@ -1645,16 +1648,10 @@ ul { list-style: none; }
 </section>
 
 <!-- ===== CTA ===== -->
-<section class="cta">
-  <div class="container">
-    <h2>まずはお気軽にご相談ください</h2>
-    <p>消化器の不調や内視鏡検査について、お気軽にお電話ください。</p>
-    <a href="#" class="cta-btn">
-      <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.25 1.01l-2.2 2.2z"/></svg>
-      03-0000-0000
-    </a>
-    <p class="cta-hours">受付は診療終了30分前まで</p>
-    <a href="#" class="cta-web-btn">WEB予約はこちら</a>
+<section class="cta-img-section">
+  <div class="container" style="max-width:800px;">
+    <a href="tel:03-0000-0000" class="cta-img-link"><img src="img/cta-banner.png" alt="まずはお気軽にご相談ください 03-0000-0000" style="width:100%;border-radius:12px;"></a>
+    <a href="#" class="cta-img-link" style="margin-top:20px;"><img src="img/cta-web.png" alt="WEB予約はこちら" style="width:100%;border-radius:12px;"></a>
   </div>
 </section>
 

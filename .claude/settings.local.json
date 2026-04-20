@@ -103,7 +103,9 @@
       "Bash(sed -i '' 's|https://images.unsplash.com/photo-1629909615184-74f495363b67?w=440&h=280&fit=crop&q=80|img/parking.png|g' design-top.html)",
       "Bash(sed -i '' 's|img/illust-stomach.png\" alt=\"胃カメラ検査を受ける前に|img/illust-endoscopy.png\" alt=\"胃カメラ検査を受ける前に|' preview-blog.html)",
       "Bash(sed -i '' 's|img/illust-liver.png\" alt=\"ピロリ菌|img/illust-stomach.png\" alt=\"ピロリ菌|' preview-blog.html)",
-      "Bash(sed -i '' 's|img/illust-reflux.png\" alt=\"過敏性腸症候群|img/illust-ibs.png\" alt=\"過敏性腸症候群|' preview-blog.html)"
+      "Bash(sed -i '' 's|img/illust-reflux.png\" alt=\"過敏性腸症候群|img/illust-ibs.png\" alt=\"過敏性腸症候群|' preview-blog.html)",
+      "Bash(cp \"/Users/ookubohikari/Downloads/ChatGPT Image 2026年4月21日 02_54_02.png\" \"/Users/ookubohikari/HP制作事業/デモサイト1-2/img/cta-banner.png\")",
+      "Bash(cp \"/Users/ookubohikari/Downloads/ChatGPT Image 2026年4月21日 02_50_29.png\" \"/Users/ookubohikari/HP制作事業/デモサイト1-2/img/cta-web.png\")"
     ]
   },
   "enabledMcpjsonServers": [

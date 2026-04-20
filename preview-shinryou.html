@@ -686,6 +686,9 @@ ul { list-style: none; }
 .sp-bottom-bar a svg { width: 18px; height: 18px; fill: #fff; flex-shrink: 0; }
 .sp-bottom-tel { background: var(--green-primary); }
 .sp-bottom-web { background: var(--gold); }
+.cta-img-section { padding: 80px 0; background: var(--cream); }
+.cta-img-link { display: block; transition: transform 0.3s, box-shadow 0.3s; }
+.cta-img-link:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.1); }
 </style>
 </head>
 <body class="page-template page-shinryou">
@@ -882,16 +885,10 @@ ul { list-style: none; }
 </section>
 
 <!-- ========== CTA ========== -->
-<section class="fp-cta">
-  <div class="container">
-    <h2>お気軽にご相談ください</h2>
-    <p>消化器の不調や内視鏡検査のご予約は、お電話またはWEB予約にて承ります。</p>
-    <a href="tel:03-0000-0000" class="cta-tel-btn">
-      <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.25 1.01l-2.2 2.2z" fill="currentColor"/></svg>
-      03-0000-0000
-    </a>
-    <p class="cta-hours">受付は診療終了30分前まで</p>
-    <a href="#" class="cta-web-btn">WEB予約はこちら</a>
+<section class="cta-img-section">
+  <div class="container" style="max-width:800px;">
+    <a href="tel:03-0000-0000" class="cta-img-link"><img src="img/cta-banner.png" alt="まずはお気軽にご相談ください 03-0000-0000" style="width:100%;border-radius:12px;"></a>
+    <a href="#" class="cta-img-link" style="margin-top:20px;"><img src="img/cta-web.png" alt="WEB予約はこちら" style="width:100%;border-radius:12px;"></a>
   </div>
 </section>
 
