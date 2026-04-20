@@ -80,7 +80,27 @@
       "Bash(gh repo *)",
       "Bash(python3 -c ' *)",
       "Bash(python3 -c \"from PIL import Image; print\\('pillow ok'\\)\")",
-      "Bash(python3 -c \"import cairosvg; print\\('cairosvg ok'\\)\")"
+      "Bash(python3 -c \"import cairosvg; print\\('cairosvg ok'\\)\")",
+      "Bash(mkdir -p img)",
+      "Bash(cp \"みどり内科画像/ChatGPT Image 2026年4月20日 22_55_44.png\" img/illust-stomach.png)",
+      "Bash(cp \"みどり内科画像/ChatGPT Image 2026年4月20日 22_57_46.png\" img/illust-intestine.png)",
+      "Bash(cp \"みどり内科画像/ChatGPT Image 2026年4月20日 23_00_52.png\" img/illust-endoscopy.png)",
+      "Bash(cp \"みどり内科画像/ChatGPT Image 2026年4月20日 23_03_26.png\" img/illust-reflux.png)",
+      "Bash(sed -i '' 's|https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1920&h=900&fit=crop&q=85|img/exterior.png|g' design-top.html)",
+      "Bash(sed -i '' 's|https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1920&h=900&fit=crop&q=85|img/reception.png|g' design-top.html)",
+      "Bash(sed -i '' 's|https://images.unsplash.com/photo-1666214280557-f1b5022eb634?w=1920&h=900&fit=crop&q=85|img/room-corridor.png|g' design-top.html)",
+      "Bash(sed -i '' 's|https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=700&h=500&fit=crop&q=80|img/doctor-consultation.png|g' design-top.html)",
+      "Bash(sed -i '' 's|https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=700&h=500&fit=crop&q=80|img/doctor-examine.png|g' design-top.html)",
+      "Bash(sed -i '' \"s|https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1920&h=600&fit=crop&q=80|img/reception.png|g\" preview-shinryou.html)",
+      "Bash(sed -i '' \"s|https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&h=400&fit=crop|img/doctor-talk.png|g\" preview-shinryou.html)",
+      "Bash(sed -i '' \"s|https://images.unsplash.com/photo-1581595220892-b0739db3ba8c?w=600&h=400&fit=crop|img/doctor-endoscopy.png|g\" preview-shinryou.html)",
+      "Bash(sed -i '' \"s|https://images.unsplash.com/photo-1581595220892-b0739db3ba8c?w=1920&h=600&fit=crop&q=80|img/room-endoscopy.png|g\" preview-kensa.html)",
+      "Bash(sed -i '' \"s|https://images.unsplash.com/photo-1581595220892-b0739db3ba8c?w=600&h=400&fit=crop|img/illust-endoscopy.png|g\" preview-kensa.html)",
+      "Bash(sed -i '' 's|https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=560&h=440&fit=crop&q=85|img/doctor-greeting.png|' design-top.html)",
+      "Bash(sed -i '' 's|https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?w=440&h=280&fit=crop&q=80|img/reception-staff.png|g' design-top.html)",
+      "Bash(sed -i '' 's|https://images.unsplash.com/photo-1666214280557-f1b5022eb634?w=440&h=280&fit=crop&q=80|img/room-corridor.png|g' design-top.html)",
+      "Bash(sed -i '' 's|https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=440&h=280&fit=crop&q=80|img/doctor-portrait.png|g' design-top.html)",
+      "Bash(sed -i '' 's|https://images.unsplash.com/photo-1629909615184-74f495363b67?w=440&h=280&fit=crop&q=80|img/parking.png|g' design-top.html)"
     ]
   },
   "enabledMcpjsonServers": [
