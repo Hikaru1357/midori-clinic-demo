@@ -74,16 +74,16 @@ ul { list-style: none; }
   max-width: 1240px; margin: 0 auto; padding: 0 40px;
   height: 100%; display: flex; align-items: center; justify-content: space-between;
 }
-.logo { display: flex; align-items: center; gap: 14px; }
+.logo { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
 .logo-mark {
-  width: 56px; height: 56px; flex-shrink: 0;
+  width: 46px; height: 46px; flex-shrink: 0;
   display: flex; align-items: center; justify-content: center;
 }
-.logo-mark img { width: 56px; height: 56px; }
+.logo-mark img { width: 46px; height: 46px; }
 .logo-text { display: flex; flex-direction: column; line-height: 1.3; }
 .logo-name {
-  font-family: var(--font-serif); font-size: 1.1rem; font-weight: 600;
-  color: var(--green-deep); letter-spacing: 0.06em; line-height: 1.3;
+  font-family: var(--font-serif); font-size: 0.9rem; font-weight: 600;
+  color: var(--green-deep); letter-spacing: 0.04em; line-height: 1.4;
 }
 .logo-sub {
   font-family: var(--font-sans); font-size: 0.5rem; color: var(--text-light);
@@ -92,11 +92,11 @@ ul { list-style: none; }
 .nav { display: flex; align-items: center; gap: 2px; }
 .nav a {
   display: flex; flex-direction: column; align-items: center;
-  padding: 10px 16px; position: relative;
+  padding: 10px 12px; position: relative;
 }
 .nav-jp {
-  font-family: var(--font-sans); font-size: 0.825rem; font-weight: 500;
-  color: var(--text); letter-spacing: 0.06em;
+  font-family: var(--font-sans); font-size: 0.775rem; font-weight: 500;
+  color: var(--text); letter-spacing: 0.04em;
 }
 .nav-en {
   font-family: var(--font-en); font-size: 0.5rem; color: var(--gold);
@@ -110,8 +110,8 @@ ul { list-style: none; }
 .header-right { display: flex; align-items: center; gap: 16px; }
 .header-tel {
   display: inline-flex; align-items: center; gap: 10px;
-  padding: 10px 22px; border: 2px solid var(--green-primary); border-radius: 40px;
-  font-family: var(--font-sans); font-size: 1.3rem; font-weight: 700;
+  padding: 8px 18px; border: 2px solid var(--green-primary); border-radius: 40px;
+  font-family: var(--font-sans); font-size: 1.1rem; font-weight: 700;
   font-style: normal;
   color: var(--green-primary); letter-spacing: 0.04em;
   transition: all 0.3s; white-space: nowrap;
