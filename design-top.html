@@ -1037,36 +1037,49 @@ ul { list-style: none; }
 
 @media (max-width: 768px) {
   .breadcrumb { padding: 10px 20px; font-size: 0.625rem; }
-  /* Hero: full screen overlay style for SP */
+  /* Hero: text → image → points vertical layout for SP */
   .hero {
-    height: auto; min-height: 100vh; max-height: none; margin-top: 64px;
+    height: auto; min-height: auto; max-height: none; margin-top: 64px;
     display: flex; flex-direction: column; position: relative;
+    background: url('blog_bg_sp.jpg') repeat; background-size: 300px auto;
   }
-  .hero-swiper { height: 55vh; min-height: 280px; }
-  .hero-overlay {
-    display: block; position: absolute; inset: 0; z-index: 1;
-    background: linear-gradient(to bottom, rgba(255,255,255,0) 30%, rgba(255,255,255,0.85) 55%, rgba(255,255,255,1) 70%);
-    pointer-events: none;
+  .hero::before {
+    content: ''; position: absolute; inset: 0;
+    background: rgba(244,250,245,0.6); pointer-events: none; z-index: 0;
   }
+  .hero-overlay { display: none; }
+  /* Text on top */
   .hero-content {
     position: relative; top: auto; left: auto; transform: none;
-    background: var(--white); padding: 0 24px 28px; text-align: center;
-    z-index: 2; margin-top: -80px;
+    background: transparent; padding: 32px 24px 20px; text-align: center;
+    z-index: 2; order: 1;
   }
   .hero-inner { max-width: 100%; }
   .hero-badge { font-size: 0.6875rem; padding: 6px 18px; margin-bottom: 12px; }
   .hero-heading {
-    font-size: 1.5rem; color: var(--green-deep);
-    letter-spacing: 0.06em; line-height: 1.7; margin-bottom: 10px;
+    font-size: 1.45rem; color: var(--green-deep);
+    letter-spacing: 0.06em; line-height: 1.75; margin-bottom: 10px;
     text-shadow: none;
   }
-  .hero-desc { text-shadow: none; font-size: 0.75rem; color: var(--text-sub); max-width: 100%; margin: 0 auto; line-height: 1.9; }
+  .hero-desc {
+    text-shadow: none; font-size: 0.75rem; color: var(--text-sub);
+    max-width: 100%; margin: 0 auto; line-height: 1.9;
+  }
+  /* Image in middle - horizontal, no crop */
+  .hero-swiper {
+    height: auto; min-height: auto; max-height: none;
+    order: 2; z-index: 1; padding: 0 16px;
+  }
+  .hero-swiper .swiper-slide img {
+    width: 100%; height: auto; object-fit: contain; border-radius: 10px;
+    animation: none;
+  }
   .hero-timetable { display: none; }
-  /* Show points on SP */
+  /* Points below image */
   .hero-points {
     display: flex !important; position: relative; left: auto; bottom: auto;
-    z-index: 3; padding: 16px 16px 0; gap: 8px; justify-content: center;
-    background: var(--white);
+    z-index: 2; padding: 20px 16px 28px; gap: 8px; justify-content: center;
+    order: 3;
   }
   .hero-point-card {
     transform: skewX(0); min-width: 0; flex: 1;
