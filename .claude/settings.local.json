@@ -106,7 +106,12 @@
       "Bash(sed -i '' 's|img/illust-reflux.png\" alt=\"過敏性腸症候群|img/illust-ibs.png\" alt=\"過敏性腸症候群|' preview-blog.html)",
       "Bash(cp \"/Users/ookubohikari/Downloads/ChatGPT Image 2026年4月21日 02_54_02.png\" \"/Users/ookubohikari/HP制作事業/デモサイト1-2/img/cta-banner.png\")",
       "Bash(cp \"/Users/ookubohikari/Downloads/ChatGPT Image 2026年4月21日 02_50_29.png\" \"/Users/ookubohikari/HP制作事業/デモサイト1-2/img/cta-web.png\")",
-      "WebFetch(domain:www.namba-endoscopy.com)"
+      "WebFetch(domain:www.namba-endoscopy.com)",
+      "Bash(sed -i '' 's|<!-- 04 — 内視鏡内科 -->|<!-- 03 — 内視鏡内科 -->|' design-top.html)",
+      "Bash(sed -i '' '/f-group-num\">04/s|04|03|' design-top.html)",
+      "Bash(sed -i '' 's|<!-- 05 — 共通 -->|<!-- 04 — 共通 -->|' design-top.html)",
+      "Bash(sed -i '' '/f-group-num\">05/s|05|04|' design-top.html)",
+      "Bash(sed -i '' 's|<!-- 06 — 共通 -->|<!-- 05 — 共通 -->|' design-top.html)"
     ]
   },
   "enabledMcpjsonServers": [
